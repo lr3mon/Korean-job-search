@@ -1,0 +1,410 @@
+[
+  {
+    "company_id": "kr-051",
+    "url": "https://recruit.posco.com/h22a01-front/H22A1000.html",
+    "snippet": "2026년 포스코 신입·경력·R&D 해외채용(미국/캐나다/일본/호주)",
+    "title": "채용공고",
+    "status": "verified",
+    "method": "ephemeral headless Chromium; cookies blocked; no authentication"
+  },
+  {
+    "company_id": "kr-051",
+    "url": "https://www.posco.co.kr/homepage/docs/kor7/jsp/s91a0000001i.jsp",
+    "snippet": "포스코그룹 채용",
+    "title": "POSCO | 포스코",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies; corporate anchor href=https://recruit.posco.com/"
+  },
+  {
+    "company_id": "kr-052",
+    "url": "https://recruit.posco.com/h22a01-front/H22A1000.html",
+    "snippet": "포스코인터내셔널",
+    "title": "채용공고",
+    "status": "verified",
+    "method": "ephemeral headless Chromium; cookies blocked; no authentication"
+  },
+  {
+    "company_id": "kr-052",
+    "url": "https://www.poscointl.com/step",
+    "snippet": "채용공고+",
+    "title": "포스코인터내셔널",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies; corporate anchor href=https://recruit.posco.com/h22a01-front/H22AMain.html"
+  },
+  {
+    "company_id": "kr-053",
+    "url": "https://recruit.posco.com/h22a01-front/H22A1000.html",
+    "snippet": "포스코퓨처엠",
+    "title": "채용공고",
+    "status": "verified",
+    "method": "ephemeral headless Chromium; cookies blocked; no authentication"
+  },
+  {
+    "company_id": "kr-053",
+    "url": "https://www.poscofuturem.com/recruitment/talent.do",
+    "snippet": "채용공고",
+    "title": "인재상 - 인재채용 - 포스코퓨처엠",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies; corporate anchor href=https://recruit.posco.com/h22a01-front/H22A1000.html"
+  },
+  {
+    "company_id": "kr-054",
+    "url": "https://recruit-hanwhaocean.com/ko/intro",
+    "snippet": "한화오션 2026 하반기 신입 채용",
+    "title": "한화오션 채용",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies"
+  },
+  {
+    "company_id": "kr-054",
+    "url": "https://www.hanwhaocean.com/",
+    "snippet": "지원하기",
+    "title": "한화오션",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies; corporate anchor href=https://recruit-hanwhaocean.com"
+  },
+  {
+    "company_id": "kr-055",
+    "url": "https://www.hanwhain.com/portal/apply/recruit",
+    "snippet": "한화솔루션 전략/운영부문\n26년 하반기 한화솔루션 재무 신입사원 채용",
+    "title": "한화인",
+    "status": "verified",
+    "method": "ephemeral headless Chromium; cookies blocked; no authentication"
+  },
+  {
+    "company_id": "kr-055",
+    "url": "https://www.hanwhasolutions-insight.com/site/main/content/careers",
+    "snippet": "한화 인 홈페이지를 통해 채용을 진행하고 있습니다.",
+    "title": "한화솔루션 인사이트 부문",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies; corporate anchor href=https://www.hanwhain.com"
+  },
+  {
+    "company_id": "kr-056",
+    "url": "https://recruit.lotte.co.kr/apply/announcement/detail/21964341?compcd=40015",
+    "snippet": "2026년 9월 롯데마트 영업관리 JA Grade 신입사원 채용 I'M전형",
+    "title": "채용공고 상세 | 입사지원 | 롯데그룹채용",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies"
+  },
+  {
+    "company_id": "kr-056",
+    "url": "https://www.lotteshoppingir.com/",
+    "snippet": "롯데그룹 채용사이트",
+    "title": "LOTTE SHOPPING INVESTOR RELATIONS.",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies; LOTTE Shopping corporate anchor href=https://recruit.lotte.co.kr/"
+  },
+  {
+    "company_id": "kr-057",
+    "url": "https://recruit.lotte.co.kr/apply/announcement/detail/21964166?compcd=50004",
+    "snippet": "2026년 9월 롯데케미칼 기초소재사업 생산전문직 신입사원(인턴) 채용",
+    "title": "채용공고 상세 | 입사지원 | 롯데그룹채용",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies"
+  },
+  {
+    "company_id": "kr-057",
+    "url": "https://www.lottechem.com",
+    "snippet": "채용공고",
+    "title": "롯데케미칼",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies; corporate anchor href=https://www.lottechem.com/ko/recruit/employment/list.do"
+  },
+  {
+    "company_id": "kr-058",
+    "url": "https://recruit.lotte.co.kr/apply/announcement/detail/21964037?compcd=10002",
+    "snippet": "2026년 9월 롯데칠성 생산 계약직 채용(오포공장)",
+    "title": "채용공고 상세 | 입사지원 | 롯데그룹채용",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies"
+  },
+  {
+    "company_id": "kr-058",
+    "url": "https://recruit.lotte.co.kr/companylife/affiliate/detail?compcd=10002",
+    "snippet": "롯데칠성음료",
+    "title": "계열사/직무 소개 상세 | 회사생활 | 롯데그룹채용",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies"
+  },
+  {
+    "company_id": "kr-059",
+    "url": "https://careers.lottewellfood.com/go/ALL-JOBS/507650/",
+    "snippet": "모집공고 부산 지역 영양사 채용 회사 롯데웰푸드",
+    "title": "LOTTE WELLFOOD CAREERS",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies"
+  },
+  {
+    "company_id": "kr-059",
+    "url": "https://www.lottewellfood.com",
+    "snippet": "채용공고",
+    "title": "롯데웰푸드",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies; corporate anchor href=https://careers.lottewellfood.com/go/ALL-JOBS/507650/"
+  },
+  {
+    "company_id": "kr-060",
+    "url": "https://recruit.lotte.co.kr/apply/announcement/detail/21933850",
+    "snippet": "2026년 9월 롯데이노베이트 신입사원 채용 일반전형",
+    "title": "채용공고 상세 | 입사지원 | 롯데그룹채용",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies"
+  },
+  {
+    "company_id": "kr-060",
+    "url": "https://recruit.lotte.co.kr/companylife/affiliate/detail?compcd=30007",
+    "snippet": "롯데이노베이트 계열사 소개 새로운 기술 및 서비스 패러다임으로 비즈니스 성과를 향상하는 디지털 플랫폼 리더",
+    "title": "계열사/직무 소개 상세 | 회사생활 | 롯데그룹채용",
+    "status": "verified",
+    "method": "Unauthenticated HTTP GET; HTML title, text and outbound-link inspection; no cookies"
+  },
+  {
+    "company_id": "kr-061",
+    "url": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8788",
+    "snippet": "2026년 하반기 CJ제일제당 신입사원 모집\nCJ제일제당",
+    "title": "CJ RECRUIT",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies"
+  },
+  {
+    "company_id": "kr-061",
+    "url": "https://www.cj.co.kr/kr/index",
+    "snippet": "인재채용",
+    "title": "CJ제일제당",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies; anchor href=https://recruit.cj.net/"
+  },
+  {
+    "company_id": "kr-062",
+    "url": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8782",
+    "snippet": "2026년 하반기 CJ대한통운 신입사원 모집\nCJ대한통운",
+    "title": "CJ RECRUIT",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies"
+  },
+  {
+    "company_id": "kr-062",
+    "url": "https://www.cjlogistics.com/ko/main",
+    "snippet": "요청하신 페이지를 찾을 수 없습니다.",
+    "title": "CJ대한통운",
+    "status": "partial",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies; HTTP 200 soft-404, not a working homepage"
+  },
+  {
+    "company_id": "kr-063",
+    "url": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8778",
+    "snippet": "2026년 하반기 CJ ENM 엔터테인먼트부문 신입사원 모집\nCJ ENM",
+    "title": "CJ RECRUIT",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies"
+  },
+  {
+    "company_id": "kr-063",
+    "url": "https://www.cjenm.com/ko/",
+    "snippet": "Careers",
+    "title": "CJ ENM 엔터테인먼트부문 | 글로벌 종합 콘텐츠 기업",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies; anchor href=https://recruit.cj.net/recruit/ko/main/main/main.fo"
+  },
+  {
+    "company_id": "kr-064",
+    "url": "https://career.oliveyoung.com/ko/apply",
+    "snippet": "통번역 담당자 (계약직) 경영지원 사무지원 경력 5년 이상 계약직 CJ올리브영",
+    "title": "CJ 올리브영 채용블로그",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies"
+  },
+  {
+    "company_id": "kr-064",
+    "url": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8770",
+    "snippet": "2026년 하반기 CJ올리브영 신입사원 모집\nCJ올리브영",
+    "title": "CJ RECRUIT",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies"
+  },
+  {
+    "company_id": "kr-065",
+    "url": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8767",
+    "snippet": "2026년 하반기 CJ올리브네트웍스 신입사원 모집\nCJ올리브네트웍스",
+    "title": "CJ RECRUIT",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies"
+  },
+  {
+    "company_id": "kr-065",
+    "url": "https://www.cjolivenetworks.co.kr/recruit/job_notice",
+    "snippet": "CJ올리브네트웍스의 이야기를 함께 만들어갈 당신의 지원을 기다립니다.",
+    "title": "채용 공고 | 채용 | CJ올리브네트웍스",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies"
+  },
+  {
+    "company_id": "kr-066",
+    "url": "https://job.shinsegae.com/api/rcrut?coCd=AD0",
+    "snippet": "(주)신세계 27년 신입사원 채용",
+    "title": "(주)신세계 27년 신입사원 채용",
+    "status": "verified",
+    "method": "HTTP GET, public JSON; endpoint and coCd parameter discovered in the official page JavaScript; no authentication or cookies; quoted pbancNm and matching coNm=신세계"
+  },
+  {
+    "company_id": "kr-066",
+    "url": "https://www.shinsegae.com/company/job/job.do#direct_move",
+    "snippet": "신세계백화점은 꿈을 함께 이뤄나갈 인재를 찾습니다.",
+    "title": "채용정보 - 신세계백화점",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies; 채용정보 바로가기 anchor href=http://job.shinsegae.com/index.jsp"
+  },
+  {
+    "company_id": "kr-067",
+    "url": "https://company.emart.com/ko/main.do",
+    "snippet": "신세계 그룹 채용",
+    "title": "이마트 회사소개",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies; anchor href=http://job.shinsegae.com/"
+  },
+  {
+    "company_id": "kr-067",
+    "url": "https://job.shinsegae.com/api/rcrut?coCd=AE0",
+    "snippet": "(주)이마트 27년 신입사원 채용",
+    "title": "(주)이마트 27년 신입사원 채용",
+    "status": "verified",
+    "method": "HTTP GET, public JSON; endpoint and coCd parameter discovered in the official page JavaScript; no authentication or cookies; quoted pbancNm and matching coNm=이마트"
+  },
+  {
+    "company_id": "kr-068",
+    "url": "https://job.shinsegae.com/api/rcrut?coCd=BI0",
+    "snippet": "(주)신세계인터내셔날 27년 신입사원 채용",
+    "title": "(주)신세계인터내셔날 27년 신입사원 채용",
+    "status": "verified",
+    "method": "HTTP GET, public JSON; endpoint and coCd parameter discovered in the official page JavaScript; no authentication or cookies; quoted pbancNm and matching coNm=신세계인터내셔날"
+  },
+  {
+    "company_id": "kr-068",
+    "url": "https://www.shinsegaegroupnewsroom.com/shinsegae-group-2027-open-recruitment-for-entry-level-employees/",
+    "snippet": "공채 관련 자세한 사항은 신세계그룹 채용 홈페이지(\njob.shinsegae.com\n)에서 확인 가능하다.",
+    "title": "신세계그룹, 2027년 신입사원 공개 채용 – 신세계그룹 뉴스룸",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies"
+  },
+  {
+    "company_id": "kr-068",
+    "url": "https://www.shinsegaegroupnewsroom.com/shinsegae-group-2027-open-recruitment-for-entry-level-employees/",
+    "snippet": "이번 채용에 나서는 신세계그룹 계열사는 이마트, 신세계백화점, 신세계프라퍼티, SCK컴퍼니(스타벅스), 신세계인터내셔날, 신세계디에프(면세점), 신세계I&C, 신세계푸드, 신세계센트럴, 신세계라이브쇼핑 등 총 10개사다.",
+    "title": "신세계그룹, 2027년 신입사원 공개 채용 – 신세계그룹 뉴스룸",
+    "status": "verified",
+    "method": "HTTP GET, HTML title/body/link extraction; no authentication or cookies"
+  },
+  {
+    "company_id": "kr-069",
+    "url": "https://gsretail.recruiter.co.kr/career/home",
+    "snippet": "GS리테일과 함께, 더 좋은 내일을 만들어갈 당신을 기다립니다.",
+    "title": "GS리테일 채용 | 채용사이트",
+    "status": "verified",
+    "method": "ephemeral headless Chromium; cookies blocked; no authentication"
+  },
+  {
+    "company_id": "kr-069",
+    "url": "https://www.gsretail.com/main",
+    "snippet": "채용문의",
+    "title": "GS Retail",
+    "status": "verified",
+    "method": "ephemeral headless Chromium; cookies blocked; no authentication; corporate anchor href=https://gsretail.recruiter.co.kr/career/home"
+  },
+  {
+    "company_id": "kr-070",
+    "url": "https://recruit.gscaltex.com",
+    "snippet": "회사의 Energy Transition에 참여하여 미래 친환경 에너지 사회를 선도합니다.",
+    "title": "GS칼텍스 채용",
+    "status": "verified",
+    "method": "unauthenticated HTTP GET (urllib, no cookies)"
+  },
+  {
+    "company_id": "kr-070",
+    "url": "https://www.gscaltex.com/kr/",
+    "snippet": "채용사이트",
+    "title": "GS 칼텍스",
+    "status": "verified",
+    "method": "unauthenticated HTTP GET (urllib, no cookies); corporate anchor href=https://recruit.gscaltex.com"
+  },
+  {
+    "company_id": "kr-071",
+    "url": "https://gsenc.recruiter.co.kr/career/home",
+    "snippet": "2026년 GS건설 하반기 신입사원 채용",
+    "title": "GS건설 채용 | 채용사이트",
+    "status": "verified",
+    "method": "ephemeral headless Chromium; cookies blocked; no authentication"
+  },
+  {
+    "company_id": "kr-071",
+    "url": "https://www.gsenc.com/",
+    "snippet": "인재채용",
+    "title": "GS건설 공식 홈페이지 | GS ENC",
+    "status": "verified",
+    "method": "unauthenticated HTTP GET (urllib, no cookies); corporate anchor href=https://gsenc.recruiter.co.kr/career/home"
+  },
+  {
+    "company_id": "kr-072",
+    "url": "https://career.doosan.com/dsp/sa/RecList.jsp",
+    "snippet": "두산에너빌리티\n경력\n정보보안 경력직 채용",
+    "title": "Career DOOSAN",
+    "status": "verified",
+    "method": "unauthenticated HTTP GET (urllib, no cookies)"
+  },
+  {
+    "company_id": "kr-072",
+    "url": "https://www.doosanenerbility.com/kr/employment/recruitment",
+    "snippet": "커리어두산 (바로가기) 을 통해 경력채용 공고를 확인하고 지원할 수 있습니다.",
+    "title": "채용전형 안내 : 두산에너빌리티",
+    "status": "verified",
+    "method": "unauthenticated HTTP GET (urllib, no cookies); corporate recruitment links to https://career.doosan.com/"
+  },
+  {
+    "company_id": "kr-073",
+    "url": "https://career.doosan.com/dsp/sa/RecList.jsp",
+    "snippet": "두산밥캣(주)\n경력\n[인재 Pool] Doosan Bobcat",
+    "title": "Career DOOSAN",
+    "status": "verified",
+    "method": "unauthenticated HTTP GET (urllib, no cookies)"
+  },
+  {
+    "company_id": "kr-073",
+    "url": "https://www.doosanbobcat.com/kr",
+    "snippet": "커리어두산",
+    "title": "두산밥캣",
+    "status": "verified",
+    "method": "unauthenticated HTTP GET (urllib, no cookies); Doosan Bobcat corporate anchor href=https://career.doosan.com/"
+  },
+  {
+    "company_id": "kr-074",
+    "url": "https://lselectric.recruiter.co.kr/career/home",
+    "snippet": "LS ELECTRIC과 꿈을 함께 할\n\n최고의 인재를 모집합니다.",
+    "title": "LS ELECTRIC 채용 | 채용사이트",
+    "status": "verified",
+    "method": "ephemeral headless Chromium; cookies blocked; no authentication"
+  },
+  {
+    "company_id": "kr-074",
+    "url": "https://www.ls-electric.com/ko/recruit/intro",
+    "snippet": "Global 기업으로 성장하고 있는 LS ELECTRIC에서 여러분의 무한한 잠재력을 마음껏 발휘해 보시기 바랍니다.",
+    "title": "LS ELECTRIC",
+    "status": "verified",
+    "method": "ephemeral headless Chromium; cookies blocked; no authentication; corporate 입사지원 anchor href=https://lselectric.recruiter.co.kr/; unauthenticated HTTP GET confirms redirect to https://lselectric.recruiter.co.kr/career/home"
+  },
+  {
+    "company_id": "kr-075",
+    "url": "https://hyosung.recruiter.co.kr/appsite/company/index",
+    "snippet": "효성중공업(주)웰링턴컨트리클럽 식음팀(홀서비스, 양식조리, 찬파트보조) 채용",
+    "title": "효성그룹 채용",
+    "status": "verified",
+    "method": "ephemeral headless Chromium; cookies blocked; no authentication"
+  },
+  {
+    "company_id": "kr-075",
+    "url": "https://www.hyosungheavyindustries.com/kr/company/recruitment/ideal-talent",
+    "snippet": "효성 그룹은 효성그룹 채용사이트에서 채용을 진행하고 있으며, 투명하고 공정한 채용 기회를 제공하고",
+    "title": "인재상 l 인재채용 l Company l 효성중공업",
+    "status": "verified",
+    "method": "unauthenticated HTTP GET (urllib, no cookies); Hyosung Heavy Industries corporate 인재채용 anchor href=https://hyosung.recruiter.co.kr/appsite/company/index"
+  }
+]
