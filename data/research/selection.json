@@ -143,7 +143,7 @@
     {
       "id": "kr-024",
       "selection_index": 24,
-      "name_ko": "SK엔무브",
+      "name_ko": "SKC",
       "batch": 1
     },
     {
@@ -602,5 +602,6 @@
       "name_ko": "셀트리온",
       "batch": 4
     }
-  ]
+  ],
+  "selection_revision_note": "kr-024 초기 후보 SK엔무브는 공식 홈페이지에서 SK온 CIC 사업부로 확인되어, 별도 법인 SKC로 대체했습니다. 이름만 다른 중복 고용주를 100개로 세지 않기 위한 수정입니다."
 }

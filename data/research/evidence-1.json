@@ -1150,59 +1150,6 @@
     "status": "verified"
   },
   {
-    "company_id": "kr-024",
-    "source_url": "https://www.skenmove.com/",
-    "method": "homepage_http_get",
-    "checked_at": "2026-09-22T16:18:29+09:00",
-    "http_status": 200,
-    "title": "SK엔무브",
-    "snippet": "SK엔무브",
-    "status": "verified"
-  },
-  {
-    "company_id": "kr-024",
-    "source_url": "https://recruit.skinnovation.com/",
-    "method": "career_portal_http_get",
-    "checked_at": "2026-09-22T16:18:29+09:00",
-    "http_status": 200,
-    "title": "SK이노베이션 계열 채용",
-    "snippet": "SK이노베이션 계열 채용",
-    "notes": "Shared portal checks are reused across employers; exact company-filter URLs were also retrieved when provided.",
-    "status": "verified"
-  },
-  {
-    "company_id": "kr-024",
-    "source_url": "https://www.skenmove.com/",
-    "method": "official_careers_link",
-    "checked_at": "2026-09-22T16:18:29+09:00",
-    "http_status": 200,
-    "title": "SK엔무브",
-    "snippet": "채용정보",
-    "linked_url": "https://recruit.skinnovation.com/ui/subsidiary/subsidiaryDetail.do?comp=skenmove",
-    "status": "verified"
-  },
-  {
-    "company_id": "kr-024",
-    "source_url": "https://recruit.skinnovation.com/ui/index.do",
-    "method": "career_portal_redirect_target",
-    "checked_at": "2026-09-22T16:19:25+09:00",
-    "http_status": 200,
-    "title": "SK이노베이션 계열 채용",
-    "snippet": "SK이노베이션 계열 채용",
-    "notes": "Public target discovered in the portal root JavaScript; one shared request reused.",
-    "status": "verified"
-  },
-  {
-    "company_id": "kr-024",
-    "source_url": "https://www.skenmove.com/",
-    "method": "official_current_entity_notice",
-    "checked_at": "2026-09-22T16:18:29+09:00",
-    "http_status": 200,
-    "title": "SK엔무브",
-    "snippet": "SK엔무브는 SK온 주식회사의 Company-in-Company(CIC)로 운영되는 사업 부문입니다.",
-    "status": "verified"
-  },
-  {
     "company_id": "kr-025",
     "source_url": "https://www.skbp.com/",
     "method": "homepage_http_get",
@@ -1275,6 +1222,17 @@
     "http_status": 200,
     "title": "SAMSUNG CAREERS",
     "snippet": "삼성생명",
+    "status": "verified"
+  },
+  {
+    "company_id": "kr-024",
+    "source_url": "https://skc.kr/eng/corporation/hiring/guide.do",
+    "method": "web_extract_of_official_page",
+    "checked_at": "2026-09-22T08:05:30.824903+00:00",
+    "http_status": null,
+    "title": "Hiring Process│Recruit│Corporation│SKC",
+    "snippet": "Applications are accepted via online at SK TALENT PORTAL (www.skcareers.com). No post or individual e-mails are accepted.",
+    "notes": "Exact text retrieved from SKC official hiring process page; verifies employer-portal relationship, not vacancies.",
     "status": "verified"
   }
 ]

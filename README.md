@@ -22,6 +22,10 @@
 
 100개 공식 채용 URL을 안다고 100개 사이트의 공고를 모두 자동으로 읽을 수 있는 것은 아닙니다. 각 출처의 접근/파싱 결과를 따로 보고하며, 차단·JS 렌더링·로그인 요구를 ‘공고 없음’으로 바꾸지 않습니다.
 
+### 실제로 어디까지 동작하나요?
+
+통합 실행에서 NAVER·CJ·사람인의 공고 목록 15개를 수집하고, NAVER 광고 프로덕트 기획 JD를 실제로 읽어 지원 작업 패킷과 로컬 보고서까지 생성했습니다. 잡코리아는 브라우저 확인이 필요했고, 원티드·카카오·롯데 직접 수집은 robots 정책 확인 실패로 중단했습니다. **모든 사이트의 완전 자동 수집을 주장하지 않습니다.** [실행 증거와 한계](artifacts/VERIFICATION.md)를 먼저 확인하세요.
+
 ## 빠른 시작
 
 저장소 루트에서 실행하세요. 전역 설치 없이 사용할 수 있습니다.
@@ -30,7 +34,7 @@
 python3 -m korean_job_search doctor
 python3 -m korean_job_search init
 python3 -m korean_job_search sources --company NAVER
-python3 -m korean_job_search collect --source NAVER --source 카카오 --limit 10 --out workspace/jobs.json
+python3 -m korean_job_search collect --source NAVER --source CJ제일제당 --source saramin --limit 5 --out workspace/jobs.json
 ```
 
 Windows에서는 `python3` 대신 `python`을 사용하셔도 됩니다. 선택적으로 `python -m pip install -e .` 하면 같은 명령을 `kjs`로 실행할 수 있습니다.

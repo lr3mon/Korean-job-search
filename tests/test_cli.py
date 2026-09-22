@@ -35,7 +35,11 @@ class CliTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             td = str(Path(td).resolve())
             target = Path(td)/"real.json"; target.write_text("old", encoding="utf-8")
-            link = Path(td)/"link.json"; link.symlink_to(target)
+            link = Path(td)/"link.json"
+            try:
+                link.symlink_to(target)
+            except OSError as exc:
+                self.skipTest(f"Symlink creation unavailable: {exc}")
             with self.assertRaises(ValueError): cli.atomic_json(link, {"new": True})
             self.assertEqual(target.read_text(), "old")
 
@@ -72,6 +76,40 @@ class CliTests(unittest.TestCase):
             code,out,err=self.run_main(["answers-check",str(p),"--limit","2"])
             self.assertEqual(code,1,err)
             self.assertFalse(json.loads(out)["ok"])
+
+    def test_track_owns_one_lock_and_manual_unknown_company(self):
+        with tempfile.TemporaryDirectory() as td:
+            ws = Path(td).resolve()/"private"
+            self.assertEqual(self.run_main(["--workspace",str(ws),"init"])[0],0)
+            jd = ws/"jd.txt"; jd.write_text("테스트 공고\n실제 채용공고가 아닌 오프라인 fixture",encoding="utf-8")
+            code,out,err=self.run_main(["--workspace",str(ws),"ingest","--file",str(jd),"--source-url","https://example.com/job/test"])
+            self.assertEqual(code,0,err)
+            job=json.loads((ws/"jobs.json").read_text())["jobs"][0]
+            self.assertEqual(job["company"],"Unknown employer")
+            code,out,err=self.run_main(["--workspace",str(ws),"track","--job",job["id"],"--status","drafted"])
+            self.assertEqual(code,0,err)
+            self.assertEqual(json.loads(out)["status"],"drafted")
+            self.assertFalse((ws/"applications.json.lock").exists())
+            self.assertEqual(self.run_main(["--workspace",str(ws),"track","--job",job["id"],"--status","applied"])[0],2)
+            self.assertEqual(self.run_main(["--workspace",str(ws),"track","--job",job["id"],"--status","applied","--confirm"])[0],0)
+
+    def test_large_korean_answer_limit_supported(self):
+        with tempfile.TemporaryDirectory() as td:
+            p=Path(td).resolve()/"answer.txt"; p.write_text("가나다",encoding="utf-8")
+            code,out,err=self.run_main(["answers-check",str(p),"--limit","2000"])
+            self.assertEqual(code,0,err)
+            self.assertEqual(json.loads(out)["count"],3)
+
+    @unittest.skipUnless(os.name == "posix", "POSIX directory permissions")
+    def test_new_output_ancestors_are_private(self):
+        with tempfile.TemporaryDirectory() as td:
+            base=Path(td).resolve()
+            target=base/"workspace"/"nested"/"jobs.json"
+            with cli.file_lock(target):
+                cli.atomic_json(target,{"jobs":[]})
+            self.assertEqual((base/"workspace").stat().st_mode & 0o777,0o700)
+            self.assertEqual(target.parent.stat().st_mode & 0o777,0o700)
+            self.assertEqual(target.stat().st_mode & 0o777,0o600)
 
     def test_lock_rejects_busy_file(self):
         with tempfile.TemporaryDirectory() as td:

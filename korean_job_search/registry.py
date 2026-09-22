@@ -71,7 +71,7 @@ def validate_companies(records, expected=100):
 
 def adapter_for_url(url):
     host = (urlsplit(url).hostname or "").lower()
-    mapping = {"recruit.navercorp.com": "naver", "careers.kakao.com": "kakao",
+    mapping = {"recruit.navercorp.com": "naver", "recruit.cj.net": "cj", "careers.kakao.com": "kakao",
                "recruit.lotte.co.kr": "lotte", "www.wanted.co.kr": "wanted",
                "www.saramin.co.kr": "saramin", "www.jobkorea.co.kr": "jobkorea"}
     return mapping.get(host, "generic")

@@ -29,9 +29,19 @@ def _no_symlinks(path):
     return target
 
 
+def _private_parents(path):
+    missing = []
+    parent = path.parent
+    while not parent.exists():
+        missing.append(parent)
+        parent = parent.parent
+    for directory in reversed(missing):
+        directory.mkdir(mode=0o700, exist_ok=True)
+
+
 def atomic_json(path, data):
     target = _no_symlinks(path)
-    target.parent.mkdir(parents=True, exist_ok=True)
+    _private_parents(target)
     fd, tmp = tempfile.mkstemp(prefix=".kjs-", dir=target.parent)
     try:
         with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as handle:
@@ -49,7 +59,7 @@ def atomic_json(path, data):
 @contextmanager
 def file_lock(path, timeout=10):
     target = _no_symlinks(str(path) + ".lock")
-    target.parent.mkdir(parents=True, exist_ok=True)
+    _private_parents(target)
     start = time.monotonic()
     while True:
         try:
@@ -170,7 +180,7 @@ def build_parser():
     c.add_argument("--min-fill", type=float, default=0.75)
     c.add_argument("--json", action="store_true")
     c = commands.add_parser("track", help="지원 상태 수동 기록; --confirm도 전송/제출하지 않음")
-    c.add_argument("--job"); c.add_argument("--status"); c.add_argument("--notes", default="")
+    c.add_argument("--job"); c.add_argument("--status", choices=["drafted", "applied", "interview", "offer", "rejected", "withdrawn", "hired"]); c.add_argument("--notes", default="")
     c.add_argument("--confirm", action="store_true", help="이미 직접 제출한 사실의 기록을 확인")
     c = commands.add_parser("report", help="외부 요청 없는 로컬 HTML 보고서")
     c.add_argument("--jobs"); c.add_argument("--applications"); c.add_argument("--out")
@@ -293,7 +303,7 @@ def run(args):
                 raise ValueError("공고 원문은 2MB 이하로 나누어 주세요.")
             title = args.title or next(s.strip() for s in text.splitlines() if s.strip())[:200]
             now = now_iso()
-            job = make_job("manual", title, args.company, args.source_url, description=text,
+            job = make_job("manual", title, args.company or "Unknown employer", args.source_url, description=text,
                            evidence={"kind": "manual_paste", "source_url": args.source_url, "fetched_at": now},
                            warnings=["사용자가 제공한 원문이며 사이트의 현재 상태/마감/완전성은 별도 확인 필요"])
             result = {"source_id": "manual", "source_url": args.source_url, "status": "ok", "jobs": [job], "diagnostics": [], "fetched_at": now}
@@ -333,8 +343,8 @@ def run(args):
             emit(json.loads(path.read_text(encoding="utf-8")) if path.exists() else []); return 0
         if not args.status:
             raise ValueError("--job과 함께 --status를 지정하세요.")
-        with file_lock(ws / "applications.json"):
-            result = workflow.track_application(ws, args.job, args.status, args.notes, confirm=args.confirm)
+        # The workflow owns its atomic update lock; a second lock here deadlocks.
+        result = workflow.track_application(ws, args.job, args.status, args.notes, confirm=args.confirm)
         emit(result); return 0
     if args.command == "report":
         jobs = workflow.load_jobs(args.jobs or ws / "jobs.json")

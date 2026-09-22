@@ -1,0 +1,190 @@
+{
+  "checked_at": "2026-09-22T08:10:40.962725+00:00",
+  "scope": "real integrated CLI; blank private profile; no model calls or actual applications",
+  "listings_count": 15,
+  "listing_sources": [
+    {
+      "source_id": "kr-076",
+      "source_url": "https://recruit.navercorp.com/rcrt/list.do",
+      "status": "partial",
+      "diagnostics": [
+        "GET https://recruit.navercorp.com/rcrt/list.do -> ok (HTTP 200).",
+        "GET https://recruit.navercorp.com/rcrt/loadJobList.do?firstIndex=0 -> ok (HTTP 200).",
+        "Source declared 45 records; parsed 10 unique records in this bounded snapshot.",
+        "Coverage is partial: at most 3 listing pages are read; more pages or failed requests may remain.",
+        "Returned records were truncated to the requested limit.",
+        "One or more records are listing cards or incomplete media-based JDs; descriptions/qualifications were not invented."
+      ],
+      "fetched_at": "2026-09-22T08:09:05.631182+00:00",
+      "job_count": 5
+    },
+    {
+      "source_id": "kr-061",
+      "source_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "status": "partial",
+      "diagnostics": [
+        "GET https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo -> ok (HTTP 200).",
+        "GET https://recruit.cj.net/recruit/ko/recruit/recruit/searchNewGonggoList.fo?pageVal=1&pageIndex=10&orderDesc=1&sch_title=&arrGubun=&arrRecBu=&arrRecJob=&arrRecArea=&schArea=N -> ok (HTTP 200).",
+        "Source declared 184 records; parsed 10 unique records in this bounded snapshot.",
+        "Coverage is partial: at most 3 listing pages are read; more pages or failed requests may remain.",
+        "Returned records were truncated to the requested limit.",
+        "One or more records are listing cards or incomplete media-based JDs; descriptions/qualifications were not invented."
+      ],
+      "fetched_at": "2026-09-22T08:09:05.631679+00:00",
+      "job_count": 5
+    },
+    {
+      "source_id": "saramin",
+      "source_url": "https://www.saramin.co.kr/zf_user/search",
+      "status": "partial",
+      "diagnostics": [
+        "saramin: public HTML/JSON-LD attempt. No authenticated/partner API credentials are configured or sent; availability is not assumed.",
+        "GET https://www.saramin.co.kr/zf_user/search -> ok (HTTP 200).",
+        "Returned records were truncated to the requested limit.",
+        "One or more records are listing cards or incomplete media-based JDs; descriptions/qualifications were not invented."
+      ],
+      "fetched_at": "2026-09-22T08:09:05.631871+00:00",
+      "job_count": 5
+    },
+    {
+      "source_id": "jobkorea",
+      "source_url": "https://www.jobkorea.co.kr/Search/",
+      "status": "needs_browser",
+      "diagnostics": [
+        "jobkorea: public HTML/JSON-LD attempt. No authenticated/partner API credentials are configured or sent; availability is not assumed.",
+        "GET https://www.jobkorea.co.kr/Search/ -> ok (HTTP 200).",
+        "No supported public job records were found. HTTP 200 may be an application shell, not an empty job list."
+      ],
+      "fetched_at": "2026-09-22T08:09:06.294091+00:00",
+      "job_count": 0
+    },
+    {
+      "source_id": "wanted",
+      "source_url": "https://www.wanted.co.kr/wdlist",
+      "status": "robots_denied",
+      "diagnostics": [
+        "wanted: public HTML/JSON-LD attempt. No authenticated/partner API credentials are configured or sent; availability is not assumed.",
+        "GET https://www.wanted.co.kr/wdlist -> robots_denied (HTTP None).",
+        "Robots policy could not be verified: robots.txt could not be verified (HTTP 403)."
+      ],
+      "fetched_at": "2026-09-22T08:09:06.444793+00:00",
+      "job_count": 0
+    },
+    {
+      "source_id": "kr-077",
+      "source_url": "https://careers.kakao.com/jobs",
+      "status": "robots_denied",
+      "diagnostics": [
+        "GET https://careers.kakao.com/jobs -> robots_denied (HTTP None).",
+        "Robots policy could not be verified: robots.txt could not be verified (HTTP 401)."
+      ],
+      "fetched_at": "2026-09-22T08:09:06.534075+00:00",
+      "job_count": 0
+    },
+    {
+      "source_id": "kr-056",
+      "source_url": "https://recruit.lotte.co.kr/apply/announcement",
+      "status": "robots_denied",
+      "diagnostics": [
+        "GET https://recruit.lotte.co.kr/apply/announcement -> robots_denied (HTTP None).",
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "fetched_at": "2026-09-22T08:09:06.719196+00:00",
+      "job_count": 0
+    }
+  ],
+  "detail": {
+    "url": "https://recruit.navercorp.com/rcrt/view.do?annoId=30005397",
+    "id": "efe7d29d5d5d8a1dc0a8b2383b93acf617ee9e405a62a5f58708da884ff38df5",
+    "company": "NAVER",
+    "title": "[NAVER] 광고 프로덕트 기획 경력 채용",
+    "characters": 9869,
+    "evidence": {
+      "kind": "live_html",
+      "source_url": "https://recruit.navercorp.com/rcrt/view.do?annoId=30005397",
+      "fetched_at": "2026-09-22T08:10:39.819282+00:00",
+      "completeness": "full_text"
+    }
+  },
+  "steps": [
+    {
+      "command": "python3 -m korean_job_search --workspace workspace/demo-live ingest --url 'https://recruit.navercorp.com/rcrt/view.do?annoId=30005397' --out workspace/demo-live/jobs.json",
+      "exit_code": 0,
+      "output_summary": {
+        "output": "workspace/demo-live/jobs.json",
+        "new_observations": 1,
+        "stored_jobs": 15,
+        "source_statuses": {
+          "ok": 1
+        },
+        "sources": [
+          {
+            "source_id": "recruit.navercorp.com",
+            "source_url": "https://recruit.navercorp.com/rcrt/view.do?annoId=30005397",
+            "status": "ok",
+            "diagnostics": [
+              "GET https://recruit.navercorp.com/rcrt/view.do?annoId=30005397 -> ok (HTTP 200)."
+            ],
+            "fetched_at": "2026-09-22T08:10:39.180920+00:00",
+            "job_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "command": "python3 -m korean_job_search --workspace workspace/demo-live rank --jobs workspace/demo-live/jobs.json --profile workspace/demo-live/profile.json --out workspace/demo-live/ranked.json",
+      "exit_code": 0,
+      "output_summary": {
+        "count": 15,
+        "output": "workspace/demo-live/ranked.json",
+        "method": "transparent_keyword_heuristic_not_hiring_probability"
+      }
+    },
+    {
+      "command": "python3 -m korean_job_search --workspace workspace/demo-live prepare --job efe7d29d5d5d8a1dc0a8b2383b93acf617ee9e405a62a5f58708da884ff38df5 --jobs workspace/demo-live/jobs.json --profile workspace/demo-live/profile.json --out workspace/demo-live/applications/20260922T081038Z",
+      "exit_code": 0,
+      "output_summary": {
+        "outdir": "workspace/demo-live/applications/20260922T081038Z",
+        "job_id": "efe7d29d5d5d8a1dc0a8b2383b93acf617ee9e405a62a5f58708da884ff38df5",
+        "submitted": false,
+        "files": [
+          "job.json",
+          "profile.json",
+          "brief.md",
+          "answers.md",
+          "review.md"
+        ]
+      }
+    },
+    {
+      "command": "python3 -m korean_job_search --workspace workspace/demo-live track --job efe7d29d5d5d8a1dc0a8b2383b93acf617ee9e405a62a5f58708da884ff38df5 --status drafted --notes '도구 동작 검증용. 실제 지원 또는 사용자 경력 기반 초안 아님.'",
+      "exit_code": 0,
+      "output_summary": {
+        "job_id": "efe7d29d5d5d8a1dc0a8b2383b93acf617ee9e405a62a5f58708da884ff38df5",
+        "created_at": "2026-09-22T08:10:40.688456+00:00",
+        "history": [
+          {
+            "status": "drafted",
+            "notes": "도구 동작 검증용. 실제 지원 또는 사용자 경력 기반 초안 아님.",
+            "at": "2026-09-22T08:10:40.688456+00:00",
+            "confirmed": false
+          }
+        ],
+        "status": "drafted",
+        "notes": "도구 동작 검증용. 실제 지원 또는 사용자 경력 기반 초안 아님.",
+        "updated_at": "2026-09-22T08:10:40.688456+00:00"
+      }
+    },
+    {
+      "command": "python3 -m korean_job_search --workspace workspace/demo-live report --jobs workspace/demo-live/ranked.json --out workspace/demo-live/report-20260922T081038Z.html",
+      "exit_code": 0,
+      "output_summary": {
+        "path": "workspace/demo-live/report-20260922T081038Z.html",
+        "job_count": 15,
+        "application_count": 1
+      }
+    }
+  ],
+  "submitted": false,
+  "used_personal_profile": false
+}

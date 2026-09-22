@@ -19,6 +19,7 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python scripts/sync_skills.py --check
       - run: python scripts/check_privacy.py
+      - run: python scripts/build_catalog.py --check
       - run: python -m korean_job_search sources --all-companies --out source-summary.json
       - run: python -m compileall -q korean_job_search
 # Live sites are NOT queried in CI. No credentials, resumes or applicant data.

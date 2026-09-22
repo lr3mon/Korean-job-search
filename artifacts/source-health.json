@@ -1,0 +1,1273 @@
+{
+  "checked_source_count": 100,
+  "unique_urls_requested": 71,
+  "status_counts": {
+    "robots_denied": 30,
+    "ok": 69,
+    "blocked": 1
+  },
+  "checks": [
+    {
+      "id": "kr-001",
+      "name_ko": "삼성전자",
+      "requested_url": "https://www.samsung.com/sec/about-us/careers/kr/",
+      "final_url": "https://www.samsung.com/sec/about-us/careers/kr/",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt has a malformed path rule."
+      ],
+      "checked_at": "2026-09-22T08:08:53.864386+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-002",
+      "name_ko": "삼성디스플레이",
+      "requested_url": "https://www.samsungdisplay.com/kor/career-info/recruit/junior-step.jsp",
+      "final_url": "https://www.samsungdisplay.com/kor/career-info/recruit/junior-step.jsp",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "robots.txt prohibits this URL for KoreanJobSearch."
+      ],
+      "checked_at": "2026-09-22T08:08:53.944100+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-003",
+      "name_ko": "삼성SDI",
+      "requested_url": "https://www.samsungcareers.com/subsid/detail/C31",
+      "final_url": "https://www.samsungcareers.com/subsid/detail/C31",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 111781,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:54.308244+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-004",
+      "name_ko": "삼성전기",
+      "requested_url": "https://www.samsungsem.com/kr/careers/job-opening/list.do",
+      "final_url": "https://www.samsungsem.com/kr/careers/job-opening/list.do",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 45564,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:53.943080+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-005",
+      "name_ko": "삼성SDS",
+      "requested_url": "https://www.samsungsds.com/kr/careers/overview/about_care_over.html",
+      "final_url": "https://www.samsungsds.com/kr/careers/overview/about_care_over.html",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 32836,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:54.440738+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-006",
+      "name_ko": "삼성바이오로직스",
+      "requested_url": "https://samsungbiologics.com/kr/careers/apply/how-to-apply",
+      "final_url": "https://samsungbiologics.com/kr/careers/apply/how-to-apply",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 80604,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:54.462865+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-007",
+      "name_ko": "삼성바이오에피스",
+      "requested_url": "https://www.samsungcareers.com/subsid/detail/DB0",
+      "final_url": "https://www.samsungcareers.com/subsid/detail/DB0",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 90172,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:54.497854+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-008",
+      "name_ko": "삼성물산",
+      "requested_url": "https://www.samsungcnt.com/about-us/careers.do",
+      "final_url": "https://www.samsungcnt.com/about-us/careers.do",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 49616,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:54.882335+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-009",
+      "name_ko": "삼성E&A",
+      "requested_url": "https://www.samsungena.com/kr/careers/join-us/job-opening/list",
+      "final_url": "https://www.samsungena.com/kr/careers/join-us/job-opening/list",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 51942,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:55.188375+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-010",
+      "name_ko": "삼성중공업",
+      "requested_url": "https://samsungshi.com/Ko/Notice_recruitment.aspx",
+      "final_url": "https://samsungshi.com/Ko/Notice_recruitment.aspx",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:54.744046+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-011",
+      "name_ko": "삼성생명",
+      "requested_url": "https://www.samsungcareers.com/subsid/detail/E11",
+      "final_url": "https://www.samsungcareers.com/subsid/detail/E11",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 93588,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:55.030396+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-012",
+      "name_ko": "삼성화재",
+      "requested_url": "https://www.samsungfire.com/company/P_U01_05_27_158.html",
+      "final_url": "https://www.samsungfire.com/company/P_U01_05_27_158.html",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 5242,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:55.212704+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-013",
+      "name_ko": "삼성증권",
+      "requested_url": "https://www.samsungsecurities.co.kr/kor/recruit/new_employee.do",
+      "final_url": "https://www.samsungsecurities.co.kr/kor/recruit/new_employee.do",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 19668,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:55.537363+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-014",
+      "name_ko": "호텔신라",
+      "requested_url": "https://www.hotelshilla.net/navigate.do?HPPageId=AVEUlwyIAKACZlq7&HPSiteCd=H",
+      "final_url": "https://www.hotelshilla.net/navigate.do?HPPageId=AVEUlwyIAKACZlq7&HPSiteCd=H",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 28661,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:55.588194+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-015",
+      "name_ko": "에스원",
+      "requested_url": "https://www.s1.co.kr/company/recruit/employee/guide",
+      "final_url": "https://www.s1.co.kr/company/recruit/employee/guide",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 89813,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.571324+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-016",
+      "name_ko": "제일기획",
+      "requested_url": "https://www.cheil.com/kr/career/",
+      "final_url": "https://www.cheil.com/kr/career/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 20995,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:55.838848+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-017",
+      "name_ko": "SK하이닉스",
+      "requested_url": "https://www.skcareers.com/",
+      "final_url": "https://www.skcareers.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 33002,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.010219+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-018",
+      "name_ko": "SK텔레콤",
+      "requested_url": "https://www.skcareers.com/Recruit?corpCode=10005",
+      "final_url": "https://www.skcareers.com/Recruit?corpCode=10005",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 73160,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.017653+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-019",
+      "name_ko": "SK브로드밴드",
+      "requested_url": "https://www.skcareers.com/",
+      "final_url": "https://www.skcareers.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 33002,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.010219+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-020",
+      "name_ko": "SK스퀘어",
+      "requested_url": "https://www.skcareers.com/",
+      "final_url": "https://www.skcareers.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 33002,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.010219+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-021",
+      "name_ko": "SK이노베이션",
+      "requested_url": "https://recruit.skinnovation.com/",
+      "final_url": "https://recruit.skinnovation.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 2322,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.385420+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-022",
+      "name_ko": "SK온",
+      "requested_url": "https://www.skcareers.com/Recruit?CorpCode=10023",
+      "final_url": "https://www.skcareers.com/Recruit?CorpCode=10023",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 73144,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.387376+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-023",
+      "name_ko": "SK에너지",
+      "requested_url": "https://recruit.skinnovation.com/",
+      "final_url": "https://recruit.skinnovation.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 2322,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.385420+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-024",
+      "name_ko": "SKC",
+      "requested_url": "https://www.skcareers.com/",
+      "final_url": "https://www.skcareers.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 33002,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.010219+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-025",
+      "name_ko": "SK바이오팜",
+      "requested_url": "https://www.skcareers.com/Recruit?CorpCode=10013",
+      "final_url": "https://www.skcareers.com/Recruit?CorpCode=10013",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 73168,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.397255+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-026",
+      "name_ko": "LG전자",
+      "requested_url": "https://careers.lg.com/apply",
+      "final_url": "https://careers.lg.com/apply",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:56.735139+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-027",
+      "name_ko": "LG디스플레이",
+      "requested_url": "https://careers.lg.com/apply",
+      "final_url": "https://careers.lg.com/apply",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:56.735139+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-028",
+      "name_ko": "LG이노텍",
+      "requested_url": "https://careers.lg.com/apply",
+      "final_url": "https://careers.lg.com/apply",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:56.735139+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-029",
+      "name_ko": "LG화학",
+      "requested_url": "https://careers.lg.com/apply",
+      "final_url": "https://careers.lg.com/apply",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:56.735139+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-030",
+      "name_ko": "LG에너지솔루션",
+      "requested_url": "https://careers.lg.com/apply",
+      "final_url": "https://careers.lg.com/apply",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:56.735139+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-031",
+      "name_ko": "LG생활건강",
+      "requested_url": "https://careers.lg.com/apply",
+      "final_url": "https://careers.lg.com/apply",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:56.735139+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-032",
+      "name_ko": "LG유플러스",
+      "requested_url": "https://careers.lg.com/apply",
+      "final_url": "https://careers.lg.com/apply",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:56.735139+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-033",
+      "name_ko": "LG CNS",
+      "requested_url": "https://careers.lg.com/apply",
+      "final_url": "https://careers.lg.com/apply",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:56.735139+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-034",
+      "name_ko": "현대자동차",
+      "requested_url": "https://talent.hyundai.com/apply/applyList.hc",
+      "final_url": "https://talent.hyundai.com/apply/applyList.hc",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 3910,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.886832+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-035",
+      "name_ko": "기아",
+      "requested_url": "https://career.kia.com/apply/applyList.kc",
+      "final_url": "https://career.kia.com/apply/applyList.kc",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 4954,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:56.916303+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-036",
+      "name_ko": "현대모비스",
+      "requested_url": "https://careers.mobis.com/jobs",
+      "final_url": "https://careers.mobis.com/jobs",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 223515,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.156100+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-037",
+      "name_ko": "현대글로비스",
+      "requested_url": "https://glovis.recruiter.co.kr/career/home",
+      "final_url": "https://glovis.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 19849,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.320334+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-038",
+      "name_ko": "현대제철",
+      "requested_url": "https://hyundai-steel.recruiter.co.kr/career/home",
+      "final_url": "https://hyundai-steel.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 21889,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.334361+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-039",
+      "name_ko": "현대건설",
+      "requested_url": "https://recruit.hdec.co.kr/#/",
+      "final_url": "https://recruit.hdec.co.kr/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 2006,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.352964+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-040",
+      "name_ko": "현대엔지니어링",
+      "requested_url": "https://hec.recruiter.co.kr/career/home",
+      "final_url": "https://hec.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 22566,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.563423+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-041",
+      "name_ko": "현대오토에버",
+      "requested_url": "https://career.hyundai-autoever.com/ko/apply",
+      "final_url": "https://career.hyundai-autoever.com/ko/apply",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 426739,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:58.083788+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-042",
+      "name_ko": "현대로템",
+      "requested_url": "https://hyundai-rotem.recruiter.co.kr/career/home",
+      "final_url": "https://hyundai-rotem.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 22634,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.834127+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-043",
+      "name_ko": "현대위아",
+      "requested_url": "https://hyundai-wia.recruiter.co.kr/career/home",
+      "final_url": "https://hyundai-wia.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 22560,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.841313+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-044",
+      "name_ko": "HD현대중공업",
+      "requested_url": "https://recruit.hd.com/kr/mainLayout/apply",
+      "final_url": "https://recruit.hd.com/kr/mainLayout/apply",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 1517,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.900491+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-045",
+      "name_ko": "HD한국조선해양",
+      "requested_url": "https://recruit.hd.com/kr/mainLayout/apply",
+      "final_url": "https://recruit.hd.com/kr/mainLayout/apply",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 1517,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.900491+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-046",
+      "name_ko": "HD현대일렉트릭",
+      "requested_url": "https://recruit.hd.com/kr/mainLayout/apply",
+      "final_url": "https://recruit.hd.com/kr/mainLayout/apply",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 1517,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.900491+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-047",
+      "name_ko": "HD현대오일뱅크",
+      "requested_url": "https://recruit.hd.com/kr/mainLayout/apply",
+      "final_url": "https://recruit.hd.com/kr/mainLayout/apply",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 1517,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:57.900491+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-048",
+      "name_ko": "한화",
+      "requested_url": "https://www.hanwhain.com/portal/apply/recruit",
+      "final_url": "https://www.hanwhain.com/portal/apply/recruit",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:58.048976+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-049",
+      "name_ko": "한화에어로스페이스",
+      "requested_url": "https://www.hanwhain.com/portal/apply/recruit",
+      "final_url": "https://www.hanwhain.com/portal/apply/recruit",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:58.048976+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-050",
+      "name_ko": "한화시스템",
+      "requested_url": "https://www.hanwhain.com/portal/apply/recruit",
+      "final_url": "https://www.hanwhain.com/portal/apply/recruit",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:58.048976+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-051",
+      "name_ko": "포스코",
+      "requested_url": "https://recruit.posco.com/h22a01-front/H22A1000.html",
+      "final_url": "https://recruit.posco.com/h22a01-front/H22A1000.html",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: Unable to connect to a validated public address."
+      ],
+      "checked_at": "2026-09-22T08:08:57.947381+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-052",
+      "name_ko": "포스코인터내셔널",
+      "requested_url": "https://recruit.posco.com/h22a01-front/H22A1000.html",
+      "final_url": "https://recruit.posco.com/h22a01-front/H22A1000.html",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: Unable to connect to a validated public address."
+      ],
+      "checked_at": "2026-09-22T08:08:57.947381+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-053",
+      "name_ko": "포스코퓨처엠",
+      "requested_url": "https://recruit.posco.com/h22a01-front/H22A1000.html",
+      "final_url": "https://recruit.posco.com/h22a01-front/H22A1000.html",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: Unable to connect to a validated public address."
+      ],
+      "checked_at": "2026-09-22T08:08:57.947381+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-054",
+      "name_ko": "한화오션",
+      "requested_url": "https://recruit-hanwhaocean.com/ko/intro",
+      "final_url": "https://recruit-hanwhaocean.com/ko/intro",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 516013,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:58.627638+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-055",
+      "name_ko": "한화솔루션",
+      "requested_url": "https://www.hanwhain.com/portal/apply/recruit",
+      "final_url": "https://www.hanwhain.com/portal/apply/recruit",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:58.048976+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-056",
+      "name_ko": "롯데쇼핑",
+      "requested_url": "https://recruit.lotte.co.kr/apply/announcement",
+      "final_url": "https://recruit.lotte.co.kr/apply/announcement",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:58.384577+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-057",
+      "name_ko": "롯데케미칼",
+      "requested_url": "https://recruit.lotte.co.kr/apply/announcement",
+      "final_url": "https://recruit.lotte.co.kr/apply/announcement",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:58.384577+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-058",
+      "name_ko": "롯데칠성음료",
+      "requested_url": "https://recruit.lotte.co.kr/apply/announcement",
+      "final_url": "https://recruit.lotte.co.kr/apply/announcement",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:58.384577+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-059",
+      "name_ko": "롯데웰푸드",
+      "requested_url": "https://careers.lottewellfood.com/go/ALL-JOBS/507650/",
+      "final_url": "https://careers.lottewellfood.com/go/ALL-JOBS/507650/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 54322,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:59.191941+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-060",
+      "name_ko": "롯데이노베이트",
+      "requested_url": "https://recruit.lotte.co.kr/apply/announcement",
+      "final_url": "https://recruit.lotte.co.kr/apply/announcement",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:08:58.384577+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-061",
+      "name_ko": "CJ제일제당",
+      "requested_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "final_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 155769,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:58.480920+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-062",
+      "name_ko": "CJ대한통운",
+      "requested_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "final_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 155769,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:58.480920+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-063",
+      "name_ko": "CJ ENM",
+      "requested_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "final_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 155769,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:58.480920+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-064",
+      "name_ko": "CJ올리브영",
+      "requested_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "final_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 155769,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:58.480920+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-065",
+      "name_ko": "CJ올리브네트웍스",
+      "requested_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "final_url": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 155769,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:58.480920+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-066",
+      "name_ko": "신세계",
+      "requested_url": "https://job.shinsegae.com/rcrut",
+      "final_url": "https://job.shinsegae.com/rcrut",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 1241879,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:59.380902+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-067",
+      "name_ko": "이마트",
+      "requested_url": "https://job.shinsegae.com/rcrut",
+      "final_url": "https://job.shinsegae.com/rcrut",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 1241879,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:59.380902+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-068",
+      "name_ko": "신세계인터내셔날",
+      "requested_url": "https://job.shinsegae.com/rcrut",
+      "final_url": "https://job.shinsegae.com/rcrut",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 1241879,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:59.380902+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-069",
+      "name_ko": "GS리테일",
+      "requested_url": "https://gsretail.recruiter.co.kr/career/home",
+      "final_url": "https://gsretail.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 22564,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:58.952701+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-070",
+      "name_ko": "GS칼텍스",
+      "requested_url": "https://recruit.gscaltex.com",
+      "final_url": "https://recruit.gscaltex.com/",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "robots.txt prohibits this URL for KoreanJobSearch."
+      ],
+      "checked_at": "2026-09-22T08:08:58.964279+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-071",
+      "name_ko": "GS건설",
+      "requested_url": "https://gsenc.recruiter.co.kr/career/home",
+      "final_url": "https://gsenc.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 22256,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:59.422088+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-072",
+      "name_ko": "두산에너빌리티",
+      "requested_url": "https://career.doosan.com/dsp/sa/RecList.jsp",
+      "final_url": "https://career.doosan.com/dsp/sa/RecList.jsp",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 105569,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:59.552438+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-073",
+      "name_ko": "두산밥캣",
+      "requested_url": "https://career.doosan.com/dsp/sa/RecList.jsp",
+      "final_url": "https://career.doosan.com/dsp/sa/RecList.jsp",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 105569,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:59.552438+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-074",
+      "name_ko": "LS ELECTRIC",
+      "requested_url": "https://lselectric.recruiter.co.kr/career/home",
+      "final_url": "https://lselectric.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 20952,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:59.611203+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-075",
+      "name_ko": "효성중공업",
+      "requested_url": "https://hyosung.recruiter.co.kr/appsite/company/index",
+      "final_url": "https://hyosung.recruiter.co.kr/appsite/company/index",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 6289,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:08:59.880354+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-076",
+      "name_ko": "NAVER",
+      "requested_url": "https://recruit.navercorp.com/rcrt/list.do",
+      "final_url": "https://recruit.navercorp.com/rcrt/list.do",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 120867,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:00.292373+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-077",
+      "name_ko": "카카오",
+      "requested_url": "https://careers.kakao.com/jobs",
+      "final_url": "https://careers.kakao.com/jobs",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt could not be verified (HTTP 401)."
+      ],
+      "checked_at": "2026-09-22T08:08:59.959347+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-078",
+      "name_ko": "카카오뱅크",
+      "requested_url": "https://recruit.kakaobank.com/",
+      "final_url": "https://recruit.kakaobank.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 12931,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:00.001324+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-079",
+      "name_ko": "카카오페이",
+      "requested_url": "https://kakaopay.career.greetinghr.com/ko/main",
+      "final_url": "https://kakaopay.career.greetinghr.com/ko/main",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 284359,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:00.478025+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-080",
+      "name_ko": "쿠팡",
+      "requested_url": "https://www.coupang.jobs/kr/jobs/",
+      "final_url": "https://www.coupang.jobs/kr/jobs/",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt has an invalid user-agent group."
+      ],
+      "checked_at": "2026-09-22T08:09:00.132830+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-081",
+      "name_ko": "우아한형제들",
+      "requested_url": "https://career.woowahan.com/",
+      "final_url": "https://career.woowahan.com/",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt has a malformed path rule."
+      ],
+      "checked_at": "2026-09-22T08:09:00.164063+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-082",
+      "name_ko": "비바리퍼블리카",
+      "requested_url": "https://toss.im/career/jobs",
+      "final_url": "https://toss.im/career/jobs",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 96810,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:00.528401+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-083",
+      "name_ko": "당근",
+      "requested_url": "https://careers.daangn.com/jobs/",
+      "final_url": "https://careers.daangn.com/jobs/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 128595,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:00.799161+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-084",
+      "name_ko": "크래프톤",
+      "requested_url": "https://www.krafton.com/careers/jobs/",
+      "final_url": "https://www.krafton.com/careers/jobs/",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt could not be verified (HTTP 403)."
+      ],
+      "checked_at": "2026-09-22T08:09:00.478789+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-085",
+      "name_ko": "엔씨소프트",
+      "requested_url": "https://careers.ncsoft.com/",
+      "final_url": "https://careers.ncsoft.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 46501,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:00.950708+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-086",
+      "name_ko": "넥슨코리아",
+      "requested_url": "https://careers.nexon.com/",
+      "final_url": "https://careers.nexon.com/",
+      "status": "blocked",
+      "http_status": 403,
+      "content_characters": 0,
+      "diagnostics": [
+        "HTTP 403: access forbidden; no bypass was attempted."
+      ],
+      "checked_at": "2026-09-22T08:09:01.073523+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-087",
+      "name_ko": "넷마블",
+      "requested_url": "https://career.netmarble.com/",
+      "final_url": "https://career.netmarble.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 43768,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:01.088303+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-088",
+      "name_ko": "NHN",
+      "requested_url": "https://careers.nhn.com/",
+      "final_url": "https://careers.nhn.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 2781,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:01.237660+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-089",
+      "name_ko": "펄어비스",
+      "requested_url": "https://www.pearlabyss.com/ko-KR/Company/Careers/Intro",
+      "final_url": "https://www.pearlabyss.com/ko-KR/Company/Careers/Intro",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 162511,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:01.774274+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-090",
+      "name_ko": "KB국민은행",
+      "requested_url": "https://omoney.kbstar.com/quics?page=C017623",
+      "final_url": "https://omoney.kbstar.com/quics?page=C017623",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "robots.txt prohibits this URL for KoreanJobSearch."
+      ],
+      "checked_at": "2026-09-22T08:09:03.769844+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-091",
+      "name_ko": "신한은행",
+      "requested_url": "https://shinhan.recruiter.co.kr/career/home",
+      "final_url": "https://shinhan.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 22718,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:01.532132+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-092",
+      "name_ko": "하나은행",
+      "requested_url": "https://hanabank.recruiter.co.kr/career/home",
+      "final_url": "https://hanabank.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 21966,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:01.597021+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-093",
+      "name_ko": "우리은행",
+      "requested_url": "https://recruit.incruit.com/wooribank/job/",
+      "final_url": "https://recruit.incruit.com/wooribank/job/",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "robots.txt prohibits this URL for KoreanJobSearch."
+      ],
+      "checked_at": "2026-09-22T08:09:01.818556+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-094",
+      "name_ko": "IBK기업은행",
+      "requested_url": "https://ibk.incruit.com/",
+      "final_url": "https://ibk.incruit.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 369,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:02.206640+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-095",
+      "name_ko": "미래에셋증권",
+      "requested_url": "https://recruit.securities.miraeasset.com/reMenuAction.do",
+      "final_url": "https://recruit.securities.miraeasset.com/reMenuAction.do",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 91872,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:02.575367+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-096",
+      "name_ko": "한국투자증권",
+      "requested_url": "https://recruit.truefriend.com/",
+      "final_url": "https://recruit.truefriend.com/",
+      "status": "robots_denied",
+      "http_status": null,
+      "content_characters": 0,
+      "diagnostics": [
+        "Robots policy could not be verified: robots.txt did not return a plain-text policy."
+      ],
+      "checked_at": "2026-09-22T08:09:02.092277+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-097",
+      "name_ko": "대한항공",
+      "requested_url": "https://koreanair.recruiter.co.kr/career/home",
+      "final_url": "https://koreanair.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 20925,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:02.510287+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-098",
+      "name_ko": "아모레퍼시픽",
+      "requested_url": "https://careers.apgroup.com/search/?createNewAlert=false&q=&optionsFacetsDD_customfield1=&optionsFacetsDD_customfield2=&optionsFacetsDD_shifttype=",
+      "final_url": "https://careers.apgroup.com/search/?createNewAlert=false&q=&optionsFacetsDD_customfield1=&optionsFacetsDD_customfield2=&optionsFacetsDD_shifttype=",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 275100,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:05.274341+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-099",
+      "name_ko": "KT",
+      "requested_url": "https://recruit.kt.com/",
+      "final_url": "https://recruit.kt.com/",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 1578,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:02.922177+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    },
+    {
+      "id": "kr-100",
+      "name_ko": "셀트리온",
+      "requested_url": "https://celltrion.recruiter.co.kr/career/home",
+      "final_url": "https://celltrion.recruiter.co.kr/career/home",
+      "status": "ok",
+      "http_status": 200,
+      "content_characters": 21925,
+      "diagnostics": [],
+      "checked_at": "2026-09-22T08:09:03.037073+00:00",
+      "scope": "URL 접근성 점검; 회사별 공고 파싱/전체 수집 증명 아님"
+    }
+  ]
+}

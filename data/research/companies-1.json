@@ -485,22 +485,24 @@
   {
     "id": "kr-024",
     "selection_index": 24,
-    "name_ko": "SK엔무브",
-    "name_en": "SK Enmove",
-    "aliases": [],
-    "sector": "윤활유·기유·열관리",
-    "homepage": "https://www.skenmove.com/",
-    "careers_url": "https://recruit.skinnovation.com/",
-    "evidence_url": "https://www.skenmove.com/",
+    "name_ko": "SKC",
+    "name_en": "SKC",
+    "aliases": [
+      "에스케이씨"
+    ],
+    "sector": "반도체·이차전지·친환경 소재",
+    "homepage": "https://skc.kr/",
+    "careers_url": "https://www.skcareers.com/",
+    "evidence_url": "https://skc.kr/eng/corporation/hiring/guide.do",
     "is_group_portal": true,
-    "access_mode": "html",
+    "access_mode": "browser",
     "verification": {
-      "checked_at": "2026-09-22T16:18:29+09:00",
-      "method": "official_http_html+official_navigation_link",
+      "checked_at": "2026-09-22T08:05:30.824903+00:00",
+      "method": "official_page_web_extract_and_explicit_portal_reference",
       "status": "verified",
-      "http_status": 200,
-      "title": "SK이노베이션 계열 채용",
-      "notes": "현재 공식 홈페이지는 SK엔무브를 SK온 주식회사의 Company-in-Company(CIC) 사업 부문으로 명시. 요청된 명칭은 유지하되 독립 고용 법인으로 단정하지 않음. 채용정보는 공용 포털 comp=skenmove로 연결; SK엔무브/관련 SK온 공고의 실제 고용 법인과 회사 필터를 확인할 것."
+      "http_status": null,
+      "title": "Hiring Process│Recruit│Corporation│SKC",
+      "notes": "공식 채용 절차 페이지가 Applications are accepted via online at SK TALENT PORTAL (www.skcareers.com)라고 명시합니다. 그룹 포털에서 SKC 고용 법인 필터를 확인해야 하며 현재 공고 전체 수집을 뜻하지 않습니다. SK온 CIC 사업부로 확인된 초기 SK엔무브 후보 대신 별도 법인 SKC를 선정했습니다."
     }
   },
   {

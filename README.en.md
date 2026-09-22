@@ -13,6 +13,10 @@ An agent-neutral, local-first workspace for Korean job discovery and evidence-gr
 - Exact codepoint, UTF-16, UTF-8 byte and CP949 byte counts with whitespace/newline options.
 - One Agent Skill shared by Hermes, Prime Agent, Codex, Claude Code and OpenClaw, plus generic AGENTS.md/Gemini pointers. No global agent configuration is silently modified.
 
+### Verified live coverage
+
+The integrated run acquired 15 listing records from NAVER, CJ and Saramin and read a real NAVER product-planning JD before producing an application work packet and local report. JobKorea required browser inspection; Wanted, Kakao and Lotte stopped because robots policy could not be verified. This is not a claim of complete automatic extraction from every portal. See [execution evidence and limitations](artifacts/VERIFICATION.md).
+
 ## Quick start
 
 Python 3.10+; no mandatory third-party runtime dependencies. Run from this repository:
@@ -21,7 +25,7 @@ Python 3.10+; no mandatory third-party runtime dependencies. Run from this repos
 python3 -m korean_job_search doctor
 python3 -m korean_job_search init
 python3 -m korean_job_search sources --company NAVER
-python3 -m korean_job_search collect --source NAVER --source 카카오 --limit 10
+python3 -m korean_job_search collect --source NAVER --source CJ제일제당 --source saramin --limit 5
 ```
 
 Use `python` on Windows if applicable. `python -m pip install -e .` optionally installs the `kjs` command. Fill the blank private profile and story templates in `workspace/`; no fabricated candidate data is supplied.
