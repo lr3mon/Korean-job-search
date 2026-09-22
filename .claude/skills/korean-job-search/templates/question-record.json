@@ -1,0 +1,32 @@
+{
+  "template_version": 1,
+  "purpose": "현재 양식의 문항을 원문으로 기록하는 빈 템플릿. 실제 내용은 workspace/ 사본에만 작성한다.",
+  "job_id": null,
+  "company": null,
+  "role": null,
+  "recruiting_cycle": null,
+  "source_url": null,
+  "captured_at": null,
+  "verification_status": "unverified",
+  "questions": [],
+  "question_fields": {
+    "id": "실제 화면의 문항 식별자 또는 확인된 순서",
+    "exact_prompt": "현재 양식의 질문과 세부 요구를 원문 그대로",
+    "source_url": "정확한 공고 또는 양식 URL; 인증 토큰은 저장하지 않음",
+    "captured_at": "시간대 포함 ISO 8601 확인 시각",
+    "min_length": "공식 최소 길이; 없거나 미확인이면 null과 이유",
+    "max_length": "공식 최대 길이; 미확인이면 null",
+    "count_mode": "codepoints / utf16 / utf8-bytes / cp949-bytes / unknown",
+    "include_spaces": "확인된 true/false 또는 null",
+    "newline_rule": "LF/CRLF/제외 등 정확한 사이트 규칙; 미확인이면 null",
+    "title_included": "소제목 포함 계산 여부; 미확인이면 null",
+    "blind_rules": "공식 금지 정보 원문과 출처",
+    "answer_file": "workspace/ 안의 본문만 있는 UTF-8 파일 경로",
+    "evidence_ids": "근거 장부의 주장·경험 ID 목록",
+    "computed_count": "실제 도구 계산값; 미계산이면 null",
+    "live_count": "현재 양식에서 읽은 카운터 값; 미확인이면 null",
+    "draft_status": "로컬 초안·검토 상태",
+    "online_status": "미입력·저장 확인·접수 확인 등을 증거와 함께 구분",
+    "unresolved": "미확인·충돌·사용자 확인이 필요한 항목 목록"
+  }
+}
