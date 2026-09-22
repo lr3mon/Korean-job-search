@@ -105,7 +105,7 @@ python3 -m unittest discover -s tests -p test_adapters.py -v
 | 프로젝트별 런타임 발견 | **미실행**. Hermes trust/OpenClaw workspace를 변경하지 않음 | 다섯 에이전트 모두 설치·활성화 완료 |
 | 실제 모델 실행 | **미실행**. 유료 호출/사용자 계정 사용/자동 제출 시험을 승인받지 않음 | 다섯 모델에서 지원서 작업 성공, 품질 점수, 토큰 절감 |
 
-오프라인 실제 실행: Python `3.13.2`에서 `python3 -m unittest discover -s tests -v` **20개 통과**. `python3 scripts/sync_skills.py --check`와 `compileall`도 통과했다. 테스트는 한글·공백이 있는 임시 경로, CRLF 진입점, 다른 CWD에서 실행, 사본 드리프트, 심볼릭 링크 거부와 알 수 없는 파일 보존을 포함한다. 네이티브 Windows나 다섯 런타임의 모델 실행 결과는 아니다.
+오프라인 실제 실행: Python `3.13.2`에서 `python3 -m unittest discover -s tests -p test_adapters.py -v` **20개 통과**. `python3 scripts/sync_skills.py --check`와 `compileall`도 통과했다. 테스트는 한글·공백이 있는 임시 경로, CRLF 진입점, 다른 CWD에서 실행, 사본 드리프트, 심볼릭 링크 거부와 알 수 없는 파일 보존을 포함한다. 네이티브 Windows나 다섯 런타임의 모델 실행 결과는 아니다.
 
 조회한 설치 버전: Hermes `v0.21.4 (2026.9.21)` / upstream `524041b9`(로컬 패치 있음), Prime Agent `0.9.5`, Codex `0.134.0`, Claude Code `2.1.81`, OpenClaw `2026.2.1` / `ed4529e`. 해당 바이너리의 버전·help만 조회했으며 로그인·설정·모델 호출은 하지 않았다. Python CLI 통합/수집 테스트는 저장소 전체 테스트와 별도 수집 증거를 확인한다. 이 문서의 어댑터 검사는 네트워크 수집 성공을 입증하지 않는다.
 

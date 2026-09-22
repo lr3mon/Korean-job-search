@@ -1,0 +1,93 @@
+{
+  "review_type": "independent_integration_spec_review",
+  "reviewed_at": "2026-09-22T08:09:54Z",
+  "verdict": "PASS",
+  "ready_for_code_quality_review": true,
+  "release_handoff_complete": false,
+  "scope": "Current repository requirements, public CLI/documentation contracts, catalogue coverage, portable agent entrypoints, profile boundaries, and representative offline integration routes. Not a code-quality review.",
+  "critical_spec_gaps": [],
+  "verified": [
+    {
+      "requirement": "Korean adaptation and provenance",
+      "result": "PASS",
+      "evidence": "README.md and README.en.md identify Korean-job-search, explain Korean evidence/question/review workflow, and distinguish deterministic tools from host LLM work. UPSTREAM.md:3-7 and LICENSE:3-4 retain upstream revision and MIT attribution."
+    },
+    {
+      "requirement": "Exactly 100 curated employers plus three named Korean portals",
+      "result": "PASS",
+      "evidence": "Executed sources --all-companies: 100 records, 100 unique IDs, 71 distinct careers URLs, 96 verified and 4 partial records. Research evidence files contain 258 rows. Executed portal selectors returned 사람인, 잡코리아, 원티드. Catalogue tests passed selection/name/package consistency; kr-024 is SKC with an explicit official hiring-guide relationship to SK Careers. The directory is explicitly not a financial ranking or an all-100-parser guarantee."
+    },
+    {
+      "requirement": "Official-first automatic agent referencing and honest collection boundaries",
+      "result": "PASS",
+      "evidence": "Executed discover --query '서비스 기획': 103 tasks, 100 official_first tasks preceding 3 secondary_discovery tasks, status search_plan, live_search_executed false. CLI/README/skill distinguish a plan from acquired jobs. docs/COLLECTORS.md:9-14,34-41,55-57 explicitly bound NAVER/CJ/Saramin extraction, generic/blocked surfaces, pagination, listing-card versus detail completeness, and no automatic detail crawl. Network acquisition was not rerun by this reviewer."
+    },
+    {
+      "requirement": "Agent portability without global configuration or paid-model assumptions",
+      "result": "PASS",
+      "evidence": "20 adapter tests and sync_skills.py --check passed: canonical .agents bundle, self-contained .claude/.hermes/skills copies, valid relative links, AGENTS/CLAUDE/GEMINI pointers, and supported command examples. docs/AGENTS_COMPATIBILITY.md:105-106 honestly marks runtime discovery and model sessions unexecuted. External runtime versions/documentation were not independently re-fetched during this bounded review."
+    },
+    {
+      "requirement": "Working deterministic CLI/application packet and private records",
+      "result": "PASS",
+      "evidence": "86 targeted offline tests passed across CLI, registry, catalogue, adapters, workflow and privacy. Representative executed tests cover initialization/manual ingestion, manual unknown-employer handling, rank/prepare/report workflows, tracking with applied confirmation, and Korean answer limits including 2000. Privacy scan returned ok with no findings and explicitly limits itself to tracked files. git check-ignore confirmed workspace/profile.json and private/example.txt. No candidate data is seeded in the profile template; SECURITY.md discloses cloud-agent data transmission."
+    }
+  ],
+  "test_results": {
+    "total_passed": 86,
+    "groups": {
+      "test_cli.py": 10,
+      "test_registry.py": 8,
+      "test_catalogue.py": 3,
+      "test_adapters.py": 20,
+      "test_workflow.py": 42,
+      "test_privacy.py": 3
+    },
+    "adapter_sync": "passed",
+    "tracked_privacy_scan": "passed; heuristic only; untracked files not included"
+  },
+  "findings": [
+    {
+      "id": "SPEC-DOC-01",
+      "severity": "low",
+      "blocks_code_quality_review": false,
+      "path": "docs/AGENTS_COMPATIBILITY.md",
+      "line": 108,
+      "issue": "The 20-test adapter result is attributed to the unfiltered full-suite command.",
+      "evidence": "Line 108 quotes python3 -m unittest discover -s tests -v followed by 20 passed. The independent run established that test_adapters.py alone contains 20 tests, while the six targeted groups already contain 86 tests.",
+      "required_fix": "Attribute 20 passes to python3 -m unittest discover -s tests -p test_adapters.py -v, or update the documented full-suite command/count using the parent's final complete run."
+    },
+    {
+      "id": "SPEC-DOC-02",
+      "severity": "medium",
+      "blocks_code_quality_review": false,
+      "blocks_final_release_handoff": true,
+      "path": "README.md",
+      "line": 121,
+      "related_locations": [
+        "README.en.md:73",
+        "docs/IMPLEMENTATION_PLAN.md:53-55"
+      ],
+      "issue": "The promised final verification report is not present at the review snapshot.",
+      "evidence": "A targeted file search found no artifacts/VERIFICATION.md. Both READMEs direct users to that file for live execution results and limitations. The parent is running the final integrated verification, so this is an unfinished handoff artifact rather than a functional implementation blocker.",
+      "required_fix": "Before final handoff, create artifacts/VERIFICATION.md from the actual integrated/live/package/source-check outputs. Preserve source-level failures and distinguish tested CLI, URL health, parser completeness, runtime discovery, and paid-model trials. Do not fabricate or infer successful checks."
+    }
+  ],
+  "not_claimed": [
+    "No independent fresh live-source crawl or current-availability guarantee",
+    "No all-100 live parser coverage",
+    "No runtime trust/workspace changes, automatic discovery tests, or paid model executions",
+    "No clean-package installation or native Windows run by this reviewer",
+    "No code-quality/security sign-off or final release/commit verification"
+  ],
+  "changes_by_reviewer": [
+    "artifacts/spec-review.json only"
+  ],
+  "handoff": "The implemented integration spec is ready for the separate code-quality review. Resolve the two documentation follow-ups and complete the parent's pending execution evidence before calling the final release handoff done.",
+  "parent_resolution": {
+    "verified_at": "2026-09-22T08:22:05.719306+00:00",
+    "SPEC-DOC-01": "Corrected to adapter-specific discovery command and reran: 20 tests OK.",
+    "SPEC-DOC-02": "artifacts/VERIFICATION.md committed with actual live/source-health/package execution boundaries (bb1c513).",
+    "reviewer_verdict_unchanged": true
+  }
+}
