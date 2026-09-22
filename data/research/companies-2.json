@@ -1,0 +1,530 @@
+[
+  {
+    "id": "kr-026",
+    "selection_index": 26,
+    "name_ko": "LG전자",
+    "name_en": "LG Electronics",
+    "aliases": [],
+    "sector": "전자·가전",
+    "homepage": "https://www.lge.co.kr/home",
+    "careers_url": "https://careers.lg.com/apply",
+    "evidence_url": "https://careers.lg.com/apply",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:11:16.930236+00:00",
+      "method": "http_get + headless_browser_dom (회사별 filter)",
+      "status": "verified",
+      "http_status": 200,
+      "title": "LG Careers",
+      "notes": "LG Careers 공동 채용창구. 공개 채용공고 페이지의 회사별 필터에서 이 고용주를 직접 확인했다. HTTP HTML은 앱 셸이며 익명 헤드리스 브라우저에서 필터를 렌더링했다. 검증 범위는 공식 채용 링크와 고용주 연결이며 전체 공고 추출 또는 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-027",
+    "selection_index": 27,
+    "name_ko": "LG디스플레이",
+    "name_en": "LG Display",
+    "aliases": [],
+    "sector": "디스플레이",
+    "homepage": "https://www.lgdisplay.com/kor",
+    "careers_url": "https://careers.lg.com/apply",
+    "evidence_url": "https://careers.lg.com/apply",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:11:16.930236+00:00",
+      "method": "http_get + headless_browser_dom (회사별 filter)",
+      "status": "verified",
+      "http_status": 200,
+      "title": "LG Careers",
+      "notes": "LG Careers 공동 채용창구. 공개 채용공고 페이지의 회사별 필터에서 이 고용주를 직접 확인했다. HTTP HTML은 앱 셸이며 익명 헤드리스 브라우저에서 필터를 렌더링했다. 검증 범위는 공식 채용 링크와 고용주 연결이며 전체 공고 추출 또는 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-028",
+    "selection_index": 28,
+    "name_ko": "LG이노텍",
+    "name_en": "LG Innotek",
+    "aliases": [],
+    "sector": "전자부품",
+    "homepage": "https://www.lginnotek.com/main/main.do",
+    "careers_url": "https://careers.lg.com/apply",
+    "evidence_url": "https://careers.lg.com/apply",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:11:16.930236+00:00",
+      "method": "http_get + headless_browser_dom (회사별 filter)",
+      "status": "verified",
+      "http_status": 200,
+      "title": "LG Careers",
+      "notes": "LG Careers 공동 채용창구. 공개 채용공고 페이지의 회사별 필터에서 이 고용주를 직접 확인했다. HTTP HTML은 앱 셸이며 익명 헤드리스 브라우저에서 필터를 렌더링했다. 검증 범위는 공식 채용 링크와 고용주 연결이며 전체 공고 추출 또는 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-029",
+    "selection_index": 29,
+    "name_ko": "LG화학",
+    "name_en": "LG Chem",
+    "aliases": [],
+    "sector": "화학·첨단소재",
+    "homepage": "https://www.lgchem.com:443/main/index",
+    "careers_url": "https://careers.lg.com/apply",
+    "evidence_url": "https://careers.lg.com/apply",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:11:16.930236+00:00",
+      "method": "http_get + headless_browser_dom (회사별 filter)",
+      "status": "verified",
+      "http_status": 200,
+      "title": "LG Careers",
+      "notes": "LG Careers 공동 채용창구. 공개 채용공고 페이지의 회사별 필터에서 이 고용주를 직접 확인했다. HTTP HTML은 앱 셸이며 익명 헤드리스 브라우저에서 필터를 렌더링했다. 검증 범위는 공식 채용 링크와 고용주 연결이며 전체 공고 추출 또는 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-030",
+    "selection_index": 30,
+    "name_ko": "LG에너지솔루션",
+    "name_en": "LG Energy Solution",
+    "aliases": [],
+    "sector": "이차전지",
+    "homepage": "https://www.lgensol.com/kr/index",
+    "careers_url": "https://careers.lg.com/apply",
+    "evidence_url": "https://careers.lg.com/apply",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:11:16.930236+00:00",
+      "method": "http_get + headless_browser_dom (회사별 filter)",
+      "status": "verified",
+      "http_status": 200,
+      "title": "LG Careers",
+      "notes": "LG Careers 공동 채용창구. 공개 채용공고 페이지의 회사별 필터에서 이 고용주를 직접 확인했다. HTTP HTML은 앱 셸이며 익명 헤드리스 브라우저에서 필터를 렌더링했다. 검증 범위는 공식 채용 링크와 고용주 연결이며 전체 공고 추출 또는 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-031",
+    "selection_index": 31,
+    "name_ko": "LG생활건강",
+    "name_en": "LG Household & Health Care",
+    "aliases": [],
+    "sector": "생활용품·화장품",
+    "homepage": "https://www.lghnh.com/index.jsp",
+    "careers_url": "https://careers.lg.com/apply",
+    "evidence_url": "https://careers.lg.com/apply",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:11:16.930236+00:00",
+      "method": "http_get + headless_browser_dom (회사별 filter)",
+      "status": "verified",
+      "http_status": 200,
+      "title": "LG Careers",
+      "notes": "LG Careers 공동 채용창구. 공개 채용공고 페이지의 회사별 필터에서 이 고용주를 직접 확인했다. HTTP HTML은 앱 셸이며 익명 헤드리스 브라우저에서 필터를 렌더링했다. 검증 범위는 공식 채용 링크와 고용주 연결이며 전체 공고 추출 또는 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-032",
+    "selection_index": 32,
+    "name_ko": "LG유플러스",
+    "name_en": "LG Uplus",
+    "aliases": [],
+    "sector": "통신",
+    "homepage": "https://www.lguplus.com/",
+    "careers_url": "https://careers.lg.com/apply",
+    "evidence_url": "https://careers.lg.com/apply",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:11:16.930236+00:00",
+      "method": "http_get + headless_browser_dom (회사별 filter)",
+      "status": "verified",
+      "http_status": 200,
+      "title": "LG Careers",
+      "notes": "LG Careers 공동 채용창구. 공개 채용공고 페이지의 회사별 필터에서 이 고용주를 직접 확인했다. HTTP HTML은 앱 셸이며 익명 헤드리스 브라우저에서 필터를 렌더링했다. 검증 범위는 공식 채용 링크와 고용주 연결이며 전체 공고 추출 또는 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-033",
+    "selection_index": 33,
+    "name_ko": "LG CNS",
+    "name_en": "LG CNS",
+    "aliases": [],
+    "sector": "IT서비스",
+    "homepage": "https://www.lgcns.com/kr",
+    "careers_url": "https://careers.lg.com/apply",
+    "evidence_url": "https://careers.lg.com/apply",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:11:16.930236+00:00",
+      "method": "http_get + headless_browser_dom (회사별 filter)",
+      "status": "verified",
+      "http_status": 200,
+      "title": "LG Careers",
+      "notes": "LG Careers 공동 채용창구. 공개 채용공고 페이지의 회사별 필터에서 이 고용주를 직접 확인했다. HTTP HTML은 앱 셸이며 익명 헤드리스 브라우저에서 필터를 렌더링했다. 검증 범위는 공식 채용 링크와 고용주 연결이며 전체 공고 추출 또는 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-034",
+    "selection_index": 34,
+    "name_ko": "현대자동차",
+    "name_en": "Hyundai Motor Company",
+    "aliases": [],
+    "sector": "자동차",
+    "homepage": "https://www.hyundai.com/kr/ko/e",
+    "careers_url": "https://talent.hyundai.com/apply/applyList.hc",
+    "evidence_url": "https://www.hyundaimotorgroup.com/ko/group/hyundai-motor-company",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:13:48.484504+00:00",
+      "method": "http_get (official group link) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "현대자동차 인재채용",
+      "notes": "현대자동차그룹 공식 회사소개 페이지의 고용주별 채용사이트 링크와 대상 페이지의 브랜드·채용 화면을 확인했다. 계열사별 독립 채용창구이며 동일 채용 솔루션 사용만으로 그룹 공용 포털로 취급하지 않는다. 공식 링크 검증이며 전체 공고 추출이나 지원 절차·로그인 성공을 검증한 것은 아니다. 주요100 큐레이션이며 재무 순위가 아니다. HTTP 앱 셸 이후 익명 헤드리스 브라우저로 공개 채용 화면을 확인했다. 사이트가 추가한 일시적 대기열 쿼리값은 채용 URL에 저장하지 않았다."
+    }
+  },
+  {
+    "id": "kr-035",
+    "selection_index": 35,
+    "name_ko": "기아",
+    "name_en": "Kia",
+    "aliases": [],
+    "sector": "자동차",
+    "homepage": "https://www.kia.com/kr",
+    "careers_url": "https://career.kia.com/apply/applyList.kc",
+    "evidence_url": "https://www.hyundaimotorgroup.com/ko/group/kia",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:12:36.443931+00:00",
+      "method": "http_get (official group link) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "기아 탤런트 라운지",
+      "notes": "현대자동차그룹 공식 회사소개 페이지의 고용주별 채용사이트 링크와 대상 페이지의 브랜드·채용 화면을 확인했다. 계열사별 독립 채용창구이며 동일 채용 솔루션 사용만으로 그룹 공용 포털로 취급하지 않는다. 공식 링크 검증이며 전체 공고 추출이나 지원 절차·로그인 성공을 검증한 것은 아니다. 주요100 큐레이션이며 재무 순위가 아니다. HTTP 앱 셸 이후 익명 헤드리스 브라우저로 공개 채용 화면을 확인했다. 사이트가 추가한 일시적 대기열 쿼리값은 채용 URL에 저장하지 않았다."
+    }
+  },
+  {
+    "id": "kr-036",
+    "selection_index": 36,
+    "name_ko": "현대모비스",
+    "name_en": "Hyundai Mobis",
+    "aliases": [],
+    "sector": "자동차부품",
+    "homepage": "https://www.mobis.com/kr/index.do",
+    "careers_url": "https://careers.mobis.com/jobs",
+    "evidence_url": "https://www.hyundaimotorgroup.com/ko/group/hyundai-mobis",
+    "is_group_portal": false,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:08:58.850532+00:00",
+      "method": "http_get (official group link) + http_get",
+      "status": "verified",
+      "http_status": 200,
+      "title": "JOBS | 현대모비스 채용 (MOBIS Careers)",
+      "notes": "현대자동차그룹 공식 회사소개 페이지의 고용주별 채용사이트 링크와 대상 페이지의 브랜드·채용 화면을 확인했다. 계열사별 독립 채용창구이며 동일 채용 솔루션 사용만으로 그룹 공용 포털로 취급하지 않는다. 공식 링크 검증이며 전체 공고 추출이나 지원 절차·로그인 성공을 검증한 것은 아니다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-037",
+    "selection_index": 37,
+    "name_ko": "현대글로비스",
+    "name_en": "Hyundai Glovis",
+    "aliases": [],
+    "sector": "물류·해운",
+    "homepage": "https://www.glovis.net/kr/home",
+    "careers_url": "https://glovis.recruiter.co.kr/career/home",
+    "evidence_url": "https://www.hyundaimotorgroup.com/ko/group/hyundai-glovis",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:12:38.548565+00:00",
+      "method": "http_get (official group link) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "현대글로비스 채용 | 채용사이트",
+      "notes": "현대자동차그룹 공식 회사소개 페이지의 고용주별 채용사이트 링크와 대상 페이지의 브랜드·채용 화면을 확인했다. 계열사별 독립 채용창구이며 동일 채용 솔루션 사용만으로 그룹 공용 포털로 취급하지 않는다. 공식 링크 검증이며 전체 공고 추출이나 지원 절차·로그인 성공을 검증한 것은 아니다. 주요100 큐레이션이며 재무 순위가 아니다. HTTP 앱 셸 이후 익명 헤드리스 브라우저로 공개 채용 화면을 확인했다."
+    }
+  },
+  {
+    "id": "kr-038",
+    "selection_index": 38,
+    "name_ko": "현대제철",
+    "name_en": "Hyundai Steel",
+    "aliases": [],
+    "sector": "철강",
+    "homepage": "https://www.hyundai-steel.com/kr",
+    "careers_url": "https://hyundai-steel.recruiter.co.kr/career/home",
+    "evidence_url": "https://www.hyundaimotorgroup.com/ko/group/hyundai-steel",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:12:48.796981+00:00",
+      "method": "http_get (official group link) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "현대제철 채용 | 채용사이트",
+      "notes": "현대자동차그룹 공식 회사소개 페이지의 고용주별 채용사이트 링크와 대상 페이지의 브랜드·채용 화면을 확인했다. 계열사별 독립 채용창구이며 동일 채용 솔루션 사용만으로 그룹 공용 포털로 취급하지 않는다. 공식 링크 검증이며 전체 공고 추출이나 지원 절차·로그인 성공을 검증한 것은 아니다. 주요100 큐레이션이며 재무 순위가 아니다. HTTP 앱 셸 이후 익명 헤드리스 브라우저로 공개 채용 화면을 확인했다."
+    }
+  },
+  {
+    "id": "kr-039",
+    "selection_index": 39,
+    "name_ko": "현대건설",
+    "name_en": "Hyundai Engineering & Construction",
+    "aliases": [],
+    "sector": "건설",
+    "homepage": "https://www.hdec.kr/kr/main.aspx",
+    "careers_url": "https://recruit.hdec.co.kr/#/",
+    "evidence_url": "https://www.hyundaimotorgroup.com/ko/group/hyundai-engineering-construction",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:12:58.989141+00:00",
+      "method": "http_get (official group link) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "현대건설 채용",
+      "notes": "현대자동차그룹 공식 회사소개 페이지의 고용주별 채용사이트 링크와 대상 페이지의 브랜드·채용 화면을 확인했다. 계열사별 독립 채용창구이며 동일 채용 솔루션 사용만으로 그룹 공용 포털로 취급하지 않는다. 공식 링크 검증이며 전체 공고 추출이나 지원 절차·로그인 성공을 검증한 것은 아니다. 주요100 큐레이션이며 재무 순위가 아니다. HTTP 앱 셸 이후 익명 헤드리스 브라우저로 공개 채용 화면을 확인했다."
+    }
+  },
+  {
+    "id": "kr-040",
+    "selection_index": 40,
+    "name_ko": "현대엔지니어링",
+    "name_en": "Hyundai Engineering",
+    "aliases": [],
+    "sector": "엔지니어링·건설",
+    "homepage": "https://www.hec.co.kr/ko",
+    "careers_url": "https://hec.recruiter.co.kr/career/home",
+    "evidence_url": "https://www.hyundaimotorgroup.com/ko/group/hyundai-engineering",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:13:51.503482+00:00",
+      "method": "http_get (official group link) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "현대엔지니어링 채용 | 채용사이트",
+      "notes": "현대자동차그룹 공식 회사소개 페이지의 고용주별 채용사이트 링크와 대상 페이지의 브랜드·채용 화면을 확인했다. 계열사별 독립 채용창구이며 동일 채용 솔루션 사용만으로 그룹 공용 포털로 취급하지 않는다. 공식 링크 검증이며 전체 공고 추출이나 지원 절차·로그인 성공을 검증한 것은 아니다. 주요100 큐레이션이며 재무 순위가 아니다. HTTP 앱 셸 이후 익명 헤드리스 브라우저로 공개 채용 화면을 확인했다."
+    }
+  },
+  {
+    "id": "kr-041",
+    "selection_index": 41,
+    "name_ko": "현대오토에버",
+    "name_en": "Hyundai AutoEver",
+    "aliases": [],
+    "sector": "IT서비스·차량 소프트웨어",
+    "homepage": "https://www.hyundai-autoever.com/",
+    "careers_url": "https://career.hyundai-autoever.com/ko/apply",
+    "evidence_url": "https://www.hyundaimotorgroup.com/ko/group/hyundai-autoever",
+    "is_group_portal": false,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:13:46.686937+00:00",
+      "method": "http_get (official group link) + http_get",
+      "status": "verified",
+      "http_status": 200,
+      "title": "현대오토에버 채용",
+      "notes": "현대자동차그룹 공식 회사소개 페이지의 고용주별 채용사이트 링크와 대상 페이지의 브랜드·채용 화면을 확인했다. 계열사별 독립 채용창구이며 동일 채용 솔루션 사용만으로 그룹 공용 포털로 취급하지 않는다. 공식 링크 검증이며 전체 공고 추출이나 지원 절차·로그인 성공을 검증한 것은 아니다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-042",
+    "selection_index": 42,
+    "name_ko": "현대로템",
+    "name_en": "Hyundai Rotem",
+    "aliases": [],
+    "sector": "철도·방산",
+    "homepage": "https://www.hyundai-rotem.co.kr:443/",
+    "careers_url": "https://hyundai-rotem.recruiter.co.kr/career/home",
+    "evidence_url": "https://www.hyundaimotorgroup.com/ko/group/hyundai-rotem",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:13:59.449564+00:00",
+      "method": "http_get (official group link) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "현대로템 채용 | 채용사이트",
+      "notes": "현대자동차그룹 공식 회사소개 페이지의 고용주별 채용사이트 링크와 대상 페이지의 브랜드·채용 화면을 확인했다. 계열사별 독립 채용창구이며 동일 채용 솔루션 사용만으로 그룹 공용 포털로 취급하지 않는다. 공식 링크 검증이며 전체 공고 추출이나 지원 절차·로그인 성공을 검증한 것은 아니다. 주요100 큐레이션이며 재무 순위가 아니다. HTTP 앱 셸 이후 익명 헤드리스 브라우저로 공개 채용 화면을 확인했다."
+    }
+  },
+  {
+    "id": "kr-043",
+    "selection_index": 43,
+    "name_ko": "현대위아",
+    "name_en": "Hyundai WIA",
+    "aliases": [],
+    "sector": "자동차부품·제조 솔루션",
+    "homepage": "https://www.hyundai-wia.com",
+    "careers_url": "https://hyundai-wia.recruiter.co.kr/career/home",
+    "evidence_url": "https://www.hyundaimotorgroup.com/ko/group/hyundai-wia",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:14:02.489476+00:00",
+      "method": "http_get (official group link) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "현대위아 채용 | 채용사이트",
+      "notes": "현대자동차그룹 공식 회사소개 페이지의 고용주별 채용사이트 링크와 대상 페이지의 브랜드·채용 화면을 확인했다. 계열사별 독립 채용창구이며 동일 채용 솔루션 사용만으로 그룹 공용 포털로 취급하지 않는다. 공식 링크 검증이며 전체 공고 추출이나 지원 절차·로그인 성공을 검증한 것은 아니다. 주요100 큐레이션이며 재무 순위가 아니다. HTTP 앱 셸 이후 익명 헤드리스 브라우저로 공개 채용 화면을 확인했다."
+    }
+  },
+  {
+    "id": "kr-044",
+    "selection_index": 44,
+    "name_ko": "HD현대중공업",
+    "name_en": "HD Hyundai Heavy Industries",
+    "aliases": [],
+    "sector": "조선·해양",
+    "homepage": "https://www.hd-hhi.com/kr/main",
+    "careers_url": "https://recruit.hd.com/kr/mainLayout/apply",
+    "evidence_url": "https://www.hd-hhi.com/kr/main",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:16.555737+00:00",
+      "method": "http_get (official company source) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "HD현대 채용공고",
+      "notes": "HD현대 공동 채용창구. 공개 포털의 이 고용주 표기와 공식 기업 사이트를 확인했다. HTTP 응답은 앱 셸이므로 익명 헤드리스 브라우저 DOM으로 채용 화면을 확인했다. 공식 링크와 고용주 연결 검증이며 전체 공고 추출이나 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-045",
+    "selection_index": 45,
+    "name_ko": "HD한국조선해양",
+    "name_en": "HD Korea Shipbuilding & Offshore Engineering",
+    "aliases": [],
+    "sector": "조선·해양 기술",
+    "homepage": "https://www.hd-ksoe.com/kr/main",
+    "careers_url": "https://recruit.hd.com/kr/mainLayout/apply",
+    "evidence_url": "https://www.hd-ksoe.com/kr/main",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:16.555737+00:00",
+      "method": "http_get (official company source) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "HD현대 채용공고",
+      "notes": "HD현대 공동 채용창구. 공개 포털의 이 고용주 표기와 공식 기업 사이트를 확인했다. HTTP 응답은 앱 셸이므로 익명 헤드리스 브라우저 DOM으로 채용 화면을 확인했다. 공식 링크와 고용주 연결 검증이며 전체 공고 추출이나 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다. 포털의 그룹 공고에 HD한국조선해양이 명시되고 기업 홈페이지는 인재채용을 recruit.hd.com으로 연결한다."
+    }
+  },
+  {
+    "id": "kr-046",
+    "selection_index": 46,
+    "name_ko": "HD현대일렉트릭",
+    "name_en": "HD Hyundai Electric",
+    "aliases": [],
+    "sector": "전력기기",
+    "homepage": "https://www.hd-hyundaielectric.com/elect/ko/index.jsp",
+    "careers_url": "https://recruit.hd.com/kr/mainLayout/apply",
+    "evidence_url": "https://www.hd-hyundaielectric.com/elect/ko/index.jsp",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:16.555737+00:00",
+      "method": "http_get (official company source) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "HD현대 채용공고",
+      "notes": "HD현대 공동 채용창구. 공개 포털의 이 고용주 표기와 공식 기업 사이트를 확인했다. HTTP 응답은 앱 셸이므로 익명 헤드리스 브라우저 DOM으로 채용 화면을 확인했다. 공식 링크와 고용주 연결 검증이며 전체 공고 추출이나 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다. 기존 www.hyundai-electric.com의 언어 헤더 없는 HTTP 전환 경로는 500을 반환했으나 일반 브라우저는 새 공식 홈페이지 www.hd-hyundaielectric.com으로 정상 이동했으며 새 주소는 별도 HTTP 200으로 확인했다."
+    }
+  },
+  {
+    "id": "kr-047",
+    "selection_index": 47,
+    "name_ko": "HD현대오일뱅크",
+    "name_en": "HD Hyundai Oilbank",
+    "aliases": [],
+    "sector": "정유·석유화학",
+    "homepage": "https://www.oilbank.co.kr/main/index.do",
+    "careers_url": "https://recruit.hd.com/kr/mainLayout/apply",
+    "evidence_url": "https://recruit.hd.com/kr/mainLayout/apply",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:16.555737+00:00",
+      "method": "http_get (official company source) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "HD현대 채용공고",
+      "notes": "HD현대 공동 채용창구. 공개 포털의 이 고용주 표기와 공식 기업 사이트를 확인했다. HTTP 응답은 앱 셸이므로 익명 헤드리스 브라우저 DOM으로 채용 화면을 확인했다. 공식 링크와 고용주 연결 검증이며 전체 공고 추출이나 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-048",
+    "selection_index": 48,
+    "name_ko": "한화",
+    "name_en": "Hanwha Corporation",
+    "aliases": [
+      "㈜한화",
+      "(주)한화"
+    ],
+    "sector": "산업소재·건설",
+    "homepage": "https://www.hanwhacorp.co.kr/index.jsp",
+    "careers_url": "https://www.hanwhain.com/portal/apply/recruit",
+    "evidence_url": "https://www.hanwhacorp.co.kr/hanwha/hrmanagement/recruitprocess.jsp",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:18.297221+00:00",
+      "method": "http_get (official company source) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "한화인",
+      "notes": "한화인 공동 채용창구. 공개 포털의 이 고용주 표기와 공식 기업 사이트를 확인했다. HTTP 응답은 앱 셸이므로 익명 헤드리스 브라우저 DOM으로 채용 화면을 확인했다. 공식 링크와 고용주 연결 검증이며 전체 공고 추출이나 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다. 선정 이름 한화는 한화그룹 전체가 아니라 ㈜한화(Hanwha Corporation)를 뜻한다. 포털에서는 (주)한화 글로벌부문 등의 부문명으로 표시된다. ㈜한화 공식 채용전형에서 그룹 전사 채용사이트 한화인을 안내한다."
+    }
+  },
+  {
+    "id": "kr-049",
+    "selection_index": 49,
+    "name_ko": "한화에어로스페이스",
+    "name_en": "Hanwha Aerospace",
+    "aliases": [],
+    "sector": "항공우주·방산",
+    "homepage": "https://www.hanwhaaerospace.com/kor/index.do",
+    "careers_url": "https://www.hanwhain.com/portal/apply/recruit",
+    "evidence_url": "https://www.hanwhaaerospace.com/kor/careers/recruit.do",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:18.297221+00:00",
+      "method": "http_get (official company source) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "한화인",
+      "notes": "한화인 공동 채용창구. 공개 포털의 이 고용주 표기와 공식 기업 사이트를 확인했다. HTTP 응답은 앱 셸이므로 익명 헤드리스 브라우저 DOM으로 채용 화면을 확인했다. 공식 링크와 고용주 연결 검증이며 전체 공고 추출이나 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  },
+  {
+    "id": "kr-050",
+    "selection_index": 50,
+    "name_ko": "한화시스템",
+    "name_en": "Hanwha Systems",
+    "aliases": [],
+    "sector": "방산전자·ICT",
+    "homepage": "https://www.hanwhasystems.com/kr/index.do",
+    "careers_url": "https://www.hanwhain.com/portal/apply/recruit",
+    "evidence_url": "https://www.hanwhasystems.com/kr/recruit/recruit3.do",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:18.297221+00:00",
+      "method": "http_get (official company source) + headless_browser_dom",
+      "status": "verified",
+      "http_status": 200,
+      "title": "한화인",
+      "notes": "한화인 공동 채용창구. 공개 포털의 이 고용주 표기와 공식 기업 사이트를 확인했다. HTTP 응답은 앱 셸이므로 익명 헤드리스 브라우저 DOM으로 채용 화면을 확인했다. 공식 링크와 고용주 연결 검증이며 전체 공고 추출이나 실시간 채용 커넥터 동작을 의미하지 않는다. 주요100 큐레이션이며 재무 순위가 아니다."
+    }
+  }
+]
