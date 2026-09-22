@@ -2,7 +2,7 @@
 
 ## 범위와 환경
 
-2026-09-22 macOS 로컬 실행입니다. 오프라인 회귀 테스트, 실제 공개 사이트 조회, 설치형 wheel 실행을 구분합니다. 클라우드 모델 호출·지원서 실제 제출·전역 에이전트 설정 변경·GitHub 공개 업로드는 하지 않았습니다.
+2026-09-22 macOS 로컬 실행입니다. 오프라인 회귀 테스트, 실제 공개 사이트 조회, 설치형 wheel 실행을 구분합니다. 별도 에이전트 모델로 지원 업무를 수행하는 유료 평가 세션·지원서 실제 제출·전역 에이전트 설정 변경·GitHub 공개 업로드는 하지 않았습니다.
 
 ## 디렉터리와 출처
 
@@ -36,10 +36,10 @@
 
 ## 오프라인/패키징
 
-- `python3 -m unittest discover -s tests -q`: 237 tests, OK.
+- `python3 -m unittest discover -s tests -q`: 237 tests, OK (Python 3.13.2 / 3.11.12 각각 실행).
 - `python3 scripts/sync_skills.py --check`: canonical bundle/entrypoints 일치.
 - `python3 scripts/build_catalog.py --check`: 100개, 근거 258개, 배포 파일 일치.
-- Python 3.13.2에서 wheel build와 소스 트리 밖 별도 경로 설치 후 `sources --all-companies` 100개 및 `init` 빈 프로필/서식 생성을 실행했습니다. 별도 설치의 모델 호출/전역 설정 수정은 없습니다.
+- Python 3.13.2에서 wheel build와 소스 트리 밖 별도 경로 설치 후 `sources --all-companies` 100개 및 `init` 빈 프로필/서식 생성을 실행했습니다. 별도 설치의 모델 호출/전역 설정 수정은 없습니다. 최종 wheel을 소스 트리 밖 별도 경로에 다시 설치하고 그 경로의 패키지가 로드되는 것을 확인한 뒤 전체 테스트 237개도 통과했습니다.
 - 지원 기록 CLI의 이중 잠금, 2,000자 제한 인자, 수동 JD의 회사 미확인 상태, 새 개인 출력 경로의 0700 디렉터리/0600 파일 권한을 회귀 검증했습니다.
 - Python 3.10/Windows 실제 실행과 원격 GitHub Actions는 수행하지 않았습니다. 설정 파일 존재를 CI 통과로 보고하지 않습니다.
 

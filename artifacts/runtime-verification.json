@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-09-22T08:25:18.264355+00:00",
+  "source_head": "f8f0b69f5be857b68f3129c06d3f611be82a813f",
+  "test_command": "python -m unittest discover -s tests -q",
+  "offline_tests": [
+    {
+      "runtime": "Python 3.13.2",
+      "distribution": "source",
+      "passed": 237,
+      "result": "OK"
+    },
+    {
+      "runtime": "Python 3.11.12",
+      "distribution": "source",
+      "passed": 237,
+      "result": "OK"
+    },
+    {
+      "runtime": "Python 3.13.2",
+      "distribution": "wheel outside source tree",
+      "passed": 237,
+      "result": "OK"
+    }
+  ],
+  "wheel": {
+    "wheel": "korean_job_search-0.1.0-py3-none-any.whl",
+    "sha256": "dc690284fdc0656cbc50e3351ff7ea1ecf75199d942edbb1d2b640c9dff7786f",
+    "companies": 100,
+    "templates": 7
+  },
+  "separate_agent_model_evaluations": 0,
+  "applications_submitted": 0,
+  "git_remote_configured": false,
+  "native_windows_tested": false,
+  "python_3_10_runtime_tested": false
+}
