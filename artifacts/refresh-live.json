@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-09-22T08:38:55.343518+00:00",
+  "source_head": "a8ae3999f9a2b981bb488bbb3dddb8b7c142a0b9",
+  "mode": "live NAVER card refresh after prior live detail ingestion; blank demo profile",
+  "job_url": "https://recruit.navercorp.com/rcrt/view.do?annoId=30005397",
+  "body_characters_before": 9869,
+  "body_characters_after": 9869,
+  "packet_body_characters": 9869,
+  "original_detail_evidence_unchanged": true,
+  "original_detail_timestamp_unchanged": true,
+  "observation_count": 2,
+  "refresh": {
+    "output": "workspace/demo-live/jobs.json",
+    "new_observations": 5,
+    "stored_jobs": 15,
+    "source_statuses": {
+      "partial": 1
+    },
+    "sources": [
+      {
+        "source_id": "kr-076",
+        "source_url": "https://recruit.navercorp.com/rcrt/list.do",
+        "status": "partial",
+        "diagnostics": [
+          "GET https://recruit.navercorp.com/rcrt/list.do -> ok (HTTP 200).",
+          "GET https://recruit.navercorp.com/rcrt/loadJobList.do?firstIndex=0 -> ok (HTTP 200).",
+          "Source declared 45 records; parsed 10 unique records in this bounded snapshot.",
+          "Coverage is partial: at most 3 listing pages are read; more pages or failed requests may remain.",
+          "Returned records were truncated to the requested limit.",
+          "One or more records are listing cards or incomplete media-based JDs; descriptions/qualifications were not invented."
+        ],
+        "fetched_at": "2026-09-22T08:38:53.289815+00:00",
+        "job_count": 5
+      }
+    ]
+  },
+  "warnings": [
+    "Listing metadata only; full job description was not fetched.",
+    "Retained an earlier acquired JD instead of a listing card; its evidence and collected_at were not refreshed. Compare observations for conflicting listing metadata."
+  ],
+  "report_path": "workspace/demo-live/report-verified-20260922T083854Z.html",
+  "parent_offline_reproductions": {
+    "rich_text": {
+      "before": 9434,
+      "after": 9434,
+      "packet": 9434,
+      "preserved_exactly": true,
+      "stable_remerge": true
+    },
+    "unknown_deadline": {
+      "raw_deadline": null,
+      "loaded_deadline": null,
+      "raw_state": "unknown",
+      "loaded_state": "unknown",
+      "warning_retained": true
+    },
+    "pass": true
+  },
+  "submitted": false
+}

@@ -36,12 +36,20 @@
 
 ## 오프라인/패키징
 
-- `python3 -m unittest discover -s tests -q`: 237 tests, OK (Python 3.13.2 / 3.11.12 각각 실행).
+- `python3 -m unittest discover -s tests -q`: 243 tests, OK (Python 3.13.2 / 3.11.12 각각 실행).
 - `python3 scripts/sync_skills.py --check`: canonical bundle/entrypoints 일치.
 - `python3 scripts/build_catalog.py --check`: 100개, 근거 258개, 배포 파일 일치.
-- Python 3.13.2에서 wheel build와 소스 트리 밖 별도 경로 설치 후 `sources --all-companies` 100개 및 `init` 빈 프로필/서식 생성을 실행했습니다. 별도 설치의 모델 호출/전역 설정 수정은 없습니다. 최종 wheel을 소스 트리 밖 별도 경로에 다시 설치하고 그 경로의 패키지가 로드되는 것을 확인한 뒤 전체 테스트 237개도 통과했습니다.
+- Python 3.13.2에서 wheel build와 소스 트리 밖 별도 경로 설치 후 `sources --all-companies` 100개 및 `init` 빈 프로필/서식 생성을 실행했습니다. 별도 설치의 모델 호출/전역 설정 수정은 없습니다. 최종 wheel을 소스 트리 밖 별도 경로에 다시 설치하고 그 경로의 패키지가 로드되는 것을 확인한 뒤 전체 테스트 243개도 통과했습니다. 실행 후 모든 korean_job_search 모듈이 소스 폴더가 아닌 별도 설치 경로에서 로드됐는지도 단언 검사했습니다.
 - 지원 기록 CLI의 이중 잠금, 2,000자 제한 인자, 수동 JD의 회사 미확인 상태, 새 개인 출력 경로의 0700 디렉터리/0600 파일 권한을 회귀 검증했습니다.
 - Python 3.10/Windows 실제 실행과 원격 GitHub Actions는 수행하지 않았습니다. 설정 파일 존재를 CI 통과로 보고하지 않습니다.
+
+## 통합 결함 재현과 수정
+
+초기 품질 검토에서 ‘목록 재수집 시 취득한 JD가 지워짐’과 ‘명시적 미확인 마감이 저장 후 로드할 때 추정 KST로 바뀜’을 발견했습니다. 초기 차단 판정은 `quality-review.json`, RED/GREEN과 설계 근거는 `quality-fix.json`에 그대로 남겼습니다.
+
+수정 후 부모 작업자가 별도 재현 코드로 확인한 결과, NAVER fixture 본문은 9,434 → 9,434자였고 생성 패킷에도 그대로 남았습니다. 명시적 마감 null은 null, 마감 상태 unknown은 unknown으로 유지됐습니다. 독립 재검토는 별도 final review artifact로 기록합니다.
+
+실제 NAVER에서도 목록을 다시 읽어 기존 광고 프로덕트 기획 JD 9,869자와 원래 근거/시각이 그대로 보존되고, 새로운 카드 관측은 별도 이력에 저장되는 것을 확인했습니다. 재생성한 작업 패킷에도 본문 9,869자가 남았습니다. 실행 증거는 `refresh-live.json`입니다. 보존된 상세가 최신임을 보장하지 않으며, 카드와 상세가 충돌하면 새 공식 상세/정정 공고를 확인해야 합니다.
 
 ## 에이전트 호환성
 

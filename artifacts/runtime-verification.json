@@ -1,36 +1,42 @@
 {
-  "checked_at": "2026-09-22T08:25:18.264355+00:00",
-  "source_head": "f8f0b69f5be857b68f3129c06d3f611be82a813f",
+  "checked_at": "2026-09-22T08:40:40.238016+00:00",
+  "source_head": "a8ae3999f9a2b981bb488bbb3dddb8b7c142a0b9",
   "test_command": "python -m unittest discover -s tests -q",
   "offline_tests": [
     {
       "runtime": "Python 3.13.2",
       "distribution": "source",
-      "passed": 237,
+      "passed": 243,
       "result": "OK"
     },
     {
       "runtime": "Python 3.11.12",
       "distribution": "source",
-      "passed": 237,
+      "passed": 243,
       "result": "OK"
     },
     {
       "runtime": "Python 3.13.2",
       "distribution": "wheel outside source tree",
-      "passed": 237,
+      "passed": 243,
       "result": "OK"
     }
   ],
   "wheel": {
     "wheel": "korean_job_search-0.1.0-py3-none-any.whl",
-    "sha256": "dc690284fdc0656cbc50e3351ff7ea1ecf75199d942edbb1d2b640c9dff7786f",
+    "sha256": "79e6a87923a331da65dc8683f5c17270c991dee955711a8491270a576c6bf28e",
     "companies": 100,
-    "templates": 7
+    "templates": 7,
+    "all_loaded_package_modules_from_isolated_install": true
   },
   "separate_agent_model_evaluations": 0,
   "applications_submitted": 0,
   "git_remote_configured": false,
   "native_windows_tested": false,
-  "python_3_10_runtime_tested": false
+  "python_3_10_runtime_tested": false,
+  "resolved_regressions": [
+    "acquired_detail_survives_card_refresh",
+    "explicit_unknown_deadline_survives_roundtrip"
+  ],
+  "live_refresh_evidence": "artifacts/refresh-live.json"
 }
