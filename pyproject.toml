@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "korean-job-search"
+version = "0.1.0"
+description = "한국 채용공고 탐색과 근거 기반 지원서 작성을 위한 에이전트 공통 도구"
+requires-python = ">=3.10"
+dependencies = []
+license = {text = "MIT"}
+
+[project.scripts]
+kjs = "korean_job_search.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["korean_job_search*"]
+
+[tool.setuptools.package-data]
+korean_job_search = ["data/*.json", "data/templates/*"]

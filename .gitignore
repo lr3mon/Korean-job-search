@@ -1,0 +1,16 @@
+# Private career data is NEVER stored in tracked profile/agent files.
+workspace/
+private/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.DS_Store
+.pytest_cache/
