@@ -22,4 +22,14 @@ jobs:
       - run: python scripts/build_catalog.py --check
       - run: python -m korean_job_search sources --all-companies --out source-summary.json
       - run: python -m compileall -q korean_job_search
+  scrapling-parser-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e '.[scrapling]'
+      - run: python -m unittest discover -s tests -p test_scrapling_skill.py -v
 # Live sites are NOT queried in CI. No credentials, resumes or applicant data.
+# The optional job tests the real parser against synthetic fixtures; no browser install/run.

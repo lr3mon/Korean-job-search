@@ -38,9 +38,9 @@ python3 -m korean_job_search ingest --file workspace/sources/posting.txt --sourc
 | `ok` | 실제 공고 상세 본문·링크·원문 시각이 있는지 확인한다. 성공 상태도 완전성 보증은 아니다. |
 | `partial` | 일부 페이지·목록만 확인됐다는 경계를 기록한다. 남은 페이지·본문을 인계한다. |
 | `empty` | 검색 범위·필터·조회 시각을 적는다. 전체 회사의 채용 없음으로 확대하지 않는다. |
-| `needs_browser` | 허용된 브라우저에서 공개 페이지를 읽는다. 없으면 수동 인계한다. |
+| `needs_browser` | 먼저 원시 HTML의 공고 링크를 확인한다. 파서 미지원과 실제 JS 필요를 구분하고 [Scrapling 보조 수집](scrapling.md)을 적용한다. 도구가 없으면 인계한다. |
 | `needs_credentials` | 로그인 이후 정보가 필요함을 알리고 안전한 사용자 인증으로 인계한다. |
-| `blocked`, `robots_denied` | 제한을 존중한다. CAPTCHA·WAF·robots를 우회하지 않는다. |
+| `blocked`, `robots_denied` | 명시적 Disallow / robots 정책 조회 실패 / HTTP 차단을 진단에서 구분한다. 자동 수집은 중단하고 공식 원문·허용된 사용자 제공 자료로 전환한다. 실패를 공고 없음으로 쓰거나 자동 우회하지 않는다. |
 | `unsupported`, `error` | 실패 이유와 시도한 URL을 보존한다. 다른 허용된 공식 표면이나 사용자 제공 원문으로 전환한다. |
 
 카드 재수집 뒤에 이전 JD가 유지되었으면 `warnings`와 `observations`를 읽는다. 본문·마감·문항을 서로 다른 시점에서 임의로 섞거나 보존된 옛 본문을 새로 확인한 것으로 표현하지 않는다. 최신 카드와 이전 상세가 충돌하면 현재 공식 상세/정정 공고를 다시 읽고, 확인 전에는 낙관적 마감을 택하지 않는다. 명시적인 `deadline: null`은 미확인 판단이므로 원문을 다시 추정해 정확한 KST 시각으로 바꾸지 않는다.

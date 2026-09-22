@@ -15,6 +15,20 @@ The collectors read public recruiting data only. They do not log in, execute pag
 
 Routing uses exact verified hostnames, including when the registry's `id` is `kr-NNN` or its adapter is `generic`. An adapter hint cannot redirect an unrelated hostname to a guessed first-party API. Group-portal `name_ko` is never copied into every job: the employer comes from each posting or is explicitly `Unknown employer` with a warning. This missing-value marker satisfies the shared model's non-empty company requirement; it is not an inferred company name. Other missing optional fields remain empty.
 
+## Optional skill-level Scrapling workflow
+
+The shared skill bundles `references/scrapling.md` and `scripts/scrapling_capture.py` in each generated adapter. This is an explicit helper, **not** a silent change to `collect` or `SafeFetcher`.
+
+- `--engine http`: robots-aware `SafeFetcher` plus Scrapling's selector parser. JobKorea HTML can already contain posting anchors even when the core generic parser returns `needs_browser`.
+- `--engine browser`: the same HTTP preflight followed by one fresh anonymous Scrapling `DynamicFetcher` render. HTTP/robots failures do not escalate to a browser; no existing profile, cookies, proxy rotation or challenge solver is used. Browser subresource networking is not the core fetcher's IP-pinned transport; restrict use to the helper's allowlisted public portal routes and trusted public pages.
+- `--html`: offline parsing of a saved, user-authorized HTML snapshot. It does not invent a fetch time, HTTP status or verified robots policy.
+- Link outputs are deduplicated candidates, not normalized jobs or full JDs. Select the useful detail separately. JobKorea's observed JD iframe must be read separately from recommendations and historical application essays.
+- JD mode requires an inspected selector, writes `jd.txt`, and labels completeness unverified. Review it before importing through `ingest --file`. Snapshots stay private under `workspace/`; existing output directories are never overwritten.
+
+Wanted's public pages were readable in a bounded anonymous browser check while its robots endpoint returned 403. That is not a verified policy or permission for recurring/bulk crawling. The helper preserves fail-closed automation; use employer-owned sources or authorized user-provided snapshots when policy cannot be established.
+
+See the [shared Scrapling guide](../.agents/skills/korean-job-search/references/scrapling.md) for setup, MCP mapping, command examples and validation.
+
 ## Interface
 
 ```python

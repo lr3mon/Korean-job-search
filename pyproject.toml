@@ -10,6 +10,9 @@ requires-python = ">=3.10"
 dependencies = []
 license = {text = "MIT"}
 
+[project.optional-dependencies]
+scrapling = ["scrapling[fetchers]==0.4.11"]
+
 [project.scripts]
 kjs = "korean_job_search.cli:main"
 

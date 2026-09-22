@@ -112,7 +112,7 @@ class AdapterContractTests(unittest.TestCase):
             "init": set(), "sources": set(), "doctor": set(),
             "discover": {"--query", "--company", "--all-companies"},
             "collect": {"--source", "--query", "--limit", "--out"},
-            "ingest": {"--url", "--file", "--source-url"},
+            "ingest": {"--url", "--file", "--source-url", "--company", "--title"},
             "rank": {"--jobs", "--profile"},
             "prepare": {"--job", "--jobs", "--profile", "--out"},
             "answers-check": {"--limit", "--mode"},

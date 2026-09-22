@@ -21,7 +21,7 @@ Korean-job-search focuses on **the connection between what you have actually don
 
 ### Discover the opportunity
 
-Start with official recruiting references for **100 major Korean employers**, then supplement discovery with **Saramin, JobKorea and Wanted**. Check eligibility and deadlines against the original posting. A blocked source is never reported as an employer with no vacancies.
+Start with official recruiting references for **100 major Korean employers**, then supplement discovery with **Saramin, JobKorea and Wanted**. Check eligibility and deadlines against the original posting. An optional [Scrapling workflow bundled with the skill](.agents/skills/korean-job-search/references/scrapling.md) helps read public pages the basic collectors do not handle. A blocked source is never reported as an employer with no vacancies.
 
 ### Connect your experience
 
@@ -75,11 +75,12 @@ You do not need to run the whole workflow at once. Start with one job descriptio
 | :--- | :--- |
 | Recruiting references | 100 employers and 258 evidence records; 96 employer records verified, 4 partially verified |
 | Live workflow | 15 listing records from NAVER, CJ and Saramin; a real NAVER product-planning JD read before generating a drafting packet and HTML report |
-| Tooling | 243 tests passed on Python 3.11 and 3.13 and an isolated package installation; independent quality re-review approved |
+| Base tooling | The initial 243 tests passed on Python 3.11 and 3.13 and an isolated package installation; independent quality re-review approved |
+| Scrapling helper | Live listing extraction → detail-iframe JD → existing import workflow checked. [Additional verification](artifacts/SCRAPLING_VERIFICATION.md) |
 
 These are execution results, not hiring odds or complete market coverage. Read the [verification record and evidence](artifacts/VERIFICATION.md).
 
-**The boundaries are explicit.** The employer directory is curated, not a financial top-100 ranking. During verification, JobKorea needed browser inspection; Wanted, Kakao and Lotte stopped because robots policy could not be verified. Use permitted search/browser tools or user-provided source text to fill gaps; complete extraction from every site is not guaranteed. Adapter files were checked, but actual model-driven work was not tested in all five agents.
+**The boundaries are explicit.** The employer directory is curated, not a financial top-100 ranking. The optional Scrapling helper reads public JobKorea HTML and detail iframes missed by the core parser. Wanted public-page readability is separate from robots-policy verification; automation stops when that policy cannot be established. Initial Kakao and Lotte requests also stopped on robots verification failures. Complete extraction from every site is not guaranteed. Adapter files were checked, but actual model-driven work was not tested in all five agents.
 
 ## Go deeper
 
