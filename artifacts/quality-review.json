@@ -1,0 +1,142 @@
+{
+  "review_type": "independent_code_quality_and_integration_review",
+  "reviewed_head": "f8f0b69f5be857b68f3129c06d3f611be82a813f",
+  "verdict": "BLOCKED",
+  "summary": "The complete offline suite passes, but two independently reproduced cross-module defects prevent approval: successful recollection deletes a previously acquired full JD, and loading a stored record changes an explicitly unknown deadline into an assumed KST deadline.",
+  "critical": [],
+  "important": [
+    {
+      "id": "QUALITY-01",
+      "priority": "P1",
+      "title": "Recollecting a listing card irreversibly discards the previously ingested full JD",
+      "locations": [
+        {"path": "korean_job_search/cli.py", "start_line": 95, "end_line": 103},
+        {"path": "korean_job_search/models.py", "start_line": 333, "end_line": 354},
+        {"path": "korean_job_search/models.py", "start_line": 387, "end_line": 392}
+      ],
+      "evidence": "save_collection passes fresh + existing to deduplicate_jobs. The first record wins every substantive field; only warnings, source_ids and provenance are merged. Provenance stores source_id/evidence/collected_at, not the previous description, questions or deadline values. Therefore a successful fresh card with description='' replaces a full-text detail record without retaining its text anywhere in jobs.json.",
+      "reproduction": {
+        "type": "Executed offline using the repository's reduced public NAVER fixtures; no network",
+        "steps": [
+          "Parse tests/fixtures/collect-naver-first-page.json with parse_job_postings at https://recruit.navercorp.com/rcrt/loadJobList.do?firstIndex=0 and source_id='naver'. Select the card for annoId=30005289.",
+          "Parse tests/fixtures/collect-naver-detail.html with parse_job_postings at that card's detail URL. Both records have the matching title '[NAVER] 보안 부문 경력 채용'. Mark their evidence.kind='test_fixture'.",
+          "In a temporary directory under TMPDIR, call save_collection with the detail record. Then call save_collection with a robots_denied result containing jobs=[]; confirm the description survives.",
+          "Call save_collection again with the matching listing card. Read jobs.json, and call prepare_application on the resulting record with an empty profile and a new temporary packet directory."
+        ],
+        "observed": {
+          "failed_collection_preserved_description": true,
+          "before_description_characters": 9434,
+          "after_description_characters": 0,
+          "before_completeness": "full_text",
+          "after_completeness": "listing_card",
+          "stored_job_count": 1,
+          "provenance_entry_count": 4,
+          "any_provenance_entry_contains_description": false,
+          "generated_packet_description_characters": 0
+        }
+      },
+      "user_impact": "The normal collect -> ingest detail -> collect refresh workflow destroys acquired application evidence. Subsequent preparation gets an empty JD and ranking loses its JD keyword input. Retaining a provenance URL/timestamp is not retention of the acquired text, which may no longer be accessible later.",
+      "required_resolution": "Use a non-destructive observation merge: preserve full/detail text and its own provenance when a new observation is only a listing card, and retain conflicting field observations rather than silently discarding them. Do not mislabel preserved old text as newly fetched. Add an integration regression covering collect -> ingest -> collect -> prepare. No implementation change was made by this reviewer."
+    },
+    {
+      "id": "QUALITY-02",
+      "priority": "P2",
+      "title": "load_jobs reinterprets explicitly unknown deadlines and invents a timezone after collection",
+      "locations": [
+        {"path": "korean_job_search/workflow.py", "start_line": 77, "end_line": 90},
+        {"path": "korean_job_search/workflow.py", "start_line": 195, "end_line": 202},
+        {"path": "korean_job_search/models.py", "start_line": 281, "end_line": 289},
+        {"path": "korean_job_search/collectors.py", "start_line": 210, "end_line": 213},
+        {"path": "korean_job_search/collectors.py", "start_line": 263, "end_line": 275}
+      ],
+      "evidence": "The collector deliberately stores deadline=None when normalization would require guessing, overriding make_job's permissive interpretation. load_jobs validates persisted records by calling make_job again; a None deadline causes make_job to parse deadline_raw and assume Seoul. This silently reverses the collector's safety decision while keeping the warning that the deadline could not be normalized.",
+      "reproduction": {
+        "type": "Executed with explicitly synthetic offline JSON-LD; no network",
+        "steps": [
+          "Build a script[type='application/ld+json'] containing @type='JobPosting', title='OFFLINE timezone test', hiringOrganization.name='Fixture company', description='Synthetic review fixture, not a real job.', validThrough='2026-09-29T10:00:00', url='https://example.com/jobs/timezone-fixture'.",
+          "Call parse_job_postings on the script, set evidence.kind='test_fixture', and persist the returned record with save_collection into a temporary jobs.json.",
+          "Compare the raw JSON record with load_jobs(path)[0]. Evaluate deadline_state for both at now='2026-09-29T02:00:00Z'."
+        ],
+        "observed": {
+          "raw_stored_deadline": null,
+          "loaded_deadline": "2026-09-29T10:00:00+09:00",
+          "deadline_raw": "2026-09-29T10:00:00",
+          "raw_deadline_state": "unknown",
+          "loaded_deadline_state": "expired",
+          "warning_retained_in_both": "Deadline could not be normalized without guessing; preserve deadline_raw."
+        }
+      },
+      "user_impact": "Commands that load saved jobs, including ranking, preparation and reporting, can present an uncertain deadline as a definite KST deadline or expired job even though acquisition explicitly refused to infer it. Recollection also loads existing records, so a later save can persist the invented value.",
+      "required_resolution": "Distinguish constructing an observation from validating/deserializing a persisted observation. Preserve an explicit unknown normalized deadline on round-trip; do not infer it again from raw text without new evidence. Add parser -> save -> load/rank/report regression coverage for timezone-ambiguous deadlines. No implementation change was made by this reviewer."
+    }
+  ],
+  "minor": [],
+  "tests_run": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -q",
+      "runtime": "Python 3.13.2",
+      "result": "PASS",
+      "tests": 237,
+      "output": "Ran 237 tests in 0.832s; OK"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_privacy.py",
+      "result": "PASS",
+      "tracked_files_checked": 109,
+      "findings": [],
+      "limitation": "Heuristic tracked-file scan; not proof that arbitrary untracked files or every possible personal identifier is safe."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/sync_skills.py --check",
+      "result": "PASS",
+      "output": "Adapters synchronized; canonical bundle and entrypoints match."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_catalog.py --check",
+      "result": "PASS",
+      "company_count": 100,
+      "verified": 96,
+      "partial": 4,
+      "unique_careers_urls": 71,
+      "evidence_record_count": 258
+    },
+    {
+      "name": "Independent offline detail/recollection/packet integration probe",
+      "result": "REPRODUCED QUALITY-01",
+      "additional_checks_passed": [
+        "Failed collection preserves acquired description.",
+        "Malformed existing jobs.json is rejected without replacing its bytes.",
+        "Collection lock is released after malformed-input rejection."
+      ]
+    },
+    {
+      "name": "Independent generic JSON-LD deadline round-trip probe",
+      "result": "REPRODUCED QUALITY-02"
+    }
+  ],
+  "documentation_followups": {
+    "SPEC-DOC-01": {
+      "result": "RESOLVED",
+      "evidence": "docs/AGENTS_COMPATIBILITY.md:108 correctly attributes 20 passes to the test_adapters.py-specific unittest discovery command, not the complete suite."
+    },
+    "SPEC-DOC-02": {
+      "result": "RESOLVED",
+      "evidence": "artifacts/VERIFICATION.md exists and separates URL health, 15-card live collection, detail ingestion, package execution, and untested native-agent/model/Windows/Python-3.10 boundaries. It is expressly not a claim of all-100 complete parsers."
+    }
+  },
+  "other_reviewed_boundaries": [
+    "Public-only fetch URL validation, numeric public-IP pinning, peer/TLS verification, redirect revalidation, destination robots enforcement, fail-closed policy errors, and request/body/deadline bounds; offline network suite passed. No live network request was made by this reviewer.",
+    "Source-host routing, actual employer versus group attribution, bounded pagination and honest partial/listing-card status.",
+    "Private output permissions, lock/error cleanup, applied-state confirmation, no-overwrite packet/report behavior, HTML escaping and CSP; relevant existing tests passed.",
+    "Codepoint/UTF-16/UTF-8/CP949 counting and newline policies; relevant existing tests passed.",
+    "Packaged-data manifest and catalogue synchronization; clean-wheel install was not independently repeated.",
+    "Agent instructions distinguish search plans, collected evidence, current questions, local records and actual submission; no global configuration or model calls were made."
+  ],
+  "limitations": [
+    "Bounded targeted review, not a comprehensive proof of security or current website availability.",
+    "No public crawling, paid-model execution, native agent discovery, native Windows run, or Python 3.10 execution.",
+    "Parent updated verification-only artifacts during review; production code remained at the reviewed HEAD."
+  ],
+  "changes_by_reviewer": ["artifacts/quality-review.json only"],
+  "handoff": "Do not approve until QUALITY-01 and QUALITY-02 are resolved and their cross-module regressions pass alongside the full suite. The passing 237-test suite does not cover away these reproduced failures."
+}
