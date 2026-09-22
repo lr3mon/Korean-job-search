@@ -1,0 +1,49 @@
+{
+  "portals": [
+    {
+      "id": "saramin",
+      "name_ko": "사람인",
+      "name_en": "saramin",
+      "aliases": [
+        "사람인"
+      ],
+      "kind": "portal",
+      "adapter": "saramin",
+      "careers_url": "https://www.saramin.co.kr/zf_user/search",
+      "is_group_portal": false,
+      "access_mode": "html",
+      "policy": "공개 접근과 robots/약관 범위에서만 조회. API 키·로그인·브라우저가 필요하거나 차단되면 해당 상태와 공식 기업 페이지 대안을 반환. 검색 결과가 실제 JD를 대체하지 않음.",
+      "verification_note": "실행 시 접근/파싱 상태를 다시 확인. 이 설정 자체는 수집 성공의 증거가 아닙니다."
+    },
+    {
+      "id": "jobkorea",
+      "name_ko": "잡코리아",
+      "name_en": "jobkorea",
+      "aliases": [
+        "잡코리아"
+      ],
+      "kind": "portal",
+      "adapter": "jobkorea",
+      "careers_url": "https://www.jobkorea.co.kr/Search/",
+      "is_group_portal": false,
+      "access_mode": "html",
+      "policy": "공개 접근과 robots/약관 범위에서만 조회. API 키·로그인·브라우저가 필요하거나 차단되면 해당 상태와 공식 기업 페이지 대안을 반환. 검색 결과가 실제 JD를 대체하지 않음.",
+      "verification_note": "실행 시 접근/파싱 상태를 다시 확인. 이 설정 자체는 수집 성공의 증거가 아닙니다."
+    },
+    {
+      "id": "wanted",
+      "name_ko": "원티드",
+      "name_en": "wanted",
+      "aliases": [
+        "원티드"
+      ],
+      "kind": "portal",
+      "adapter": "wanted",
+      "careers_url": "https://www.wanted.co.kr/wdlist",
+      "is_group_portal": false,
+      "access_mode": "html",
+      "policy": "공개 접근과 robots/약관 범위에서만 조회. API 키·로그인·브라우저가 필요하거나 차단되면 해당 상태와 공식 기업 페이지 대안을 반환. 검색 결과가 실제 JD를 대체하지 않음.",
+      "verification_note": "실행 시 접근/파싱 상태를 다시 확인. 이 설정 자체는 수집 성공의 증거가 아닙니다."
+    }
+  ]
+}
