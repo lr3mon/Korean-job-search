@@ -1,0 +1,533 @@
+[
+  {
+    "id": "kr-076",
+    "selection_index": 76,
+    "name_ko": "NAVER",
+    "name_en": "NAVER Corporation",
+    "aliases": [],
+    "sector": "Internet / technology",
+    "homepage": "https://navercorp.com/",
+    "careers_url": "https://recruit.navercorp.com/rcrt/list.do",
+    "evidence_url": "https://recruit.navercorp.com/rcrt/list.do",
+    "is_group_portal": true,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:07:56.016627+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "NAVER Careers",
+      "notes": "Company filter includes NAVER and other group companies; NAVER jobs must be distinguished from affiliates. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-077",
+    "selection_index": 77,
+    "name_ko": "카카오",
+    "name_en": "Kakao Corp.",
+    "aliases": [],
+    "sector": "Internet / technology",
+    "homepage": "https://www.kakaocorp.com/page/",
+    "careers_url": "https://careers.kakao.com/jobs",
+    "evidence_url": "https://www.kakaocorp.com/page/",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:07:56.016810+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection; web_extract rendering/extraction where noted",
+      "status": "verified",
+      "http_status": 200,
+      "title": "카카오 영입",
+      "notes": "Corporate homepage links to the official hiring domain. Direct HTML is a JavaScript shell; public web_extract returned company filters and Kakao job rows. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-078",
+    "selection_index": 78,
+    "name_ko": "카카오뱅크",
+    "name_en": "KakaoBank Corp.",
+    "aliases": [],
+    "sector": "Banking / fintech",
+    "homepage": "https://www.kakaobank.com/",
+    "careers_url": "https://recruit.kakaobank.com/",
+    "evidence_url": "https://recruit.kakaobank.com/",
+    "is_group_portal": false,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:07:56.016932+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "카카오뱅크 인재영입",
+      "notes": "Recruiting-site footer identifies kakaobank Corp. and links to the official corporate homepage. Application-account pages were not accessed. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-079",
+    "selection_index": 79,
+    "name_ko": "카카오페이",
+    "name_en": "Kakao Pay Corp.",
+    "aliases": [],
+    "sector": "Fintech / payments",
+    "homepage": "https://www.kakaopay.com/",
+    "careers_url": "https://kakaopay.career.greetinghr.com/ko/main",
+    "evidence_url": "https://kakaopay.career.greetinghr.com/ko/main",
+    "is_group_portal": false,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:07:56.226120+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "카카오페이 채용",
+      "notes": "Greeting-hosted Kakao Pay recruiting page explicitly names 주식회사 카카오페이 in its privacy policy; public job list identifies 카카오페이. Official homepage was fetched but its direct HTML is a JavaScript shell. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-080",
+    "selection_index": 80,
+    "name_ko": "쿠팡",
+    "name_en": "Coupang",
+    "aliases": [],
+    "sector": "E-commerce / logistics",
+    "homepage": "https://www.aboutcoupang.com/",
+    "careers_url": "https://www.coupang.jobs/kr/jobs/",
+    "evidence_url": "https://www.aboutcoupang.com/",
+    "is_group_portal": true,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:07:56.247973+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "Jobs | Coupang Careers",
+      "notes": "Global Coupang recruiting portal includes Korean Coupang and subsidiaries. Do not attribute all group/global listings to the Korean employer. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-081",
+    "selection_index": 81,
+    "name_ko": "우아한형제들",
+    "name_en": "Woowa Brothers",
+    "aliases": [],
+    "sector": "Food delivery / technology",
+    "homepage": "https://www.woowahan.com/",
+    "careers_url": "https://career.woowahan.com/",
+    "evidence_url": "https://career.woowahan.com/",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:17:34.354758+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection; web_extract rendering/extraction where noted",
+      "status": "partial",
+      "http_status": 200,
+      "title": "우아한형제들 인재영입",
+      "notes": "Careers domain was discovered in public search and returned HTTP 200 with 우아한형제들 인재영입 title and matching recruiting metadata. Corporate homepage HTTP requests were blocked (403); web_extract could read its English company introduction but not the careers body. Corporate-to-careers hyperlink and rendered careers body were not verified. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-082",
+    "selection_index": 82,
+    "name_ko": "비바리퍼블리카",
+    "name_en": "Viva Republica",
+    "aliases": [
+      "토스",
+      "Toss"
+    ],
+    "sector": "Fintech / financial platform",
+    "homepage": "https://toss.im/",
+    "careers_url": "https://toss.im/career/jobs",
+    "evidence_url": "https://toss.im/",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:05.430535+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection; web_extract rendering/extraction where noted",
+      "status": "verified",
+      "http_status": 200,
+      "title": "토스 채용",
+      "notes": "Toss is the recruiting brand for Viva Republica; company homepage metadata explicitly identifies Viva Republica. The shared portal contains Toss and other affiliates. Raw HTML displays a dynamic zero placeholder; it is not a verified vacancy count. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-083",
+    "selection_index": 83,
+    "name_ko": "당근",
+    "name_en": "Daangn",
+    "aliases": [],
+    "sector": "Local commerce / internet",
+    "homepage": "https://about.daangn.com/",
+    "careers_url": "https://careers.daangn.com/jobs/",
+    "evidence_url": "https://about.daangn.com/",
+    "is_group_portal": true,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:09:11.233821+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "채용공고 | 당근 채용",
+      "notes": "Corporate page directly links the recruiting domain. Company filters include 당근, 당근페이 and 당근서비스; affiliate listings must be separated. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-084",
+    "selection_index": 84,
+    "name_ko": "크래프톤",
+    "name_en": "KRAFTON",
+    "aliases": [],
+    "sector": "Games / entertainment",
+    "homepage": "https://www.krafton.com/",
+    "careers_url": "https://www.krafton.com/careers/jobs/",
+    "evidence_url": "https://www.krafton.com/",
+    "is_group_portal": true,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:09:11.460902+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "크래프톤 채용 공고",
+      "notes": "Integrated official-site recruiting page includes KRAFTON and multiple studios. Corporate/studio filters are necessary before attributing job listings. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-085",
+    "selection_index": 85,
+    "name_ko": "엔씨소프트",
+    "name_en": "NCSOFT",
+    "aliases": [
+      "NC",
+      "엔씨"
+    ],
+    "sector": "Games / entertainment",
+    "homepage": "https://www.nc.com/",
+    "careers_url": "https://careers.ncsoft.com/",
+    "evidence_url": "https://nc.com/newsroom/news/articles?articleId=68dddca06b713d7e84457dd7&boardLanguage=ko&locale=ko-KR",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:05.744480+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection; web_extract rendering/extraction where noted",
+      "status": "verified",
+      "http_status": 200,
+      "title": "NC Careers",
+      "notes": "Manifest name 엔씨소프트 is preserved; current official site and recruiting brand use NC / NC Company. Official corporate announcement explicitly describes the shared NC Careers site for 엔씨소프트 and subsidiaries. Raw HTML count zero is a dynamic placeholder, not a verified absence of jobs. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-086",
+    "selection_index": 86,
+    "name_ko": "넥슨코리아",
+    "name_en": "NEXON Korea",
+    "aliases": [],
+    "sector": "Games / entertainment",
+    "homepage": "https://company.nexon.com/",
+    "careers_url": "https://careers.nexon.com/",
+    "evidence_url": "https://careers.nexon.com/recruit/9795",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:16:08.549242+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection; web_extract rendering/extraction where noted",
+      "status": "verified",
+      "http_status": 200,
+      "title": "NEXON COMPANY Careers",
+      "notes": "NEXON COMPANY shared portal; an actual official job page explicitly identifies 넥슨코리아. The public root and corporate homepage are JavaScript shells. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-087",
+    "selection_index": 87,
+    "name_ko": "넷마블",
+    "name_en": "Netmarble",
+    "aliases": [],
+    "sector": "Games / entertainment",
+    "homepage": "http://company.netmarble.com/",
+    "careers_url": "https://career.netmarble.com/",
+    "evidence_url": "http://company.netmarble.com/",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:05.929627+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "넷마블컴퍼니 채용",
+      "notes": "Corporate homepage directly links Netmarble Company careers. Company-group navigation is shared. Raw HTML zero totals are dynamic placeholders and must not be read as no active vacancies. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-088",
+    "selection_index": 88,
+    "name_ko": "NHN",
+    "name_en": "NHN",
+    "aliases": [],
+    "sector": "Technology / games / cloud",
+    "homepage": "https://nhn.com/",
+    "careers_url": "https://careers.nhn.com/",
+    "evidence_url": "https://nhn.com/",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:05.946230+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection; web_extract rendering/extraction where noted",
+      "status": "verified",
+      "http_status": 200,
+      "title": "NHN Careers",
+      "notes": "Corporate homepage directly links NHN Careers. Raw careers HTML is a JavaScript shell; public extracted page includes NHN and affiliate job/company logos. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-089",
+    "selection_index": 89,
+    "name_ko": "펄어비스",
+    "name_en": "Pearl Abyss",
+    "aliases": [],
+    "sector": "Games / entertainment",
+    "homepage": "https://www.pearlabyss.com/ko-KR",
+    "careers_url": "https://www.pearlabyss.com/ko-KR/Company/Careers/Intro",
+    "evidence_url": "https://www.pearlabyss.com/ko-KR",
+    "is_group_portal": false,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:10:06.061910+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "채용 | Pearl Abyss",
+      "notes": "Official corporate careers route redirects to /ko-KR/Company/Careers/Intro and provides recruiting introduction and job-list navigation. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-090",
+    "selection_index": 90,
+    "name_ko": "KB국민은행",
+    "name_en": "KB Kookmin Bank",
+    "aliases": [],
+    "sector": "Banking",
+    "homepage": "https://omoney.kbstar.com/quics?page=oabout",
+    "careers_url": "https://omoney.kbstar.com/quics?page=C017623",
+    "evidence_url": "https://omoney.kbstar.com/quics?page=oabout",
+    "is_group_portal": false,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:16:06.065175+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "채용공고 ( 은행소개 | 채용정보 | 공개채용 | 채용공고 )",
+      "notes": "Official bank recruitment announcement board; menus separately link new-graduate and rolling recruitment. The separate C059984 graduate landing returned an empty HTTP shell; this does not imply no graduate recruitment. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-091",
+    "selection_index": 91,
+    "name_ko": "신한은행",
+    "name_en": "Shinhan Bank",
+    "aliases": [],
+    "sector": "Banking",
+    "homepage": "https://www.shinhan.com/",
+    "careers_url": "https://shinhan.recruiter.co.kr/career/home",
+    "evidence_url": "https://www.shinhangroup.com/kr/archive/press/detail/667",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:14:02.192919+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection; web_extract rendering/extraction where noted",
+      "status": "verified",
+      "http_status": 200,
+      "title": "신한은행 채용 | 채용사이트",
+      "notes": "Official Shinhan Financial Group news explicitly gives shinhan.recruiter.co.kr as Shinhan Bank recruiting. Direct HTML is a JavaScript shell; public extraction resolves the bank-specific recruiting page. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-092",
+    "selection_index": 92,
+    "name_ko": "하나은행",
+    "name_en": "Hana Bank",
+    "aliases": [],
+    "sector": "Banking",
+    "homepage": "https://www.kebhana.com/",
+    "careers_url": "https://hanabank.recruiter.co.kr/career/home",
+    "evidence_url": "https://www.kebhana.com/",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:14:01.885272+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection; web_extract rendering/extraction where noted",
+      "status": "verified",
+      "http_status": 200,
+      "title": "하나은행 | 채용사이트",
+      "notes": "Corporate 채용안내 link redirects from /appsite/company/index to /career/home. Additional Hana-branded rolling-recruitment board hanabankhr.career.co.kr/jobs/ was retrieved; it is a supplementary route, not the main corporate-linked portal. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-093",
+    "selection_index": 93,
+    "name_ko": "우리은행",
+    "name_en": "Woori Bank",
+    "aliases": [],
+    "sector": "Banking",
+    "homepage": "https://spot.wooribank.com/",
+    "careers_url": "https://recruit.incruit.com/wooribank/job/",
+    "evidence_url": "https://spot.wooribank.com/pot/Dream?withyou=BPBKI0046",
+    "is_group_portal": false,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:16:06.065739+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "우리은행 채용리스트",
+      "notes": "Corporate bank recruitment menu explicitly links this Incruit rolling-recruitment list and separately links jrs.jobkorea.co.kr/wooribank for new graduates. This catalog URL is the rolling-recruitment route, not an exhaustive combined vacancy feed. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-094",
+    "selection_index": 94,
+    "name_ko": "IBK기업은행",
+    "name_en": "Industrial Bank of Korea",
+    "aliases": [],
+    "sector": "Banking",
+    "homepage": "https://www.ibk.co.kr/",
+    "careers_url": "https://ibk.incruit.com/",
+    "evidence_url": "https://blog.ibk.co.kr/569692",
+    "is_group_portal": false,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:12:39.787081+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "IBK기업은행 채용정보",
+      "notes": "Official IBK blog identifies ibk.incruit.com as the dedicated recruiting site. Root uses an HTML meta-refresh to /index_main_2025.asp, which was followed and rendered as the current recruitment landing. Blog href includes a stray closing parenthesis; canonical portal was independently discovered and fetched, not silently repaired. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed. Homepage meta-refresh target contained substantive recruiting navigation (HTML access mode)."
+    }
+  },
+  {
+    "id": "kr-095",
+    "selection_index": 95,
+    "name_ko": "미래에셋증권",
+    "name_en": "Mirae Asset Securities",
+    "aliases": [],
+    "sector": "Securities / financial services",
+    "homepage": "https://securities.miraeasset.com/",
+    "careers_url": "https://recruit.securities.miraeasset.com/reMenuAction.do",
+    "evidence_url": "https://securities.miraeasset.com/newir/view/pc/kr/investor/announceView.jsp",
+    "is_group_portal": false,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:20:01.802616+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "미래에셋증권 채용",
+      "notes": "Securities-company corporate IR navigation directly links recruit.securities.miraeasset.com. Root returns an e-HR JavaScript redirect; the observed /reMenuAction.do target was followed and provides a substantive 미래에셋증권 채용 page. The separate career.miraeasset.com group portal is not substituted for this employer-specific system. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-096",
+    "selection_index": 96,
+    "name_ko": "한국투자증권",
+    "name_en": "Korea Investment & Securities",
+    "aliases": [],
+    "sector": "Securities / financial services",
+    "homepage": "https://www.truefriend.com/main/Main.jsp",
+    "careers_url": "https://recruit.truefriend.com/",
+    "evidence_url": "https://www.truefriend.com/main/Main.jsp",
+    "is_group_portal": true,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:12:39.516902+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "채용포탈",
+      "notes": "Official securities homepage links this 채용포털. Shared portal includes Korea Investment financial-group affiliates and a company selection; postings must be checked for employer identity. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-097",
+    "selection_index": 97,
+    "name_ko": "대한항공",
+    "name_en": "Korean Air",
+    "aliases": [],
+    "sector": "Airlines / aerospace",
+    "homepage": "https://www.koreanair.com/",
+    "careers_url": "https://koreanair.recruiter.co.kr/career/home",
+    "evidence_url": "https://news.koreanair.com/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5-2024%EB%85%84-%EC%8B%A0%EC%9E%85-%EA%B0%9D%EC%8B%A4%EC%8A%B9%EB%AC%B4%EC%9B%90-%EC%B1%84%EC%9A%A9-%EB%82%98%EC%84%A0%EB%8B%A4-12%EC%9B%94-4%EC%9D%BC%EA%B9%8C/",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:12:39.517045+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection; web_extract rendering/extraction where noted",
+      "status": "verified",
+      "http_status": 200,
+      "title": "대한항공 채용 | 채용사이트",
+      "notes": "Official airline newsroom explicitly links the recruiting domain through the older /appsite/company/index route. Current /career/home returns Korean Air title and public extracted recruiting content. Older article is relationship evidence, not evidence of current recruitment deadlines. Corporate booking homepage returned HTTP 403 Access Denied, separately from the accessible recruiting portal. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-098",
+    "selection_index": 98,
+    "name_ko": "아모레퍼시픽",
+    "name_en": "Amorepacific",
+    "aliases": [],
+    "sector": "Cosmetics / beauty",
+    "homepage": "https://www.apgroup.com/int/ko/index.html",
+    "careers_url": "https://careers.apgroup.com/search/?createNewAlert=false&q=&optionsFacetsDD_customfield1=&optionsFacetsDD_customfield2=&optionsFacetsDD_shifttype=",
+    "evidence_url": "https://www.apgroup.com/int/ko/careers/careers.html",
+    "is_group_portal": true,
+    "access_mode": "html",
+    "verification": {
+      "checked_at": "2026-09-22T07:16:08.207864+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "Amorepacific Corporation 직무",
+      "notes": "Corporate careers page directly links the AP Group recruiting search portal. A 회사 filter exists and displayed job rows identify 아모레퍼시픽; the company field must be preserved for any future collection. Group-portal classification refers to the AP Group branded portal; its full multi-company coverage was not enumerated. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-099",
+    "selection_index": 99,
+    "name_ko": "KT",
+    "name_en": "KT Corporation",
+    "aliases": [],
+    "sector": "Telecommunications / technology",
+    "homepage": "https://corp.kt.com/",
+    "careers_url": "https://recruit.kt.com/",
+    "evidence_url": "https://recruit.kt.com",
+    "is_group_portal": true,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:12:39.747063+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection; web_extract rendering/extraction where noted",
+      "status": "verified",
+      "http_status": 200,
+      "title": "KT그룹 채용",
+      "notes": "KT Group recruiting site is a client-rendered Nuxt application: direct HTTP returns an empty shell without a title. Public extracted page identifies KT and other KT group companies and provides company filters; this verifies portal identity, not current job counts/deadlines. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  },
+  {
+    "id": "kr-100",
+    "selection_index": 100,
+    "name_ko": "셀트리온",
+    "name_en": "Celltrion",
+    "aliases": [],
+    "sector": "Biotechnology / pharmaceuticals",
+    "homepage": "https://www.celltrion.com/ko-kr",
+    "careers_url": "https://celltrion.recruiter.co.kr/career/home",
+    "evidence_url": "https://www.celltrion.com/ko-kr/careers/recruit/process",
+    "is_group_portal": false,
+    "access_mode": "browser",
+    "verification": {
+      "checked_at": "2026-09-22T07:16:08.399416+00:00",
+      "method": "Public official-site HTTP GET and link/text inspection",
+      "status": "verified",
+      "http_status": 200,
+      "title": "셀트리온 | 채용사이트",
+      "notes": "Official Celltrion careers process page and corporate homepage directly link this recruiter.co.kr tenant. Tenant returns matching 셀트리온 title but its raw HTTP body is a JavaScript shell. Verification concerns recruiting-site identity and employer relationship only; individual job collection and completeness have not been performed."
+    }
+  }
+]

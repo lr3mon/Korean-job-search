@@ -1,0 +1,879 @@
+[
+  {
+    "id": "kr-076",
+    "url": "https://recruit.navercorp.com/rcrt/list.do",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:07:56.016627+00:00",
+    "http_status": 200,
+    "title": "NAVER Careers",
+    "snippet": "법인 NAVER NAVER Cloud SNOW NAVER LABS NAVER WEBTOON NAVER FINANCIAL NAVER I&S 고용형태 정규 계약 인턴 경력 신입 경력 무관 근무지 분당 서울 춘천 세종 글로벌 Clear filters filter 닫기 지난 공개 채용 다시보기 Join us 네이버와 함께할 동료를 기다립니다. Search Jobs 검색 아이콘 [NAVER] 보안 부문 경력 채용 모집 부서 Tech 모집 분야 Security Analysis 외 모집 경력 경력 근로 조건 정규 모집 기간 2026.09.11 ~ 2026.09.29 Share Save 주소가 복사되었습니다. 원하는 곳에 붙여넣기(Ctrl+V)해 주세요. 닫기 버튼 네이버 블로그 네이버 카페 라인 링크드인 카카오톡 페이스북 URL 복사 NAVER [NAVER] 광고 프로덕트 기획 경력 채용 모집 부서 Service & Business 모집 분야 Product Development 모집 경력 경력 근로 조건 정규 모집 기간 2026.09.10 ~ 2026.09.29 Share Save 주소가 복사되었습니다. 원하는 곳에 붙여넣기(Ctrl+V)해 주세요. 닫기 버튼 네이버 블로그 네이버 카페 라인 링크드인 카카오톡 페이스북 URL 복사 NAVER [NAVER] 해외 투자 및 사업 개발 담당 (경력) 모집 부서 Corporate 모집 분야 투자 모집 경",
+    "observed_links": [
+      {
+        "text": "© NAVER Corp.",
+        "url": "https://navercorp.com/"
+      },
+      {
+        "text": "NAVER Corp.",
+        "url": "https://navercorp.com/"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://navercorp.com/main",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:14:35.252595+00:00",
+        "http_status": 200,
+        "title": "NAVER Corp.",
+        "snippet": "NAVER Corp. Skip to navigation Skip to content logo 회사소개 기술과 서비스로 세상의 모든 가능성을 연결합니다 소개 주요 계열사 주요 연혁 브랜드 리소스 제휴 제안 Contact 서비스 검색에서 탐색으로 진화 On-Service AI 네이버 주요 ",
+        "observed_links": [
+          {
+            "text": "채용",
+            "url": "https://recruit.navercorp.com/"
+          },
+          {
+            "text": "채용",
+            "url": "https://recruit.navercorp.com/"
+          },
+          {
+            "text": "채용 당신의 가능성이 팀네이버의 가능성으로!",
+            "url": "https://recruit.navercorp.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kr-077",
+    "url": "https://www.kakaocorp.com/page/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:10:05.430074+00:00",
+    "http_status": 200,
+    "title": "카카오",
+    "snippet": "인재영입 새창열림 고객센터 카카오 고객센터 (새창열림) Daum 고객센터 (새창열림) 커머스 고객센터 (새창열림) 홈 본문 검색어 닫기 스토리텔링 서비스 바로가기 서비스 나의 세계를 바꾸는 카카오 AI 기술 나에게 가장 가까운, 가장 쉬운 AI 채용 함께 나아갈 미래의 크루들에게 지속가능성 지속가능한 미래를 위한 카카오의 약속과 책임 Service AI/TECH People ESG 카카오의 다양한 모습 바로가기 뉴스 바로가기 카카오가 전하는 가",
+    "observed_links": [
+      {
+        "text": "인재영입 새창열림",
+        "url": "https://careers.kakao.com/index"
+      },
+      {
+        "text": "채용 함께 나아갈 미래의 크루들에게",
+        "url": "https://careers.kakao.com/index?t_src=mainpage"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://careers.kakao.com/jobs",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:07:56.016810+00:00",
+        "http_status": 200,
+        "title": "카카오 영입",
+        "snippet": "카카오 영입"
+      },
+      {
+        "url": "https://careers.kakao.com/jobs",
+        "method": "web_extract public page extraction",
+        "checked_at": "2026-09-22T07:11:12.378995+00:00",
+        "http_status": null,
+        "title": "카카오 영입",
+        "snippet": "**회사 정보** _선택내용_ 카카오 _선택옵션_\n\n- 전체\n- 카카오\n- 관계사\n- 관계사별 모아보기\n\n**전체 직원유형** _선택내용_ 전체 직원유형 _선택옵션_\n\n- 전체 직원유형\n- 정규직\n- 계약직\n- 어시스턴트\n- 인턴\n- 경영계약직\n- 전문계약직\n\n검색어를 입력하세요.검색\n\n**직군 태그**\n\n\\\\* 아래 관심 있는 #해시태그를 선택하시면, 해당 스킬셋과 관련된 공고를 확인하실 수 있습니다.\n\n#Android#iOS#Windows#Web front#Cloud#DB#Network#Security#System#Algorithm/ML#Hadoop eco system#Server#Statistics/Analysis#QA#기타\n\n[**Data Scientist (경력)**영입마감일영입종료시근무지\\\\\n\\\\\n**직군 태그**#Algorithm/ML\\\\\n\\\\\n회사정보카카오직원유형정규직](https://careers.kakao.com/jobs/P-14324?skillSet=&part=TECHNOLOGY&company=KAKAO&keyword=&employeeType=&page=1) [**Data Analytics Engineer (경력)**영입마감일영입종료시근무지\\\\\n\\\\\n**직군 태그**#기타\\\\\n\\\\\n회사정보카카오직원유형정규직](https://careers.kakao.com/jobs/P-14276?skillSet=&part=TECHNOLOGY&company=KAKAO&keyword=&employeeType=&page=1)"
+      }
+    ]
+  },
+  {
+    "id": "kr-078",
+    "url": "https://recruit.kakaobank.com/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:07:56.016932+00:00",
+    "http_status": 200,
+    "title": "카카오뱅크 인재영입",
+    "snippet": "About Us 공식 홈페이지 공식 유튜브 공식 인스타그램 On Social 영입 블로그 링크드인 Our Tech 기술 블로그 금융기술연구소 Legal & Privacy 개인정보처리방침 이메일무단수집거부 Contact recruit@kakaobank.com © kakaobank Corp.",
+    "observed_links": [
+      {
+        "text": "공식 홈페이지",
+        "url": "https://www.kakaobank.com/"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://www.kakaobank.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:14:35.142218+00:00",
+        "http_status": 200,
+        "title": "카카오뱅크",
+        "snippet": "카카오뱅크 주 메뉴로 이동 본문으로 이동 푸터로 이동 카카오뱅크 소개 회사소개 윤리경영 브랜드 리소스 오시는 길 공지사항 제휴문의 입찰공고 서비스 ESG 투자정보 주요정보 공시정보 경영정보 재무정보 IR자료실 IR일정 IR공지 공고 고객센터 인재영입 한국어 English 소개 회사소개 오시는 길 윤리경영",
+        "observed_links": [
+          {
+            "text": "인재영입",
+            "url": "https://recruit.kakaobank.com/"
+          },
+          {
+            "text": "인재영입",
+            "url": "https://recruit.kakaobank.com/"
+          },
+          {
+            "text": "인재영입",
+            "url": "https://recruit.kakaobank.com/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kr-079",
+    "url": "https://kakaopay.career.greetinghr.com/ko/main",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:07:56.226120+00:00",
+    "http_status": 200,
+    "title": "카카오페이 채용",
+    "snippet": "개인정보 처리방침 (2026년 9월 기준) 주식회사 카카오페이(이하 \"회사\")는 ⌜개인정보 보호법⌟, ⌜정보통신망 이용촉진 및 정보보호 등에 관한 법률⌟ 등 준수하여야 할 관련 법규를 준수하고 있습니다. 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보 처리방침을 수립∙공개합니다. 카카오페이 개인정보 처리방침의 목차는 다음과 같습니다. ① 개인정보 처리 목적 및 항목 ② 개인정보의 처리 및 보유기간 ③ 개인정보의 제3자 제공 ④ 개인정보의 처리업무의 위탁 및 국외이전 ⑤ 개인정보의 파기 절차 및 방법 ⑥ 이용자의 권리∙의무 및 행사방법 ⑦ 개인정보의 안전성 확보 조치 ⑧ 개인정보 자동수집장치의 설치, 운영 및 그 거부 등 ⑨ 개인정보 보호책임자 ⑩ 이용",
+    "supporting_sources": [
+      {
+        "url": "https://kakaopay.career.greetinghr.com/ko/main",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:07:56.226120+00:00",
+        "http_status": 200,
+        "title": "카카오페이 채용",
+        "snippet": "카카오페이 채용 수시 채용 PAY-GUIDE PAY-STORY 로그인 한국어 좋은 크루들과 함께 새로운 가능성을 만들어요 카카오페이 채용 공고 직군 (5) 경력사항 (3) 고용형태 (3) 근무지 (1) [스테이블코인] 프로덕트 매니저 - 스테이블코인 & 월렛 프로덕트 프로덕트 경력 3년 이상 정규직 카카오페이 [스테이블코인] 서버 개발자 - 스테이블코인 발행 & 유통 기술 경력 10년 이상 정규직 카카오페이 [디지털자산] DevOps 엔지니어 - 클라우드 기반 블록체인 서비스 인프라 구축 & 운영 기술 경력 10년 이상 정규직 카카오페이 [계약직] 정보 협력 담당자 - 대외기관 정보 제공 지원 스탭 신입 계약직 카카오페이 프로덕트 매니저 - 결제 서비스 (시니어) 프로덕트 경력 10년 이상 정규직 카카오페이 데이터 기획자 - 데이터 거버넌스 정책/시스템 기술 경력 7년 이상 정규직 카카오페이 데"
+      },
+      {
+        "url": "https://www.kakaopay.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:09:10.981921+00:00",
+        "http_status": 200,
+        "title": "카카오페이 | 마음 놓고 금융하다",
+        "snippet": "카카오페이 | 마음 놓고 금융하다"
+      }
+    ]
+  },
+  {
+    "id": "kr-080",
+    "url": "https://www.aboutcoupang.com/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:09:10.982223+00:00",
+    "http_status": 200,
+    "title": "Coupang, Inc.",
+    "snippet": "Coupang, Inc. skip to content About Us What We Do Economic Impact Our Perspectives Where We Operate Who We Are Innovations News Investors Careers search menu open menu close search area close search keyword Your browser does not support the video tag. Your browser does not suppor",
+    "observed_links": [
+      {
+        "text": "Careers",
+        "url": "https://www.coupang.jobs/en/"
+      },
+      {
+        "text": "",
+        "url": "https://www.coupang.jobs/en/"
+      },
+      {
+        "text": "Discover Coupang Careers",
+        "url": "https://www.coupang.jobs/en/"
+      },
+      {
+        "text": "Coupang Careers",
+        "url": "https://www.coupang.jobs/en/"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://www.coupang.jobs/kr/jobs/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:07:56.247973+00:00",
+        "http_status": 200,
+        "title": "Jobs | Coupang Careers",
+        "snippet": "Jobs | Coupang Careers 기본 콘텐츠로 건너뛰기 Why Coupang Teams Locations Life at Coupang Life at Coupang Employee stories Coupang news In the community Engineering Blog 0 저장된 채용 공고 한국어 English 한국어 繁體中文 日本語 简体中文 검색하기 Jobs 조건 별 검색 조건 별 검색 키워드 근무지 근무지 베이징 벵갈루루 장화 치바 하이데라바드 마운틴뷰 오사카 리버사이드 시애틀 서울 상하이 싱가포르 싱가포르 대한민국 타이난 타이베이 타오위안 도쿄 워싱턴 DC 옌지 원격근무 적극 채용 중인 공고 직무 검색하기 최근 본 공고 1 부터 20 건 확인 중, 총 707 건의 결과가 있습니다 [쿠팡로지스틱스서비스] 물류 운영기획 (Process Innovation) 저장하기 저장 완료 서울 Senior QA Engineer (Advertiser Platform) 저장하기 저장 완료 서울 [Coupang Pay] Staff Back-end Engineer (Fintech Developer Platform) 저장하기 저장 완료 서울 [쿠팡로지스틱스서비스] 물류 차량 운영기획 담당자 (신입 가능) 저장하기 저장 완료 서울 [CPLB] 상품 품질관리 담당자(의류) 저장하기 저장 완료 서울 Principal, Security Engineer 저장하기 저장 완료 시애틀 [CPLB] Senior QA Specialist (Fashion Technical Services) 저장하기 저장 완료 서울 Staff Back-end Engineer (NCA and TW Ads) 저장하기 저장 완료 상하이 [쿠팡"
+      }
+    ]
+  },
+  {
+    "id": "kr-081",
+    "url": "https://career.woowahan.com/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:17:34.354758+00:00",
+    "http_status": 200,
+    "title": "우아한형제들 인재영입",
+    "snippet": "우아한형제들 인재영입\n우아한형제들 인재영입 사이트. 일의 맛을 아는 사람들이 모인 이곳에 합류할 기회를 확인해 보세요.",
+    "supporting_sources": [
+      {
+        "url": "https://www.woowahan.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:09:10.982729+00:00",
+        "http_status": 403,
+        "title": "보안 위배 접근 제한 페이지 1",
+        "snippet": "보안 위배 접근 제한 페이지 1 죄송합니다. 올바르지 않은 요청으로 페이지를 보실 수 없습니다."
+      },
+      {
+        "url": "https://www.woowahan.com/en",
+        "method": "web_extract public page extraction",
+        "checked_at": "2026-09-22T07:20:41.624677+00:00",
+        "http_status": null,
+        "title": "Woowa Brothers, 우아한형제들",
+        "snippet": "#\n\n### Ensuring nothing in the world goes cold\n\nFrom food delivery and grocery shopping to robots, Woowa Brothers leads the way.\n\n### This Is How Woowa Brothers Works\n\nOrdinary people come together to deliver extraordinary outcomes.\n\n[**AI\n for Delivery**기술과 서비스](https://story.baemin.com/6052/)\n\n[**Enjoying Delivery Without Single-Use Plastics**Baemin Green](https://www.woowahan.com/en/sustainabil"
+      }
+    ]
+  },
+  {
+    "id": "kr-082",
+    "url": "https://toss.im/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:14:01.329155+00:00",
+    "http_status": 200,
+    "title": "토스",
+    "snippet": "서비스 비즈니스 회사소개 뉴스룸 채용 KOR 앱 다 운 로 드 앱 다 운 로 드 토스\n<meta name=\"twitter:creator\" content=\"Viva Republica\"/>",
+    "observed_links": [
+      {
+        "text": "채용",
+        "url": "https://toss.im/career/jobs"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://toss.im/career/jobs",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:10:05.430535+00:00",
+        "http_status": 200,
+        "title": "토스 채용",
+        "snippet": "토스 채용 계열사 소개 계열사 소개 합류 여정 팀 문화 아티클 자주 묻는 질문 전체 공고 금융을 넘어 삶을 바꾸는 여정, 이 유난한 도전에 함께할 동료를 찾습니다 전체 모든 직군 모든 계열사 모든 계열사 토스 토스뱅크 토스증권 토스페이먼츠 토스인슈어런스 토스씨엑스 토스플레이스 토스인컴 토스인사이트 전체 모든 고용형태 정규직 계약직 단기계약직 위촉직 현장실습생 임원 초기화 0개 의 포지션이 열려있어요. 새로운 아티클 전체 보기 채용팀에 문의하기"
+      },
+      {
+        "url": "https://toss.im/career/jobs",
+        "method": "web_extract public page extraction",
+        "checked_at": "2026-09-22T07:15:25.176724+00:00",
+        "http_status": null,
+        "title": "Toss Careers",
+        "snippet": "A journey beyond finance to change lives,\nJoin us on this extraordinary challenge\n\n283 open positions\n\n[토스증권 Product Designer 집중 채용 (2년 이상) (~9/15)\n디자인 ・ UX ・ 제품 ・ Product\nSecurities](/career/job-detail?job_id=7915249003)[토스커뮤니티 Frontend Developer 대규모 채용 (~9/14)\nToss and 3 other affiliates](/career/job-detail?job_id=7867197003)[토스페이먼츠 데이터 엔지니어 공개채용 (7년 이하) (~9/10)\nPayments](/career/job-detail?job_id=7977764003)[ Privacy Protection Team Leader\n보안 ・ 개인정보보호 ・ 신용정보보호 ・ 리더십\nBank](/career/job-detail?job_id=7992209003)[Account Management Specialist\nsa"
+      }
+    ]
+  },
+  {
+    "id": "kr-083",
+    "url": "https://about.daangn.com/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:14:01.329589+00:00",
+    "http_status": 200,
+    "title": "당근 회사소개",
+    "snippet": "당근 회사소개 서비스 보도자료 채용 동네를 여는 문,\n당근 동네를 여는 문,\n당근 로컬의 모든 것을 연결해,\n동네의 숨은 가치를 깨워요 로컬의 모든 것을 연결해,\n동네의 숨은 가치를 깨워요 당근은 동네의 숨은 가치에 주목합니다. 근처 이웃과의 중고 직거래를 시작으로, 전에 없던 지역 생활 커뮤니티를 만들어 나가고 있어요. 이웃들은 진짜 우리 동네 이야기를 나누고, 가게 사장님들은 이웃의 목소리를 가장 가까이서 들을 수 있지요. 거래부터 모임, 홍보, 결제까지, 로컬에서 일어나는 모든 경험을 당근이 하나로 연결하고 있습니다. 당근 사용자 이야기 당근을 만나고 달라진 일상 가벼운 시도가 ",
+    "observed_links": [
+      {
+        "text": "채용",
+        "url": "https://careers.daangn.com/"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://careers.daangn.com/jobs/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:09:11.233821+00:00",
+        "http_status": 200,
+        "title": "채용공고 | 당근 채용",
+        "snippet": "소속 소속 당근 47 당근페이 4 당근서비스 고용형태 고용형태 정규직 42 계약직 3 인턴 6 51 개의 공고가 열려있어요 Design Engineer - 디자인 시스템 당근 정규직 Software Engineer, Machine Learning 당근 정규직 Software Engineer, Machine Learning - 검색 (품질) 당근 정규직 AD Sales Manager - 광고 (세일즈, Agency) 당근 정규직 B2B Content Designer (계약직) - 광고 당근 계약직 Brand Designer (계약직) - 브랜딩 (서비스 브랜딩 & UI) 당근 계약직 Character Designer, Illustrator - 브랜딩 당근 정규직 ER Manager - 경영지원 (피플) 당근 정규직 HRBP - 경영지원 (피플) 당근 정규직 Network Engineer - 인프라 (네트워크, Cloud) 당근 정규직 Network Engineer (인턴) - 인프라 (네트워크) 당근 인턴 Operations Manager (전환형 인턴) - 커뮤니티 D ",
+        "observed_links": [
+          {
+            "text": "회사 소개",
+            "url": "https://about.daangn.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kr-084",
+    "url": "https://www.krafton.com/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:14:01.615579+00:00",
+    "http_status": 200,
+    "title": "크래프톤",
+    "snippet": "크래프톤 KRAFTON About Studios Games More Experience Careers IR CSR News KO EN CN JP menu About 크래프톤 이야기 남겨온 흔적 도전의 역사 브랜드 리소스 센터 Studios Studios 메인 펍지 스튜",
+    "observed_links": [
+      {
+        "text": "채용공고",
+        "url": "https://www.krafton.com/careers/jobs/"
+      },
+      {
+        "text": "KRAFTON RECRUIT 크래프톤의 최신 채용공고를 살펴보세요.",
+        "url": "https://www.krafton.com/careers/jobs/"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://www.krafton.com/careers/jobs/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:09:11.460902+00:00",
+        "http_status": 200,
+        "title": "크래프톤 채용 공고",
+        "snippet": "채용공고 조건 별 검색 Close 조건 별 검색 Clear Corp./Studio KRAFTON PUBG STUDIOS Bluehole Studio Striking Distance Studios RisingWings 5minlab OmniCraft Labs inZOI Studio Unknown Worlds KRAFTON Montreal Studio ReLU Games Flyway Games OVERDARE Tango Gameworks JOFSOFT Dreamotion Eleventh Hour Games Ludo Robotics Loonshot Games OliveTree Games 9B Studio Job Family Art Business & Service Data Development Management Game Design IT Infra Management Supporting QA Sound Tech Technical Artist UX & UI Location Bundang Remote Pangyo Prague Bangkok El Segundo San Ramon, CA Montréal Bengaluru Tokyo Madison, WI Santa Monica Seattle San Francisco Seoul Portugal Amsterdam Employment Type Regular Contractor Internship Par"
+      }
+    ]
+  },
+  {
+    "id": "kr-085",
+    "url": "https://nc.com/newsroom/news/articles?articleId=68dddca06b713d7e84457dd7&boardLanguage=ko&locale=ko-KR",
+    "method": "web_extract public page extraction",
+    "checked_at": "2026-09-22T07:15:25.177105+00:00",
+    "http_status": null,
+    "title": "뉴스 - NC",
+    "snippet": "- **엔씨소프트 및 자회사 법인을 포괄하는 통합 채용 브랜드로 ‘NC Company’ 운영**\n- **통합 채용 홈페이지 ‘NC Careers’에서 관련 정보 확인 및 지원서 접수**\n㈜엔씨소프트(공동대표 김택진, 박병무 이하 엔씨(NC))가 ‘2025 신입사원 공개채용’을 13일부터 실시한다.\n\n​\n\n이번 공개채용은 ‘NC Company(엔씨 컴퍼니)’ 통합으로 진행된다. NC Company는 엔씨소프트, 퍼스트스파크 게임즈(FirstSpark Games), 빅파이어 게임즈(BigFire Games), 엔씨 에이아이(NC AI) 등 자회사 법인까지 포괄하는 통합 채용 브랜드 명칭이다.\n\n​\n\n2025년 신입사원 공개채용은 자회사 법인 설립 후 처음으로 진행되는 그룹 단위 채용이며 중복 지원도 가능하다.\n\n​\n\n모집 분야는 ▲프로그래밍 ▲게임기획 ▲게임사업 ▲PM ▲AI 등 5개 부문이다. 기술 경쟁력 확보를 위해 프로그래밍 직종의 채용 규모를 가장 크게 운영한다.\n\n​\n\n모집 기간은 10월 13일부터 21일까지다. 채용 절차는 ▲지원서 접수 ▲서류 전형 ▲NCTEST ▲1, 2차 면접 등의 순서로 진행된다. 프로그래밍과 AI 직무는 온라인 코딩 테스트를 추가로 진행한다. 최종합격자는 2026년 1월 정규직 신입사원으로 입사한다.\n\n​\n\n엔씨(NC)는 올해 공개채용에 ‘AI 리터러시 역량 검증 체계’를 처음으로 도입한다. 서류 전형과 면접을 통해 지원자의 AI 활용 역량을 확인할 계획이다.\n\n​\n\n전문연구요원의 채용도 진행된다. 신입사원 공개채용과 별도의 공고를 통해 진행되며 모집 분야는 프로그래밍이다. 관련 분야 석사 이상 학위 보유자 또는 취득 예정인 신규 편입 대상자에 한해 지원이 가능하다",
+    "supporting_sources": [
+      {
+        "url": "https://careers.ncsoft.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:10:05.744480+00:00",
+        "http_status": 200,
+        "title": "NC Careers",
+        "snippet": "NC Careers 이전 공지 다음 공지 NC Careers 채용공고 지원안내 채용전형 공지사항 FAQ 회사소개 엔씨생활 NC INSIDE 복지혜택 NC UNIVERSITY NC PLAY↗ 로그인 Who’s the Next New Player? 법인 직군 검색 현재 채용 중인 공고 총 0 건의 공고가 진행 중입니다. Development 0 System & Information 0 Business 0 Management Supporting 0 채용 공고 하이라이트 공고 전체 보기 NC Company 채용 관련 정보와 생생한 사내 이야기를 지금 바로 확인하세요. 채용 블로그 바로가기 개인정보 처리방침 정보보호현황 페이스북 인스타그램 유튜브 Family Site Copyright ⓒ NC Corporation All Rights Reserved. 지원서 구성중"
+      },
+      {
+        "url": "https://www.nc.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:14:35.060420+00:00",
+        "http_status": 200,
+        "title": "NC - Welcome to a New world Connected Through Joy",
+        "snippet": "NC - Welcome to a New world Connected Through Joy"
+      }
+    ]
+  },
+  {
+    "id": "kr-086",
+    "url": "https://careers.nexon.com/recruit/9795",
+    "method": "web_extract public page extraction",
+    "checked_at": "2026-09-22T07:19:09.083679+00:00",
+    "http_status": null,
+    "title": "NEXON COMPANY Careers",
+    "snippet": "## 채용공고\n\n### [빈딕투스: 디파잉 페이트] 개발 PM (기획 담당)\n\n넥슨코리아채용 완료 시\n\n####\n![](https://careers.nexon.com/files/job-post/9218d349-57be-4f32-bee7-f6af5f14e86b.png)\n\n조직 소개\n\n빈딕투스: 디파잉 페이트는 마비노기 영웅전 IP를 활용하여 개발 중인 실사풍 중세 판타지 3D액션RPG 프로젝트입니다.\n\n마비노기 시리즈와는 별개로 완전히 독립된 게임으로서, PC/콘솔 시장 진출을 목표로 하여 언리얼 엔진5를 기반으로 개발하고 있습니다.\n\n저희가 만들고자 하는 게임은, 싱글 플레이를 바탕으로 다양한 캐릭터가 펼치는 고유의 액션 색깔과 재미를 추구하는 게임입니다.\n\n멀티 플레이 기능은 취향에 따른 재미 요소인 게임, 밝지 않고 무겁지만 흥미진진한 이야기를 풀어가는 게임,\n\n액션과 조작의 재미가 중요한 게임이며, 세계 최고의 액션 게임 대열에 서는 것을 목표하고 있습니다.\n\n게임이란 것을 접하고 좋아하게 되면서, 언젠가 만들고 싶은 게임에 대한 꿈을 꾸신 적 있으신가요?\n\n저희는 그 꿈을 기억하고, 오랜 시간이 걸렸지만 이제는 꿈을 이루기 위해 나아가고 있습니다.\n\n그리고 그 꿈에 함께 하실 분들을 모집하고 있습니다.\n\n주요 업무\n\n- 게임 개발 공정에 대한 이해도를 기반으로 개발 프로세스 수립 및 체계적 실행\n\n- 프로젝트 통합 마일스톤 관리 및 기획/아트/기술 조직과 유기적 협업\n\n- 개발 일정 관리 협업 툴(Jira/Notion/Confluence 등) 셋팅 및 고도화\n\n- 개발 조직의 요구사항과 스스로 진단한 개선사항을 토대로 작업 효율 향상을 위한 다양한 R&D와 공정 개선 주도\n\n* 라이브본부 ",
+    "supporting_sources": [
+      {
+        "url": "https://careers.nexon.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:16:08.549242+00:00",
+        "http_status": 200,
+        "title": "NEXON COMPANY Careers",
+        "snippet": "NEXON COMPANY Careers"
+      },
+      {
+        "url": "https://company.nexon.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:14:01.592459+00:00",
+        "http_status": 200,
+        "title": "넥슨 컴퍼니",
+        "snippet": "넥슨 컴퍼니 Chrome Edge Safari"
+      }
+    ]
+  },
+  {
+    "id": "kr-087",
+    "url": "http://company.netmarble.com/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:16:08.544178+00:00",
+    "http_status": 200,
+    "title": "넷마블컴퍼니",
+    "snippet": "넷마블컴퍼니 본문 바로가기 netmarble 넷마블 넷마블컴퍼니 비전/미션 연혁 CI/기업전용서체 뉴스 오시는길 넷마블 둘러보기 사업소개 사업영역 넷마블게임 글로벌사업 인재채용 정도경영 정도경영 정도경영 상담센터 지속가능경영 IR Overview 기업지배구조 재무정보 IR 자료실 공시 즐거운 게임포털 넷마블 NEWS 더보기 STOCK 사이트맵 개인정보처리방침 오시는길 정도경영 © Netmarble Corp. All Rights Reserved 페이스북 유튜브 블로그 Korean English Korean",
+    "observed_links": [
+      {
+        "text": "인재채용",
+        "url": "https://career.netmarble.com/"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://career.netmarble.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:10:05.929627+00:00",
+        "http_status": 200,
+        "title": "넷마블컴퍼니 채용",
+        "snippet": "넷마블컴퍼니 채용 닫기 관심 있는 채용공고를 검색하세요. 넷마블컴퍼니 채용공고 바로가기 넷마블인SIDE 넷마블 人 라이프 넷마블 In 웰니스 넷마블 In 세상 넷마블 人 직무 채용공고 채용 중 공고 채용 상세 정보 지원서 작성 지원안내 FAQ 영입 절차 마이페이지 내 정보 1:1 문의 지원현황 관심공고 인재Pool 등록 내 알림 search alarm Login FAQ 우리는 재미있는 게임으로 세상을 즐겁게 합니다. 직무 회사 Scroll 현재 채용 중 . 진행 중인 채용 공고 0 채용 중인 넷마블컴퍼니 0 We entertain the world with fun games . 전세계 사람들에게 즐거움을 선사하는 우리가 궁금하다면? netmarble Story 더 알아보기 How we hire . netmarble careers 영입절차 넷마블컴퍼니로 오는 길, 힘들지 않도록 합류Tips를 준비했어요. CH. netmarble . 채널 넷마블 넷마블 속 더 많은 이야기가 담긴 채널넷마블로 놀러오세요! 즐거움의 가치를 아는 당신과 함께하고 싶습니다 . 채용공고 바로가기 개인정보처리방침 오시는길 FAQ 공지사항 © Netmarble Corp. All Rights Reserved Family Sites Family Sites 넷마블 넷마블컴퍼니"
+      }
+    ]
+  },
+  {
+    "id": "kr-088",
+    "url": "https://nhn.com/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:14:01.330002+00:00",
+    "http_status": 200,
+    "title": "NHN",
+    "snippet": "NHN 회사소개 회사소개 국내법인 해외법인 브랜드 서비스 게임 결제·광고 커머스 기술 콘텐츠 홍보 보도자료 투자정보 공시정보 주가정보 재무제표 IR 행사 일반공고 지배구조 ESG 지속가능경영 환경경영 사람중심경영 정보보호 사회적 책임 실천 기업윤리 ESG 자료실 CAREERS INSIDE NHN 한국어 English 日本語 NHN Weaving New Play 주가정보 NHN - KRW - 우리의 연결로 만드는\n지속 가능한 미래 Recent News Our Business 상상과 현실, 기술과 삶, 사람과 사람을 연결합니다. Game 현실과 상상의 세계를 잇는 \n무한한 즐거움.\n새로운 세상이 펼쳐집니다. Payment Ad 온･오프라인의 경계를 \n허무는 ",
+    "observed_links": [
+      {
+        "text": "CAREERS",
+        "url": "https://careers.nhn.com/"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://careers.nhn.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:10:05.946230+00:00",
+        "http_status": 200,
+        "title": "NHN Careers",
+        "snippet": "NHN Careers"
+      },
+      {
+        "url": "https://careers.nhn.com",
+        "method": "web_extract public page extraction",
+        "checked_at": "2026-09-22T07:15:25.177180+00:00",
+        "http_status": null,
+        "title": "NHN Careers",
+        "snippet": "2 / 2\n\n### Find your PLAY\n지원 분야의 공고를 확인해 보세요.\n\n### Attention !\n주목해야 할 공고를 확인해 보세요.\n\n## 노무\n\nCorporate\nHR\n\n경력정규\n\n![logo](/nstatic/corporation-logo/NHN_24.svg)\n채용시까지\n\n## 클라우드 영업(금융)\n\nBusiness\nConsulting\n\n경력정규\n\n![logo](/nstatic/corporation-logo/CLOUD_24.svg)\n채용시까지\n\n## 와플랫 사업 기획\n\nBusiness\nBusiness\n\n경력정규\n\n![logo](/nstatic/corporation-logo/waplat.svg)\n채용시까지\n\n## 경영관리\n\nCorporate\nFinance\n\n경력정규\n\n![logo](/nstatic/corporation-logo/CLOUD_24.svg)\n채용시까지\n\n## CERT (침해사고 예방)\n\nTech\nIT Security\n\n경력정규\n\n![logo](/nstatic/corporation-logo/CLOUD_24.svg)\n채용시까지\n\n## 애플리케이션 보안 진단\n\nTech\nIT Security\n\n경력정규\n\n![logo](/nstatic/c"
+      }
+    ]
+  },
+  {
+    "id": "kr-089",
+    "url": "https://www.pearlabyss.com/ko-KR",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:14:01.623630+00:00",
+    "http_status": 200,
+    "title": "펄어비스 공식 홈페이지 | Pearl Abyss",
+    "snippet": "펄어비스 공식 홈페이지 | Pearl Abyss 전체 메뉴 펄어비스 언어 변경 KOR ENG JPN 소개 펄어비스 소개 연구소 사회공헌 게임 검은사막 검은사막 모바일 붉은사막 도깨비 플랜 8 소식 보도자료 펄어비스 소식 문화 기업문화 복지 채용 채용 소개 채용 공고 투자정보 기업지배구조 주가정보 재무정보 공시·공고 IR 자료 지속가능경영 자세히 보기 자세히 보기 NEWS 펄어비스 검은사막 모바일, 추석 맞아 풍성한 이벤트 진행 2026.09.22 펄어비스가 추석을 맞아 ‘검은사막 모바일’ 모험가들",
+    "observed_links": [
+      {
+        "text": "채용",
+        "url": "https://www.pearlabyss.com/Company/Careers/Intro"
+      },
+      {
+        "text": "채용 소개",
+        "url": "https://www.pearlabyss.com/Company/Careers/Intro"
+      },
+      {
+        "text": "채용 공고",
+        "url": "https://www.pearlabyss.com/Company/Careers/List"
+      },
+      {
+        "text": "채용",
+        "url": "https://www.pearlabyss.com/Company/Careers/Intro"
+      },
+      {
+        "text": "채용 소개",
+        "url": "https://www.pearlabyss.com/Company/Careers/Intro"
+      },
+      {
+        "text": "채용 공고",
+        "url": "https://www.pearlabyss.com/Company/Careers/List"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://www.pearlabyss.com/ko-KR/Company/Careers/Intro",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:10:06.061910+00:00",
+        "http_status": 200,
+        "title": "채용 | Pearl Abyss",
+        "snippet": "채용 | Pearl Abyss 전체 메뉴 펄어비스 언어 변경 KOR ENG JPN 소개 펄어비스 소개 연구소 사회공헌 게임 검은사막 검은사막 모바일 붉은사막 도깨비 플랜 8 소식 보도자료 펄어비스 소식 문화 기업문화 복지 채용 채용 소개 채용 공고 투자정보 기업지배구조 주가정보 재무정보 공시·공고 IR 자료 지속가능경영 채용 펄어비스에서 최고의 팀과 함께 글로벌 No.1 게임을 만드세요 검색 인턴십 7 프로그래밍 5 아트 1 게임 디자인 2 게임 서비스 5 경영지원 2 개발 지원 2 기타 1 채용 공지 채용 FAQ 내 지원서 우리는 게임을 만듭니다 우리는 유저들에게 한 번도 느껴보지 못한 재미와 잊지 못할 경험을 선물하기 위해 유저들이 접하는 모든 부분에서 최상의 퀄리티를 구현하고자 노력합니다. 펄어비스 소개 펄어비스의 비전과 가치 세계 최고의 게임을 만듭니다 연구소 펄어비스의 경쟁력 어떻게 게임을 넘어서는 최상의 경험을 제공할까요 기업문화 펄어비스의 문화 파괴적인 창조자, 펄어비스가 일하는 방식을 확인하세요 우리는 더 나은 방법이라면 스스로의 생각조차 부수고 뒤집을 수 있습니다 우리는 주도적이고 자율적으로 일하며, 유저에게 더 나은 경험을 제공할 수 있다면 누구나 아이디어를 내고 빠르게 반영합니다. 직접 이야기 합니다 펄어비스는 가장 빠른 커뮤"
+      }
+    ]
+  },
+  {
+    "id": "kr-090",
+    "url": "https://omoney.kbstar.com/quics?page=oabout",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:16:06.065343+00:00",
+    "http_status": 200,
+    "title": "은행소개 ( 은행소개 )",
+    "snippet": "KB국민은행 전체메뉴 보기 KB국민은행 전체메뉴 닫기 은행소개 서비스 메뉴 은행안내 미션/비전/핵심가치 CEO 코너 CEO메시지 프로필 수상실적/연혁 수상실적 연혁 조직구성도 ESG경영 ESG 전략체계 ESG 전략 ESG 목표 ESG 거버넌스 ESG 활동 친환경금융상품 기후변화대응 KB Green Wave 必환경 캠페인 사회공헌 ESG 이니셔티브 안전보건 경영방침/목표 세상을 바꾸는 나눔 ESG 보고서 사회공헌백서 환경보고서 적도원칙이행보고서 지속가능경영보고서 새창열림 윤리경영 추진배경 윤리헌장 윤리강령 거래업체 행동준칙 AI윤리기준 프로그램 윤리경영 실천 프로그램 임직원 법규준수행동기준 올바른제보제도 채용정보 인사제도소개 채용안내 인재상 연수제도 공개채용 채용공고 신입행원 공개채용 새창열림 상시채용 FAQ 사이버홍보관 KB 홍보관 인쇄광고 ",
+    "observed_links": [
+      {
+        "text": "채용공고",
+        "url": "https://omoney.kbstar.com/quics?page=C017623"
+      },
+      {
+        "text": "상시채용",
+        "url": "https://omoney.kbstar.com/quics?page=C058488"
+      },
+      {
+        "text": "공개채용",
+        "url": "https://omoney.kbstar.com/quics?page=C017623"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://omoney.kbstar.com/quics?page=C017623",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:16:06.065175+00:00",
+        "http_status": 200,
+        "title": "채용공고 ( 은행소개 | 채용정보 | 공개채용 | 채용공고 )",
+        "snippet": "채용공고 ( 은행소개 | 채용정보 | 공개채용 | 채용공고 ) 본문 바로가기 로그인 인증센터 개인 기업 전체메뉴 개인 기업 자산관리 부동산 퇴직연금 카드 전체서비스 금융서비스 에스크로이체 보안센터 인증센터(개인) 인증센터(기업) 특화서비스 주택청약 국민주택채권 주택도시기금 스마트금융서비스 Liiv M KB국민인증서 멤버십서비스 KB고객우대제도 GOLD&WISE KB와 함께 은행소개 지점안내 고객센터 KB정보광장 이벤트 희망금융클리닉 KB굿잡 KB의 생각 GLOBAL LANGUAGE English Chinese Japanese KB GLOBAL NETWORK Japan New Zealand China Hong Kong Myanmar UK Cambodia Vietnam India Singapore 키워드검색 인기검색어 지점안내 지점검색 지역명(도로명) 지역명(지번) 가까운주소/지하철명 지점명(점번코드) 지점검색입력 검색 자동화코너검색 지역명(도로명) 지역명(지번) 가까운주소/지하철명 자동화코너명 자동화코너검색 검색어 검색 검색 닫기 KB국민은행 전체메뉴 보기 KB국민은행 전체메뉴 닫기 은행소개 서비스 메뉴 은행안내 미션/비전/핵심가치 CEO 코너 CEO메시지 프로필 수상실적/연혁 수상실적 연혁 조직구성도 ESG경영 ESG 전략체계 ESG 전략 ESG 목표 ESG 거버넌스 ESG 활동 친환경금융상품 기후변화대응 KB Green Wave 必"
+      }
+    ]
+  },
+  {
+    "id": "kr-091",
+    "url": "https://www.shinhangroup.com/kr/archive/press/detail/667",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:14:34.558009+00:00",
+    "http_status": 200,
+    "title": "신한은행, 2026년 상반기 신입행원 채용 실시",
+    "snippet": "채용 서류 접수는 이달 23일부터 ‘신한은행 채용(https://shinhan.recruiter.co.kr)’ 홈페이지를 통해 진행된다. 이전 다음 목록 Go to page top 개인정보처리방침 신용정보활용체제 고객정보취급방침 신한지킴이 Family site 신한은행 신한카드 신한투자증권 신한라이프 신한캐피탈 신한자산운용 제주은행 신한저축은행 신한자산신탁 신한DS 신한펀드파트너스 신한리츠운용 신한벤처투자 신한EZ손해보험 신한장학재단 신한금융희망재단 신한금융그룹 서울특별시 중구 세종대로 9길 20 (태평로 2가 120) 16층/17층 Copyright ©SHINHAN FINANCIAL GROUP. All Rights R",
+    "supporting_sources": [
+      {
+        "url": "https://shinhan.recruiter.co.kr/career/home",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:14:02.192919+00:00",
+        "http_status": 200,
+        "title": "신한은행 채용 | 채용사이트",
+        "snippet": "신한은행 채용 | 채용사이트"
+      },
+      {
+        "url": "https://shinhan.recruiter.co.kr/career/home",
+        "method": "web_extract public page extraction",
+        "checked_at": "2026-09-22T07:19:09.083990+00:00",
+        "http_status": null,
+        "title": "신한은행 채용",
+        "snippet": "![신한은행의 홈와(과) 연결되었습니다.](https://infra1-static.recruiter.co.kr/builder/2024/09/02/5f0995a6-9ea0-4f2c-975f-e678e38066e4.png)\n\n# 신한은행\n\n채용정보\n\n- [진행 중 공고](/career/jobs)\n- [파트타이머 채용](/career/part2608)\n- [신한 On Air](/career/video)\n- [채용 FAQ](/career/faq)\n\n은행소개\n\n- [신한문화](/career/culture)\n- [인재상](/career/people)\n- [신한인 행복](/career/welfare_)\n- [신한인 성장](/career/development)\n\n직무소개\n\n- [개인금융](/career/retail)\n- [기업금융](/career/corp)\n- [본부부서](/career/hq)\n\n**진행 중인 채용 공고**\n\n신입/경력\n\n접수상태\n\n- [접수중\n2026년 하반기 신한은행 일반직 신입행원 채용\nD-1\n2026.09.09 ~\n2026.09.17 14:00"
+      },
+      {
+        "url": "https://www.shinhan.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:16:06.668215+00:00",
+        "http_status": 200,
+        "title": "Shinhan Bank",
+        "snippet": "Shinhan Bank"
+      }
+    ]
+  },
+  {
+    "id": "kr-092",
+    "url": "https://www.kebhana.com/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:16:06.776011+00:00",
+    "http_status": 200,
+    "title": "하나은행",
+    "snippet": "하나은행 본문 바로가기 주메뉴 바로가기 기업뱅킹 하나카드 은행소개 채용안내 로그인 인증센터 님 09:59 연장 로그아웃 인증센터 USD 피싱 예방용 환율 이미지서비스 설정 Language 한국어 English 日本語 中文 Tieng Viet 조회 계좌조회 거래내역조회 거래중지/휴면계좌조회 거래중지계좌조회 휴면계좌조회 장기",
+    "observed_links": [
+      {
+        "text": "채용안내",
+        "url": "https://hanabank.recruiter.co.kr/appsite/company/index"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://hanabank.recruiter.co.kr/career/home",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:14:01.885272+00:00",
+        "http_status": 200,
+        "title": "하나은행 | 채용사이트",
+        "snippet": "하나은행 | 채용사이트"
+      },
+      {
+        "url": "https://hanabank.recruiter.co.kr/career/home",
+        "method": "web_extract public page extraction",
+        "checked_at": "2026-09-22T07:19:09.084662+00:00",
+        "http_status": null,
+        "title": "하나은행 채용",
+        "snippet": "![하나은행의 홈와(과) 연결되었습니다.](https://infra1-static.recruiter.co.kr/builder/2025/02/20/43df5849-3bf8-4ee8-ae11-c62615b89337.png)\n\n# 하나은행\n\n채용정보\n\n- [채용프로세스](/career/process)\n- [채용 FAQ](/career/FAQ)\n\n은행소개\n\n- [기업문화](/career/culture)\n- [인재상](/career/talent)\n- [복리후생](/career/benefit)\n- [하나은행 ↗](/career/https://www.kebhana.com)\n- [하나금융그룹 ↗](/career/https://www.hanafn.com)\n\nHANA Career\n\n- [INTERVIEWS](/career/interview)\n\nHANA Story\n\n- [ONETHEWORK](/career/care"
+      },
+      {
+        "url": "https://hanabankhr.career.co.kr/jobs/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:12:13.594626+00:00",
+        "http_status": 200,
+        "title": "하나은행 채용 홈페이지에 오신 걸 환영합니다.",
+        "snippet": "하나은행 채용 홈페이지에 오신 걸 환영합니다. 본문 바로가기 상단 메뉴 바로가기 채용공고 -전체- -접수중- -접수마감- Home 채용공고 채용공고 리스트 채용정보 구분 채용공고명 (모집분야수) 접수시작일 접수마감일 진행 상시 리스크검증팀 [리스크 적합성 검증] (1) 2026/09/21 2026/10/06 접수중 상시 브랜드전략부 [디지털 커뮤니케이션 및 온드 미디어 채널 기획운영] (1) 2026/09/18 2026/10/05 접수중 상시 브랜드전략부 [브랜드/디자인] (1) 2026/09/18 2026/10/05 접수중 상시 "
+      }
+    ]
+  },
+  {
+    "id": "kr-093",
+    "url": "https://spot.wooribank.com/pot/Dream?withyou=BPBKI0046",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:12:13.357306+00:00",
+    "http_status": 200,
+    "title": "인재개발제도",
+    "snippet": "인재채용 신입행원 채용 수시채용 인재개발제도 관련사이트 우리은행 스포츠단 우리1899 역사관 우리미술대회 우리가족광장 인터넷뱅킹 KR 언어 선택 KR EN 메뉴 열기 메뉴 열기 은행소개 윤리경영 투자정보 PR센터 ESG 인재채용 은행소개 CEO 소개 조직 소개 조직도 경영진 소개 비전/가치체계 연혁/수상경력 연혁 수상경력 CI/캐릭터 소개 CI 소개 캐릭터 소개 윤리경영 우리윤리경영 우리윤리강령 우리금융그룹 윤리강령 우리은행 행동강령 우리은행 행동기준 자산관리 영업 윤리강령 우리핫라인 협력회사(직원)핫라인 임직원핫라인 이해관계핫라인",
+    "observed_links": [
+      {
+        "text": "신입행원 채용",
+        "url": "https://jrs.jobkorea.co.kr/wooribank"
+      },
+      {
+        "text": "수시채용",
+        "url": "https://recruit.incruit.com/wooribank/job/"
+      },
+      {
+        "text": "신입행원 채용",
+        "url": "https://jrs.jobkorea.co.kr/wooribank"
+      },
+      {
+        "text": "수시채용",
+        "url": "https://recruit.incruit.com/wooribank/job/"
+      },
+      {
+        "text": "신입행원 채용",
+        "url": "http://jrs.jobkorea.co.kr/wooribank"
+      },
+      {
+        "text": "수시채용",
+        "url": "https://recruit.incruit.com/wooribank/job/"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://recruit.incruit.com/wooribank/job/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:16:06.065739+00:00",
+        "http_status": 200,
+        "title": "우리은행 채용리스트",
+        "snippet": "우리은행 채용리스트 전체 모집중 마감 전체 정규직 계약직 인턴직 파견직 수습 아르바이트 정규직/계약직 공무직 교육생 기타 검색 우리은행 데이터 엔지니어 (AI데이터플랫폼부) 전문직 채용공고 접수시간 2026.09.11 00:00 ~ 2026.09.26 00:00 자세히보기 우리은행 모션그래픽 디자이너(브랜드전략부) 전문직 채용 공고 접수시간 2026.09.14 00:00 ~ 2026.10.06 23:59 자세히보기 우리은행 퇴직연금 컨설턴트 전문직(연금사업부) 채용공고 접수시간 2026.09.11 00:00 ~ 2026.09.25 23:59 자세히보기 우리은행 BIZ어드바이저(퇴직인력) 채용공고 접수시간 2026.07.30 00:00 ~ 2026.08.10 23:59 (접수마감) 자세히보기 [인천공항 환전CREW] 공항금융센터 파트타이머 인재Pool 상시 등록(상시 채용 중) 접수시간 2026.09.09 00:00 ~ 2027.09.15 23:59 자세히보기 [NPS전북] 영업점 파트타이머 인재 Pool 상시 등록 접수시간 2026.09.09 00:00 ~ 2027.09.15 23:59 자세히보기 [충청북부] 영업점 파트타이머 인재 Pool 상시 등록 접수시간 2026.09.09 00:00 ~ 2027.09.15 23:59 자세히보기 [중앙] 영"
+      }
+    ]
+  },
+  {
+    "id": "kr-094",
+    "url": "https://blog.ibk.co.kr/569692",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:12:13.357686+00:00",
+    "http_status": 200,
+    "title": "2026년 하반기 IBK기업은행 신입행원 채용",
+    "snippet": "*자세한 내용은 IBK기업은행 채용 전용 홈페이지 ( https://ibk.incruit.com) 의 채용공고를 참고해주세요. 공유하기 게시글 관리 IBK기업은행 저작자표시 비영리 변경금지 (새창열림) ' IBK log ' 카테고리의 다른 글 세상을 바꾸는 아이디어의 시작! IBK창공 혁신기업 6곳을 소개합니다! (0) 2026.09.21 IBK기업은행 창립 65주년 영상 공개! “Turn on, 가능성을 켜다” (0) 2026.08.20 한입에 담은 제주의 달콤한 전통! 제라헌 오메기떡 (0) 2026.08.05 IBK역사관 이음스퀘어가 개관 1주년을 맞이했습니다! (0) 2026.07.31 IBK기업은행 기업 PR ",
+    "observed_links": [
+      {
+        "text": "https://ibk.incruit.com)",
+        "url": "https://ibk.incruit.com)"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://ibk.incruit.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:12:39.787081+00:00",
+        "http_status": 200,
+        "title": "IBK기업은행 채용정보",
+        "snippet": "IBK기업은행 채용정보"
+      },
+      {
+        "url": "https://ibk.incruit.com/index_main_2025.asp",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:14:02.218793+00:00",
+        "http_status": 200,
+        "title": "IBK 기업은행 채용페이지",
+        "snippet": "IBK 기업은행 채용페이지 채용정보 채용공고 2026년 하반기 신입행원 채용 2026년 하반기 일반직원(정규직) 수시채용 전문계약직 채용 일반계약직 채용 (나라사랑카드 영업지원) 일반계약직 채용 (스포츠트레이너) 시간선택제 준정규직 (장애·보훈) 채용 채용프로세스 채용 FAQ 은행소개 비전 수상내역 복지제도 IBK기업은행 홈페이지 IBK-Preview 채용정보 채용공고 2026년 하반기 신입행원 채용 2026년 하반기 일반직원(정규직) 수시채용 전문계약직 채용 일반계약직 채용 (나라사랑카드 영업지원) 일반계약직 채용 (스포츠트레이너) 시간선택제 준정규직 (장애·보훈) 채용 채용프로세스 채용 FAQ 은행소개 비전 수상내역 복지제도 IBK기업은행 홈페이지 IBK-Preview 꿈꾸고 도전하는, 오직 너를 위한 IBK 기업은행과 같이 성장할 소중한 인재를 모십니다! 꿈꾸고 도전하는, 오직 너를 위한 IBK 기업은행과 같이 성장할 소중한 인재를 모십니다! 2026년 하반기 신입행원 채용 2026년 하반기 일반직원(정규직) 수시채용 전문계약직 채용 일반계약직 채용 (나라사랑카드 영업지원) 일반계약직 채용 (스포츠트레이너) 시간선택제 준정규직 (장애·보훈) 채용 2026 하반기 IBK기업은행 신입행원 채용 온라인 채용설명회 보러가기 채용완전정복 토크쇼 보러가기 5인 5색 인터뷰 보러가기 개인정보 처리방침 COPYRIGHT INCRUIT. ALL",
+        "observed_links": [
+          {
+            "text": "IBK기업은행 홈페이지",
+            "url": "https://www.ibk.co.kr"
+          },
+          {
+            "text": "IBK기업은행 홈페이지",
+            "url": "https://www.ibk.co.kr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kr-095",
+    "url": "https://securities.miraeasset.com/newir/view/pc/kr/investor/announceView.jsp",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:17:34.704406+00:00",
+    "http_status": 200,
+    "title": "회사공고 상세| 미래에셋증권",
+    "snippet": "회사공고 상세| 미래에셋증권 본문 바로가기 미래에셋증권 로고 News EN KR 메뉴 더보기 열기 OUR BUSINESS 사업개요 Global Business Investment Banking Trading Wealth Management Principal Investment FOR INVESTOR Earnings Call 정기보고서 주가정보 주주환원 공시정보 회사공고 ABOUT US 회사개요 Founder & GSO 경영정보 지속가능경영 홍보자료 인재채용 facebook youtube 회사공고 Date Prev 이전 게시글이 없습니다. Next 다음 게시글이 없습니다. 목록 닫기 Contact Us 대표번호 1588-6800 채용안내 recruit@miraeasset.com 투자문의 irteam@miraeasset.com 본사주소 서울시 중구 을지로5길 26 미래에셋 센터원빌딩 이스트타워 닫기 OUR BUSINESS 사업개요 Global Business Investment Banking Trading Wealth Management Principal Investment FOR INVESTOR Earnings Call 정기보고서 주가정보 주주환원 공시정보 회사공고 ABOUT US 회사개요 Founder & GSO 경영정보 지속가능경영 홍보자료 인재채용 News Contact Us CI Guide facebook youtube Priv",
+    "observed_links": [
+      {
+        "text": "인재채용",
+        "url": "https://recruit.securities.miraeasset.com/"
+      },
+      {
+        "text": "인재채용",
+        "url": "https://recruit.securities.miraeasset.com/"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://recruit.securities.miraeasset.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:18:11.375714+00:00",
+        "http_status": 200,
+        "title": "e-HR",
+        "snippet": "e-HR"
+      },
+      {
+        "url": "https://recruit.securities.miraeasset.com/reMenuAction.do",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:20:01.802616+00:00",
+        "http_status": 200,
+        "title": "미래에셋증권 채용",
+        "snippet": "미래에셋증권 채용 바로가기 메뉴 본문 바로가기 주메뉴 바로가기 바닥글 바로가기 직무소개 채용공고 전형결과확인 FAQ 채용문의 직무소개 당신의 전문성이 미래에셋증권의 경쟁력이 됩니다. 진행중인 공고로 스크롤 다운 진행중인 공고 자세히 보기 공고검색 검색 버튼 전체 8 신입 1 경력 7 전체 신입 경력 인재 POOL 등록 인재 DB등록으로 지원하시면 해당 부문에서 인력이 필요할 때 우선적으로 검토하여 연락드리겠습니다. 신입지원 경력지원 우리는 글로벌투자전문그룹으로서 고객의 성공적 자산운용과 평안한 노후를 위해 기여한다. 핵심가치 미래에셋에는 구성원 개개인이 반드시 마음에 새겨야 할 핵심가치가 존재합니다. 이 핵심가치들은 미래에셋인이 행하는 모든 의사결정의 기준이 됩니다. 현재슬라이드: 1 4 FAQ (자주찾는 질문) 지원자들이 자주 묻는 질문과 답변을 제공합니다. 지원자의 필요역량 지원자의 역량은 다각도로 평가하며, 지원분야에 대한 준비도와 업무 경험 등을 확인합니다. (예시:금융권 인턴 경험, 코딩 역량, 직무 관련 전무자격증 증) 채용전형 지원자의 역량은 다각도로 평가하며, 지원분야에 대한 준비도와 업무 경험 등을 확인합니다. (예시:금융권 인턴 경험, 코딩 역량, 직무 관련 전무자격증 증) 지원서 제출 방법 지원자의 역량은 다각도로 평가하며, 지원분야에 대한 준비도와 업무 경험 등을 확인합니다. (예시:금융권 인턴 경험, 코딩 역량, 직무 관련 전무자격증 증) 자세히 보기 회사소개 개인정보처리방침 © MIRAE ASSET SECURITIES CO., LTD. ALL RIGHTS RESERVED Family site 웹와치(WebWatch) 2025.7.4~2026.7.3 웹와치(WebWatch) 2025.7.4~2026.7.3 미래에셋증권 패밀리사이트 글로벌 미래에셋증권 미래에셋자산"
+      },
+      {
+        "url": "https://securities.miraeasset.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:16:07.424719+00:00",
+        "http_status": 200,
+        "title": "미래에셋증권 - 글로벌 투자 파트너",
+        "snippet": "미래에셋증권 - 글로벌 투자 파트너"
+      }
+    ]
+  },
+  {
+    "id": "kr-096",
+    "url": "https://www.truefriend.com/main/Main.jsp",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:17:34.355275+00:00",
+    "http_status": 200,
+    "title": "",
+    "snippet": "한국투자증권 한국투자증권 한국투자증권 나의자산 금융상품 연금 리서치 트레이딩 뱅킹/청약/대출 고객서비스 이용안내 메뉴닫기 로그인 인증센터 검색열기 검색어를 입력하세요. 검색하기 메뉴 0건 전체보기 상품 0건 전체보기 최근검색어 인기검색어 open api 수요예측 거래내역 잔고증명서 모의투자 최근 3개월 TOP3 상품 수익률이 높은 펀드, 수익률 정보로 구성",
+    "observed_links": [
+      {
+        "text": "채용포털",
+        "url": "https://recruit.truefriend.com/"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://recruit.truefriend.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:12:39.516902+00:00",
+        "http_status": 200,
+        "title": "채용포탈",
+        "snippet": "계열사 소개 개인정보 처리방침 Family site 바로가기 한국투자금융지주 한국투자증권 한국투자신탁운용 한국투자밸류자산운용 한국투자저축은행 한국투자캐피탈 한국투자파트너스 한국투자프라이빗에쿼티 한국투자부동산신탁 서울특별시 영등포구 의사당대로 88 대표전화  02 . 3276 . 6400 사업자등록번호 116 - 81 - 04504 COPYRIGHT 2019 KOREA INVERSTMENT & SECURITIES CO.LTD. ALL RIGHT RESERVED. 개인정보처리방침 \"本 홈페이지를 활용하여 채용과 인턴 선발을 실시하는 회사 중 귀하께서 지원서를 제출하는 회사\" (이하 '회사'라 합니다. 리스트 보기)가 취급하는 모든 개인정보는 \n                        개인정보보호법 및 정보통신망이용촉진 및 정보보호에 관한 법률에 따라 정보주체의 동의에 의하여 수집∙보유 및 처리되고 있습니다. 이러한 법령의 규정에 따라 수집∙보유 및 \n                        처리하는 개인정보를 업무의 수행과 이용자를 보호하기 위해 적법하고 적정하게 취급할 것입니다. 1. 수집하는 개인정보 및 수집방법 (1) 수집하는 개인정보의 항목 본 사이트",
+        "observed_links": [
+          {
+            "text": "한국투자증권",
+            "url": "https://www.truefriend.com/main/Main.jsp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kr-097",
+    "url": "https://news.koreanair.com/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5-2024%EB%85%84-%EC%8B%A0%EC%9E%85-%EA%B0%9D%EC%8B%A4%EC%8A%B9%EB%AC%B4%EC%9B%90-%EC%B1%84%EC%9A%A9-%EB%82%98%EC%84%A0%EB%8B%A4-12%EC%9B%94-4%EC%9D%BC%EA%B9%8C/",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:19:08.892472+00:00",
+    "http_status": 200,
+    "title": "대한항공, 2024년 신입 객실승무원 채용 나선다… 12월 4일까지 접수 – 대한항공 뉴스룸",
+    "snippet": "각 분야별 자세한 내용은 대한항공 채용 홈페이지 (https://koreanair.recruiter.co.kr) 에서 확인할 수 있다. < 이전 글 [칼톡_Kaltalk] 폐식용유가 항공기를 띄운다고?😮 대한항공이 친환경 시대를 열어갑니다! Story 2023.11.17 다음 글 > 대한항공, LX판토스와 지속가능 항공 연료 사용 협약 News 2023.11.20 맨 위로 대한항공 로고 News ESG Story Travel FAMILYSITE",
+    "observed_links": [
+      {
+        "text": "(https://koreanair.recruiter.co.kr)",
+        "url": "https://koreanair.recruiter.co.kr/appsite/company/index"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://koreanair.recruiter.co.kr/career/home",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:12:39.517045+00:00",
+        "http_status": 200,
+        "title": "대한항공 채용 | 채용사이트",
+        "snippet": "대한항공 채용 | 채용사이트"
+      },
+      {
+        "url": "https://koreanair.recruiter.co.kr/career/home",
+        "method": "web_extract public page extraction",
+        "checked_at": "2026-09-22T07:20:41.624959+00:00",
+        "http_status": null,
+        "title": "대한항공 채용",
+        "snippet": "![대한항공의 홈와(과) 연결되었습니다.](https://infra1-static.recruiter.co.kr/builder/2025/03/11/efd9a872-dab0-43d0-ad0d-f148075ea26e.png)\n\n# 대한항공\n\n대한항공 소개\n\n- [회사소개](/career/https://www.koreanair.com/contents/footer/about-us/who-we-are/overview/greetings)\n- [NEWSROOM](/career/https://news.koreanair.com)\n\nKE MAN 소개\n\n- [일반직](/career/km1)\n- [기술직](/career/km2)\n- [객실승무직](/career/km3)\n- [운항승무직](/career/km4)\n- [기타직](/career/km5)\n- [영상으로 만나는 KE MAN](/career/kemanvideo)\n\nHR제도\n\n- [인재상](/career/kemanship)\n- [인사제도](/career/hrp1)\n- [양성체계](/career/hrp2)\n- [평가체계](/career/hrp3)\n- [복리후생](/career/hrp4)\n- [보상체계](/career/hrp5)\n\n채용정보\n\n- [채용공고](/career/apply)\n- [공지사항](/career/notice)\n- [채용 FAQ](/career/faq)\n- [채용 Q&A](/career/https://koreanair.recruiter.co.kr/career?viewType=QnA)\n\n입사지원\n\n- [지원서 작성](/career/apply_1)\n- [지원서 수정](/career/https://koreanair.recruiter.co.kr/career?vi"
+      },
+      {
+        "url": "https://www.koreanair.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:20:01.802312+00:00",
+        "http_status": 403,
+        "title": "Access Denied",
+        "snippet": "Access Denied Access Denied You don't have permission to access \"http://www.koreanair.com/\" on this server. Reference #18.cda2317.1790061602.9fc82748 https://errors.edgesuite.net/18.cda2317.1790061602.9fc82748"
+      }
+    ]
+  },
+  {
+    "id": "kr-098",
+    "url": "https://www.apgroup.com/int/ko/careers/careers.html",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:12:39.517285+00:00",
+    "http_status": 200,
+    "title": "Careers | 아모레퍼시픽 채용",
+    "snippet": "Amorepacific INSPIRING THE WORLD, WITH NEW BEAUTY 동영상 재생 당신과 함께하는 우리의 여정은 더 아름다운 세상을 만들어 갑니다. Growth & vision Nine Decades of Beauty Philosophy 아름다움에 대한 독보적인 전문",
+    "observed_links": [
+      {
+        "text": "본사 채용 공고",
+        "url": "https://careers.apgroup.com/search/?createNewAlert=false&q=&optionsFacetsDD_customfield1=&optionsFacetsDD_customfield2=&optionsFacetsDD_shifttype="
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://careers.apgroup.com/search/?createNewAlert=false&q=&optionsFacetsDD_customfield1=&optionsFacetsDD_customfield2=&optionsFacetsDD_shifttype=",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:16:08.207864+00:00",
+        "http_status": 200,
+        "title": "Amorepacific Corporation 직무",
+        "snippet": "회사 모두 근무 유형 모두 충원 구분 모두 21개의 작업 중 1 - 21 표시 검색 결과 :  \"\".\n                21개의 작업 중 1 - 21 표시\n                Tab 키로 직무 목록을 탐색합니다. 직무의 전체 세부사항을 보려면 해당 직무를 선택하십시오. 모집공고 [경력] '26년 AMOREPACIFIC 경력채용_글로벌 마케팅 커뮤니케이션 담당(중동/남미) 회사 아모레퍼시픽 지역 서울, KR 근무 유형 정규직 공고 마감일 2026. 09. 28 모집공고 [경력] '26년 AMOREPACIFIC 경력채용_글로벌 마케팅 커뮤니케이션 담당(중동/남미) 회사 아모레퍼시픽 근무 유형 정규직 게시일 2026. 9. 19. 공고 마감일 2026. 09. 28 모집공고 [경력] '26년 AMOREPACIFIC 경력채용_글로벌 마케팅 커뮤니케이션 담당(중동/남미) 회사 아모레퍼시픽 게시일 2026. 9. 19. 공고 마감일 2026. 09. 28 스페이스바를 눌러 선택하면 직무 정보의 전체 컨텐트를 조회할 수 있습니다. 모집공고 [경력] '26년 AMOREPACIFIC 경력채용_상품개발 담당 회사 아모레퍼시픽 지역 서울, KR 근무 유형 정규직 공고 마감일 2026. 09. 30 모집공고 [경력] '26년 AMOREPACIFIC 경력채용_상품개발 담당 회사 아모레퍼시픽 근무 유형 정규직 게시일 2026. 9. 16. 공고 마감일 2026. 09. 30 모집공고 [경력] '26년 AMOREPACIFIC 경력채용_상품개발 담당 회사 아모레퍼시픽 게시일 2026. 9. 16. 공고 마감일 2026. 09. 30 스페이스바를 눌러 선택하면 직무 정보의 전체 컨텐트를 조회할 수 있습니다."
+      }
+    ]
+  },
+  {
+    "id": "kr-099",
+    "url": "https://recruit.kt.com",
+    "method": "web_extract public page extraction",
+    "checked_at": "2026-09-22T07:20:41.625072+00:00",
+    "http_status": null,
+    "title": "KT그룹 채용",
+    "snippet": "### 지원하고 싶은 공고를 찾아보세요\n\n- 회사\n- 영입유형\n- 검색어\n\n[### 주요 채용 공고 총 *61*건\nKT의 주요 채용 공고를 확인해보세요.](/careers/)\n[#### [kt sat]\n##### 2026년 하반기 경력직 공개채용\nD-02026.09.07 ~ 2026.09.14](/careers/265643)\n[#### [KT]\n##### 2026년 경력채용(국방 SI사업 이행 PL)\nD-02026.08.31 ~ 2026.09.14](/careers/264996)\n[#### [KT]\n##### 2026년 경력채용(국방 SI사업 이행 PM)\nD-02026.08.31 ~ 2026.09.14](/careers/264986)\n[#### [KT]\n##### 2026년 경력채용(AI 프로젝트 제안/이행 PM/PL)\nD-22026.09.02 ~ 2026.09.16](/careers/265302)\n[#### [KT]\n##### 2026년 경력채용(Cloud/IT 기반 SI사업 제안/이행 PM/PL)\nD-22026.09.02 ~ 2026.09.16](/careers/265301)\n[#### [kt service남부]\n##### '26년 9월 신입/경력사원 채용 장애인/보훈 전형_부산권역\nD-62026.09.14 ~ 2026.09.20](/careers/266493)\n[#### [kt service남부]\n##### '26년 9월 신입/경력사원 채용_부산권역\nD-62026.09.14 ~ 2026.09.20](/careers/",
+    "supporting_sources": [
+      {
+        "url": "https://recruit.kt.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:12:39.747063+00:00",
+        "http_status": 200,
+        "title": "",
+        "snippet": ""
+      },
+      {
+        "url": "https://corp.kt.com/",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:14:34.861404+00:00",
+        "http_status": 200,
+        "title": "회사소개 | KT",
+        "snippet": "회사소개 | KT 주메뉴 바로 가기 본문 바로가기 이전 다음 메인 슬라이드 재생 메인 슬라이드 정지 KT 더보기 숫자로 보는 KT KT와 함께 No.1 2025 한국품질만족지수(KS-QEI) 전 부문 6년 연속 1위 초고속인터넷(10년), IPTV(9년), 이동통신(6년) 140 년 대한민국 통신역사와 함께해 온 대표 국민기업 5G 5G로 만드는 세상 모든 새로움 Better Life KT와 함께하는 예술의전당 - 마음을 담은 클래식, 수준 높은 고품격 연주로 찾아갑니다. Corporate Governance Model KT는 투명하고 윤리적인 기업 경영을 통해 건강한 경제성장을 이루어 갑니다. Environmental ICT services KT는 자연과 인간의 양립을 통해 지속가능한 인류의 터전을 창조합"
+      }
+    ]
+  },
+  {
+    "id": "kr-100",
+    "url": "https://www.celltrion.com/ko-kr/careers/recruit/process",
+    "method": "public HTTP GET; HTML text/link extraction",
+    "checked_at": "2026-09-22T07:12:39.772560+00:00",
+    "http_status": 200,
+    "title": "셀트리온 채용 프로세스 안내 | 셀트리온 (Celltrion)",
+    "snippet": "셀트리온 채용 프로세스 안내 | 셀트리온 (Celltrion) Celltrion 기업소개 기업개요 공지사항 미디어센터 사업영역 사업개요 연구개발 생산 유통 제품정보 허가제품 파이프라인 ESG 환경 사회 지배구조 ESG 자료실 투자 재무정보 주가정보 공고ㆍ공시 IR 자료실 인재채용 인재상 채용정보 채용공고 KOR ENG 다른 국가 선택 Europe Asia Pacific North America Latin America 닫기 Denmark Finland (FI) Finland (SV) France Germany Hungary Ireland Italy Netherlands Norway (NO) Norway (SV) Poland Portugal Spain Sweden Switz",
+    "observed_links": [
+      {
+        "text": "채용공고",
+        "url": "https://celltrion.recruiter.co.kr/career/home"
+      },
+      {
+        "text": "채용공고",
+        "url": "https://celltrion.recruiter.co.kr/career/home"
+      },
+      {
+        "text": "채용공고",
+        "url": "https://celltrion.recruiter.co.kr/career/home"
+      }
+    ],
+    "supporting_sources": [
+      {
+        "url": "https://celltrion.recruiter.co.kr/career/home",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:16:08.399416+00:00",
+        "http_status": 200,
+        "title": "셀트리온 | 채용사이트",
+        "snippet": "셀트리온 | 채용사이트"
+      },
+      {
+        "url": "https://www.celltrion.com/ko-kr",
+        "method": "public HTTP GET; HTML text/link extraction",
+        "checked_at": "2026-09-22T07:17:34.580501+00:00",
+        "http_status": 200,
+        "title": "셀트리온 (Celltrion) | 글로벌 생명공학 선도기업",
+        "snippet": "셀트리온 (Celltrion) | 글로벌 생명공학 선도기업 주주님께 드리는 글 [당기순이익의 3분의 1을 활용한 주주환원 정책 안내] 존경하는 주주 여러분 , 안녕하십니까 . 항상 셀트리온의 비전과 성장을 믿고 함께해 주시는 주주 여러분께 깊은 감사의 말씀을 드립니다 . 최근 주가 흐름과 시장 변동성 확대로 인해 주주 여",
+        "observed_links": [
+          {
+            "text": "채용공고",
+            "url": "https://celltrion.recruiter.co.kr/career/home"
+          },
+          {
+            "text": "채용공고",
+            "url": "https://celltrion.recruiter.co.kr/career/home"
+          }
+        ]
+      }
+    ]
+  }
+]
