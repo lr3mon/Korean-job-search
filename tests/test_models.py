@@ -338,8 +338,9 @@ class DeadlineParsingTests(unittest.TestCase):
         self.assertEqual(result["warnings"][0], "원문 확인 필요")
         self.assertGreater(len(result["warnings"]), 1)
 
-    def test_null_deadline_can_be_parsed_from_raw_when_building_job(self):
-        self.assertEqual(job(deadline=None, deadline_raw="2026년 9월 30일")["deadline"], "2026-09-30")
+    def test_explicit_null_deadline_preserves_unknown_and_absent_parses_raw(self):
+        self.assertIsNone(job(deadline=None, deadline_raw="2026년 9월 30일")["deadline"])
+        self.assertEqual(job(deadline_raw="2026년 9월 30일")["deadline"], "2026-09-30")
 
 
 class DeadlineStateTests(unittest.TestCase):

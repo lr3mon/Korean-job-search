@@ -243,7 +243,9 @@ def make_job(source_id: str, title: str, company: str, url: str, description: st
     collected_at과 evidence.fetched_at에는 시간대가 반드시 있어야 한다.
     근거 기본값은 kind='source', source_url=원본 URL, fetched_at=수집 시각이다.
 
-    deadline은 문자열 또는 None이고 deadline_raw는 원문 문자열이다. 완전한 ISO 날짜,
+    deadline은 문자열 또는 None이고 deadline_raw는 원문 문자열이다. 명시적인 None은
+    정규화 불가 판단을 보존하며 원문을 다시 해석하지 않는다. deadline을 생략하면
+    deadline_raw를 해석한다. 완전한 ISO 날짜,
     연도를 포함한 한국어/점 구분 날짜와 선택적 시각만 해석한다. 시간대 없는 시각은
     서울 시간이며, 날짜만 있으면 날짜만 저장한다. 상대 표현·불완전한 날짜·잘못된
     날짜는 deadline=None과 한국어 경고로 남긴다. 명시적인 상시 표현에는 경고가 없다.
@@ -278,12 +280,12 @@ def make_job(source_id: str, title: str, company: str, url: str, description: st
     record["evidence"] = evidence
     record["warnings"] = _warnings(values.pop("warnings", []))
 
-    deadline = values.pop("deadline", None)
-    if deadline is not None and not isinstance(deadline, str):
+    deadline = values.pop("deadline", _MISSING)
+    if deadline is not _MISSING and deadline is not None and not isinstance(deadline, str):
         raise ValueError("마감일은 문자열 또는 None이어야 합니다.")
     raw = values.pop("deadline_raw", _MISSING)
-    raw = (deadline if deadline is not None else "") if raw is _MISSING else _text(raw, "마감일 원문")
-    candidate = deadline if deadline is not None and deadline.strip() else raw
+    raw = (deadline if isinstance(deadline, str) else "") if raw is _MISSING else _text(raw, "마감일 원문")
+    candidate = "" if deadline is None else (deadline if isinstance(deadline, str) and deadline.strip() else raw)
     parsed = _parse_deadline(candidate)
     record["deadline"] = parsed.text if parsed is not None else None
     record["deadline_raw"] = raw
@@ -355,14 +357,48 @@ def _provenance(record: dict) -> tuple[list, list]:
     return sources, provenance
 
 
+_OBSERVATION_AGGREGATES = frozenset({"warnings", "source_ids", "provenance", "observations"})
+_RETAINED_DETAIL_WARNING = (
+    "Retained an earlier acquired JD instead of a listing card; its evidence and "
+    "collected_at were not refreshed. Compare observations for conflicting listing metadata."
+)
+
+
+def _observations(record: dict) -> list:
+    """Keep one flat snapshot per distinct observation, never snapshots of histories.
+
+    Growth is bounded by distinct input observations, not the number of merges.
+    Warnings and provenance are already unioned separately. Each snapshot keeps
+    substantive fields together with their own source, evidence and timestamp.
+    """
+    inherited = record.get("observations", [])
+    if not isinstance(inherited, (list, tuple)):
+        raise ValueError("공고 관측 이력은 목록이어야 합니다.")
+    observations = []
+    for entry in [*inherited, record]:
+        if not isinstance(entry, Mapping):
+            raise ValueError("공고 관측 이력의 각 항목은 사전이어야 합니다.")
+        snapshot = {key: deepcopy(value) for key, value in entry.items() if key not in _OBSERVATION_AGGREGATES}
+        _append_unique(observations, [snapshot])
+    return observations
+
+
+def _listing_card(record: dict) -> bool:
+    return record.get("evidence", {}).get("completeness") == "listing_card"
+
+
 def deduplicate_jobs(jobs: Iterable[Mapping]) -> list:
-    """정규 URL만을 기준으로 중복을 합치고 최초 공고·순서를 보존한다.
+    """정규 URL만을 기준으로 중복을 합치고 최초 URL 등장 순서를 보존한다.
 
     입력을 깊은 복사하고 URL과 id를 다시 계산한다. 동일 회사·제목이라도 URL이
-    다르면 합치지 않는다. 첫 공고의 필드는 유지하고 warnings·source_ids·provenance는
-    최초 등장 순서로 중복 없이 합친다. provenance는 source_id, evidence, collected_at을
-    보존하며 후자의 두 항목은 입력에 있을 때 포함한다. 같은 출처의 새로운 수집
-    근거도 보존한다. 이미 합친 결과를 다시 합쳐도 결과가 변하지 않는다.
+    다르면 합치지 않는다. 첫 관측을 표시하되 listing_card 대신 이전에 취득한 JD가
+    있으면 그 관측 전체를 표시한다. 서로 다른 시점의 본문·메타데이터를 섞지 않으며
+    오래된 본문의 수집 시각을 갱신하지 않는다. 본문 길이로 권위를 판단하지 않는다.
+    충돌하는 제목·마감·문항 등은 원래 근거와 함께 평탄한 observations에 보존한다.
+    warnings·source_ids·provenance·observations는 중복 없이 합친다. provenance는
+    source_id와 입력에 있는 evidence·collected_at을 보존한다. 관측 이력에 다시 이력을
+    넣지 않으므로 같은 결과를 재병합해도 커지지 않는다. 최신 카드 정보는 observations를
+    확인해야 하며, 보존된 JD가 현재도 유효하다는 뜻은 아니다.
     각 입력은 최소한 유효한 url·source_id를 가져야 하며 잘못된 입력은 ValueError다.
     """
     if isinstance(jobs, (str, bytes, Mapping)):
@@ -384,10 +420,20 @@ def deduplicate_jobs(jobs: Iterable[Mapping]) -> list:
         _append_unique(warnings, _warnings(record.get("warnings", [])))
         record["warnings"] = warnings
         record["source_ids"], record["provenance"] = _provenance(record)
+        record["observations"] = _observations(record)
         if url not in by_url:
             by_url[url] = record
         else:
             first = by_url[url]
-            for field in ("warnings", "source_ids", "provenance"):
+            retain_detail = _listing_card(first) and not _listing_card(record) and bool(record.get("description"))
+            for field in ("warnings", "source_ids", "provenance", "observations"):
                 _append_unique(first[field], record[field])
+            if retain_detail:
+                # Keep a coherent original observation, not an old body carrying
+                # a new listing timestamp/title/deadline. All alternatives remain.
+                for field in ("warnings", "source_ids", "provenance", "observations"):
+                    record[field] = first[field]
+                record["source_ids"] = list(dict.fromkeys([record["source_id"], *record["source_ids"]]))
+                _append_unique(record["warnings"], [_RETAINED_DETAIL_WARNING])
+                by_url[url] = record
     return list(by_url.values())

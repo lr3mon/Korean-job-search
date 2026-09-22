@@ -1,0 +1,58 @@
+{
+  "type": "integration_defect_fix_verification",
+  "baseline": "30b8328205c27488ba3f551545d373631a8f44d4",
+  "resolved": ["QUALITY-01", "QUALITY-02"],
+  "design": {
+    "observation_merge": "Prefer the first observation unless it is explicitly a listing_card and another observation contains acquired JD text. Retain that entire original observation, including its own evidence and collected_at, rather than mixing an older body with newly fetched metadata. Fresh card title/deadline/question alternatives remain in observations, not promoted to top-level fields. The retained-JD warning directs readers to conflicting observations.",
+    "history": "Flat unique snapshots retain substantive fields with original source/evidence/timestamp; aggregate history fields are excluded from snapshots. Repeated merges are idempotent; storage grows with distinct observations, not merge count. There is no silent fixed-count truncation.",
+    "body_selection": "Text length is not an authority signal. A newly supplied detail observation wins over an older longer detail; both remain in history.",
+    "deadline": "make_job distinguishes absent deadline from explicit null. Absent normalized deadline retains existing raw-date construction behavior. Explicit null remains unknown, with raw text and existing warnings intact throughout loading, ranking, preparation, reporting and re-saving."
+  },
+  "tests": [
+    {
+      "phase": "RED before production changes",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_integration_roundtrip.py -v",
+      "result": "FAILED",
+      "tests": 6,
+      "failures_including_subtests": 8,
+      "errors": 1,
+      "evidence": "NAVER refresh lost the acquired JD; loaded/ranked/prepared/re-saved timezone-ambiguous deadline became assumed KST and expired; conflicting observations were absent. One known-deadline compatibility test passed."
+    },
+    {
+      "phase": "GREEN",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_integration_roundtrip.py -v",
+      "result": "OK",
+      "tests": 6,
+      "seconds": 0.035
+    },
+    {
+      "phase": "full offline suite",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -q",
+      "result": "OK",
+      "tests": 243,
+      "seconds": 0.864
+    },
+    {
+      "command": "git diff --check",
+      "result": "PASS"
+    }
+  ],
+  "coverage": [
+    "Repository reduced public NAVER fixtures, annoId=30005289, relabeled evidence.kind=test_fixture; collect -> ingest -> failed collection -> successful refresh -> load -> rank -> prepare -> report -> repeat refresh.",
+    "Explicitly synthetic JSON-LD with timezone-ambiguous validThrough; parser -> save -> load -> rank -> prepare -> report -> re-save remains unknown and retains warning.",
+    "Conflicting description, title, questions, deadline and unknown qualifications; immutable inputs; flat unique history; twenty repeat deduplication checks; shorter new detail replaces longer old detail.",
+    "Absent normalized deadline and explicit valid timezone preserve established normalization behavior; explicit null does not reparse raw."
+  ],
+  "limitations": [
+    "Tests are offline and new integration tests block socket connects. No live acquisition, model calls or external writes.",
+    "Conservative whole-observation selection intentionally leaves the acquired detail's top-level metadata/timestamp unchanged during card-only refresh; consumers must consult observations for newer listing metadata.",
+    "Independent review remains the parent agent's responsibility."
+  ],
+  "files": [
+    "korean_job_search/models.py",
+    "korean_job_search/workflow.py",
+    "tests/test_models.py",
+    "tests/test_integration_roundtrip.py",
+    "artifacts/quality-fix.json"
+  ]
+}

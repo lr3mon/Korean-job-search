@@ -75,6 +75,7 @@ def _profile(value):
 
 
 def _job(value):
+    """Validate without replacing an explicitly unknown normalized deadline."""
     if not isinstance(value, Mapping):
         raise ValueError("공고는 사전이어야 합니다.")
     fields = deepcopy(dict(value))
@@ -193,7 +194,7 @@ def init_workspace(path) -> dict:
 
 
 def load_jobs(path) -> list:
-    """UTF-8 JSON 배열 또는 {'jobs': 배열}을 읽고 공고 형식·식별자를 검증한다."""
+    """UTF-8 공고 JSON의 형식·식별자를 검증하고 명시적 deadline=null을 보존한다."""
     value = _read_json(path)
     if isinstance(value, dict):
         if "jobs" not in value:
