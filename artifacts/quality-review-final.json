@@ -1,0 +1,118 @@
+{
+  "review_type": "independent_targeted_integration_quality_re_review",
+  "reviewed_head": "a8ae3999f9a2b981bb488bbb3dddb8b7c142a0b9",
+  "fix_commit": "e0fed73d09d2cd737d65546a4b03508749057007",
+  "verdict": "APPROVED",
+  "ready": true,
+  "summary": "Both previously blocking integration defects are resolved at the reviewed HEAD. Independent execution preserved the acquired JD and explicit unknown deadline through collection, persistence and downstream consumers. No remaining actionable blocking finding was identified in the scoped re-review.",
+  "critical": [],
+  "important": [],
+  "minor": [],
+  "resolutions": [
+    {
+      "id": "QUALITY-01",
+      "result": "RESOLVED",
+      "reviewed_locations": ["korean_job_search/models.py:360-439", "korean_job_search/cli.py:92-105", "tests/test_integration_roundtrip.py"],
+      "rationale": "A fresh listing_card cannot replace an existing observation containing acquired detail text. Selection retains the entire detail observation, not an old body mixed with new title, deadline, questions or timestamps. Both substantive observations and their own evidence remain in flat unique history; source IDs and provenance are retained. New detail still supersedes older detail regardless of body length.",
+      "independent_evidence": {
+        "naver_fixture_description_characters_before": 9434,
+        "naver_fixture_description_characters_after_card_refresh": 9434,
+        "naver_fixture_packet_description_characters": 9434,
+        "naver_exact_body_retention": true,
+        "original_evidence_and_timestamp_retention": true,
+        "conflicting_title_deadline_questions_retained_with_original_provenance": true,
+        "same_url_multiple_source_ids_preserved": true,
+        "inputs_immutable": true,
+        "identical_remerge_iterations_without_change": 100,
+        "additional_distinct_card_observations": 25,
+        "history_count_after_distinct_refreshes": 27,
+        "history_count_after_shorter_detail_replacement": 28,
+        "nested_aggregate_history_absent": true,
+        "shorter_new_detail_selected": true
+      }
+    },
+    {
+      "id": "QUALITY-02",
+      "result": "RESOLVED",
+      "reviewed_locations": ["korean_job_search/models.py:283-295", "korean_job_search/workflow.py:77-91", "korean_job_search/workflow.py:196-203", "tests/test_integration_roundtrip.py"],
+      "rationale": "make_job distinguishes the missing normalized-deadline field from explicit null. Explicit null no longer causes workflow validation to reinterpret deadline_raw. Construction with an absent normalized deadline retains the existing normalization contract.",
+      "independent_evidence": {
+        "fixture_deadline_raw": "2026-09-29T10:00:00",
+        "comparison_now": "2026-09-29T02:00:00Z",
+        "stored_deadline": null,
+        "loaded_deadline": null,
+        "stored_state": "unknown",
+        "loaded_state": "unknown",
+        "verified_stages": ["parser", "save", "load", "rank", "prepare", "report", "resave"],
+        "raw_text_and_collector_warning_preserved": true,
+        "ranked_expired": false,
+        "report_labels_deadline_unconfirmed": true,
+        "absent_normalized_deadline_and_explicit_timezone_compatibility": true
+      }
+    }
+  ],
+  "tests_run": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -q",
+      "runtime": "Python 3.13.2",
+      "result": "PASS",
+      "tests": 243,
+      "output": "Ran 243 tests in 0.894s; OK"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_integration_roundtrip.py -v",
+      "result": "PASS",
+      "tests": 6,
+      "output": "Ran 6 tests in 0.060s; OK"
+    },
+    {
+      "command_display": "PYTHONDONTWRITEBYTECODE=1 python3 <SCRATCH>/kjs-parent-roundtrip-check.py <REPO_ROOT>",
+      "parent_redaction_note": "Only local absolute filesystem prefixes were redacted for portability/privacy; reviewer result and all assertions are unchanged.",
+      "result": "PASS",
+      "output": "9434 -> 9434 -> 9434 description characters; preserved_exactly=true; stable_remerge=true; deadline null -> null; unknown -> unknown; warning_retained=true; pass=true",
+      "scope": "Existing reproduction script inspected and independently executed against the fixed HEAD; reduced public NAVER and explicitly synthetic timezone fixtures, no network."
+    },
+    {
+      "name": "Reviewer-authored inline offline adversarial and CLI integration probe",
+      "result": "PASS",
+      "network": "socket.socket.connect patched to raise on any network attempt",
+      "cli_commands_exercised": ["init", "collect", "ingest", "rank", "prepare", "report"],
+      "scope": "Actual CLI parser/dispatcher, saving and downstream workflows executed. Only collection/HTTP acquisition entrypoints were replaced with explicit offline observations. Independently parsed timezone JSON-LD was used for the uncertainty regression.",
+      "assertions": [
+        "A new card conflicting on title, deadline and questions retains the whole acquired-detail observation and preserves both alternatives with their respective source IDs, evidence and timestamps.",
+        "One hundred identical repeat merges are structurally and serialized-content idempotent; inputs are unchanged.",
+        "Twenty-five distinct timestamped card refreshes add exactly one flat observation each; no nested aggregate histories are introduced.",
+        "A newer shorter detail becomes the selected observation without deleting older detail or listing conflicts.",
+        "CLI collect -> ingest -> collect -> rank -> prepare -> report preserves acquired text, original metadata, original evidence time, conflict history and warning.",
+        "The timezone-ambiguous deadline stays null/unknown through parser, stored data, loading, ranking, packet generation, reporting and failed-collection re-save; its raw text and warning survive.",
+        "Absent deadline normalization remains distinct from explicit null.",
+        "Malformed pre-existing JSON remains byte-for-byte unchanged after rejected save and its collection lock is released."
+      ]
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/sync_skills.py --check",
+      "result": "PASS",
+      "output": "Adapters synchronized; canonical bundle and entrypoints match."
+    },
+    {
+      "command": "git diff --check; git diff --exit-code HEAD -- korean_job_search/models.py korean_job_search/workflow.py korean_job_search/cli.py tests/test_integration_roundtrip.py",
+      "result": "PASS",
+      "scope": "Whitespace check and confirmation that reviewed production/test files remained unchanged against the declared HEAD."
+    }
+  ],
+  "documentation_review": {
+    "result": "CONSISTENT_WITH_FIX",
+    "files": ["README.md", "skills/korean-job-search/references/search.md"],
+    "evidence": "Instructions explain whole-observation retention, warn that retained old JD is not current verification, require comparing observations and rechecking the current official detail/correction on conflict, and prohibit converting explicit null into guessed KST. Adapter synchronization passed."
+  },
+  "limitations": [
+    "This is a bounded re-review of the two integration fixes and their direct CLI consumers, not a comprehensive new audit of the repository.",
+    "All reviewer executions were offline. No mass-source checks, live crawling, model calls, native-agent discovery, global installation or application submission occurred.",
+    "The reviewer independently reran Python 3.13.2 only. Parent-reported Python 3.11.12 and wheel/live verification are not claimed as this reviewer's own execution.",
+    "Whole-observation selection intentionally keeps older detail metadata visible during a card-only refresh. Conflicting latest-card values are retained in observations, not automatically promoted; users must follow the documented official-detail recheck requirement.",
+    "Passing this quality gate does not assert complete parsers for all 100 companies or tested native agent/model behavior."
+  ],
+  "changes_by_reviewer": ["artifacts/quality-review-final.json"],
+  "concurrency_note": "HEAD remained a8ae3999f9a2b981bb488bbb3dddb8b7c142a0b9 during verification. Parent-created untracked artifacts/refresh-live.json was observed but not modified or relied upon. Temporary probe outputs were confined to TMPDIR and removed by TemporaryDirectory cleanup.",
+  "handoff": "APPROVED for the scoped final integration quality gate. QUALITY-01 and QUALITY-02 no longer block readiness. No code changes or commits were made by this reviewer."
+}
