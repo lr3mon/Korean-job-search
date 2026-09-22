@@ -1,0 +1,18 @@
+{
+  "kind": "test_fixture",
+  "acquired_date_utc": "2026-09-22",
+  "note": "Offline regression excerpts, not live availability evidence. HTML excerpts retain relevant public card text/attributes and JSON-LD data, and omit executable scripts, styles, buttons, SVG, unrelated page chrome. Pagination discovery literals are condensed comments copied from observed source. JSON pages retain the first two original rows and unchanged total-count metadata; test counts must not be represented as live totals.",
+  "sources": {
+    "collect-naver-list.html": "https://recruit.navercorp.com/rcrt/list.do",
+    "collect-naver-affiliate-card.html": "https://recruit.navercorp.com/rcrt/list.do",
+    "collect-naver-first-page.json": "https://recruit.navercorp.com/rcrt/loadJobList.do?firstIndex=0",
+    "collect-naver-page.json": "https://recruit.navercorp.com/rcrt/loadJobList.do?firstIndex=10",
+    "collect-cj-list.html": "https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo",
+    "collect-cj-page.json": "https://recruit.cj.net/recruit/ko/recruit/recruit/searchNewGonggoList.fo?pageVal=1&pageIndex=10&orderDesc=1&sch_title=&arrGubun=&arrRecBu=&arrRecJob=&arrRecArea=&schArea=N",
+    "collect-naver-detail.html": "https://recruit.navercorp.com/rcrt/view.do?annoId=30005289&lang=ko",
+    "collect-cj-career-row.json": "https://recruit.cj.net/recruit/ko/recruit/recruit/searchNewGonggoList.fo?pageVal=2&pageIndex=10&orderDesc=1&sch_title=&arrGubun=&arrRecBu=&arrRecJob=&arrRecArea=&schArea=N",
+    "collect-cj-detail.html": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=8788",
+    "collect-saramin-list.html": "https://www.saramin.co.kr/zf_user/search?searchword=python"
+  },
+  "privacy": "Public job listings only; no applicant records, authentication cookies, submitted forms or credentials. HTML fixtures do not execute. Synthetic JSON-LD in test_collectors.py is explicitly generated test data."
+}
