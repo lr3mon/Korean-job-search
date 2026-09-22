@@ -95,7 +95,7 @@ def save_collection(results, outpath):
     fresh = [job for result in results for job in result.get("jobs", [])]
     with file_lock(outpath):
         existing = load_jobs(outpath) if Path(outpath).exists() else []
-        # Fresh first: keep latest observations rather than silently preferring old cards.
+        # Fresh observations first; the model retains coherent detail snapshots and all alternatives.
         jobs = deduplicate_jobs(fresh + existing)
         observations = [{k: v for k, v in r.items() if k != "jobs"} | {"job_count": len(r.get("jobs", []))} for r in results]
         path = atomic_json(outpath, {"schema_version": 1, "updated_at": now_iso(), "jobs": jobs,

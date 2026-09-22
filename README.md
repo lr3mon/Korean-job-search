@@ -72,7 +72,7 @@ python3 -m korean_job_search collect --all-companies --workers 3 --limit 5
 
 출처별 `status`, `diagnostics`, `job_count`를 확인하세요. `ok/partial/empty`와 `blocked/robots_denied/needs_browser/needs_credentials/unsupported/error`를 구분합니다. 공개 조회가 거부되면 우회하지 않습니다. 일부 출처만 성공해도 성공/실패 내역을 모두 보존합니다. 동일 그룹 창구는 중복 요청하지 않으며, 공고별 실제 고용 법인을 확인해야 합니다.
 
-`jobs.json`은 기존 기록을 보존하며 새 관측을 병합합니다. 실패한 사이트의 기존 공고가 파일에 남을 수 있으므로 `collected_at`과 마감 원문을 확인하세요. 공고 카드만 확보했으면 전체 JD를 읽은 것으로 취급하지 않습니다.
+`jobs.json`은 기존 기록을 보존하며 새 관측을 병합합니다. 목록 카드만 다시 읽으면 이미 확보한 JD와 원래 확인 시각을 보존하고, 최신 카드의 변경 내용은 `observations`에 따로 남깁니다. 보존된 JD가 현재도 유효하다는 뜻은 아닙니다. `warnings`, 각 관측의 시각·마감 원문을 비교하고 충돌하면 공식 상세를 다시 확인하세요. 실패한 사이트의 이전 기록도 남으며, 목록 카드만 확보했으면 전체 JD를 읽은 것으로 취급하지 않습니다.
 
 ### 2. 에이전트의 검색/브라우저를 통한 보완
 

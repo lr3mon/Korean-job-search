@@ -43,6 +43,8 @@ python3 -m korean_job_search ingest --file workspace/sources/posting.txt --sourc
 | `blocked`, `robots_denied` | 제한을 존중한다. CAPTCHA·WAF·robots를 우회하지 않는다. |
 | `unsupported`, `error` | 실패 이유와 시도한 URL을 보존한다. 다른 허용된 공식 표면이나 사용자 제공 원문으로 전환한다. |
 
+카드 재수집 뒤에 이전 JD가 유지되었으면 `warnings`와 `observations`를 읽는다. 본문·마감·문항을 서로 다른 시점에서 임의로 섞거나 보존된 옛 본문을 새로 확인한 것으로 표현하지 않는다. 최신 카드와 이전 상세가 충돌하면 현재 공식 상세/정정 공고를 다시 읽고, 확인 전에는 낙관적 마감을 택하지 않는다. 명시적인 `deadline: null`은 미확인 판단이므로 원문을 다시 추정해 정확한 KST 시각으로 바꾸지 않는다.
+
 HTTP 200, 메뉴, 빈 JavaScript 셸, 목록 카드만으로 전체 JD를 확보했다고 말하지 않는다. 이미지 공고는 실제 시각 도구로 읽고, 없으면 원본 확인을 사용자에게 요청한다. 인증 필요 문항을 찾으려고 비슷한 검색을 무한 반복하지 않는다.
 
 수집 결과의 상태와 에이전트 작업 상태를 분리한다. 아래는 CLI 반환 스키마가 아닌 **작업 인계 메모 형식**이다.

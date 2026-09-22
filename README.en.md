@@ -42,7 +42,7 @@ python3 -m korean_job_search ingest --url "https://official-employer.example/job
 python3 -m korean_job_search ingest --file workspace/jd.txt --source-url "https://official-employer.example/job"
 ```
 
-`collect` makes real public requests, subject to robots/access controls. Inspect per-source status and diagnostics. Shared group portals are fetched once, not mislabeled as separate employer feeds. Existing job observations survive failed refreshes; inspect each record's timestamp/deadline.
+`collect` makes real public requests, subject to robots/access controls. Inspect per-source status and diagnostics. Shared group portals are fetched once, not mislabeled as separate employer feeds. Existing job observations survive failed refreshes. A card-only refresh retains an acquired detail observation and its original timestamp; newer card metadata stays in flat `observations`, with a warning. Retained detail is not necessarily current: compare timestamps/deadlines and recheck the official detail on conflict.
 
 `discover` only produces a structured search plan, clearly labeled `live_search_executed: false`. Your agent executes the tasks using its actual search/browser tools and imports the source text. Search snippets and listing cards are not full job descriptions. Login-required forms must be verified with authorized access or user-provided text; old questions are never substituted.
 
