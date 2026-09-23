@@ -4,9 +4,13 @@ on:
   pull_request:
 permissions:
   contents: read
+env:
+  # Korean fixtures, subprocess JSON and CLI help use UTF-8 on every runner.
+  PYTHONUTF8: "1"
 jobs:
   offline-tests:
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
         python: ['3.10', '3.13']
@@ -17,6 +21,9 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -m unittest discover -s tests -v
+        env:
+          # Avoid macOS /var temporary-directory symlinks without weakening path checks.
+          TMPDIR: ${{ runner.temp }}
       - run: python scripts/sync_skills.py --check
       - run: python scripts/check_privacy.py
       - run: python scripts/build_catalog.py --check

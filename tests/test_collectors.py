@@ -98,7 +98,11 @@ class StructuredTests(unittest.TestCase):
     def test_malformed_html_declaration_is_safe(self):
         self.assertEqual(parse_job_postings("<![bogus]>", BASE, "fixture"), [])
         r = ingest_url(BASE, FakeFetcher({BASE: "<![bogus]>"}))
-        self.assertEqual(r["status"], "error")
+        # HTMLParser patch releases either reject this declaration or treat it
+        # as a bogus comment. Both must remain non-success, with no fake jobs.
+        self.assertIn(r["status"], {"error", "unsupported"})
+        self.assertEqual(r["jobs"], [])
+        self.assertTrue(r["diagnostics"])
 
 
 class AcquisitionTests(unittest.TestCase):

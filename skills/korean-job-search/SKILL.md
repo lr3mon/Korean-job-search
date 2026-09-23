@@ -22,7 +22,7 @@ compatibility: "Python 3.10+ standard library CLI; optional Scrapling 0.4.11 hel
 
 특정 에이전트의 함수명이나 유료 모델에 의존하지 않는다. 파일 읽기/쓰기, 터미널, 웹 검색, URL 읽기, 브라우저를 **현재 호스트에서 실제 제공되는 도구**에 대응한다. 없는 기능은 사용했다고 주장하지 않는다.
 
-명령은 `korean_job_search/`와 `pyproject.toml`이 있는 **저장소 루트**에서 실행한다. 스킬 사본의 폴더에서 실행하지 않는다. Windows에서 `python3`가 없으면 Python 3.10+인지 확인한 `py -3` 또는 `python`으로 실행 파일만 바꾼다. 경로에 공백이 있으면 인용한다. 전역 설치·설정 변경·자동 시작 작업을 만들지 않는다.
+명령은 `korean_job_search/`와 `pyproject.toml`이 있는 **저장소 루트**에서 실행한다. 스킬 사본의 폴더에서 실행하지 않는다. Windows에서는 한글 파일·파이프 출력을 위해 UTF-8 모드(`PYTHONUTF8=1` 또는 `-X utf8`)를 사용한다. `python3`가 없으면 Python 3.10+인지 확인한 `py -3 -X utf8` 또는 `python -X utf8`으로 실행한다. 경로에 공백이 있으면 인용한다. 전역 설치·설정 변경·자동 시작 작업을 만들지 않는다.
 
 ## 1. 작업 범위와 근거 확보
 
