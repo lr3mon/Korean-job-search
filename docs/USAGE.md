@@ -10,12 +10,13 @@
 
 ```bash
 python3 -m korean_job_search doctor
+python3 -m korean_job_search setup
 python3 -m korean_job_search init
 python3 -m korean_job_search sources --company NAVER
 python3 -m korean_job_search collect --source NAVER --source CJ제일제당 --source saramin --limit 5 --out workspace/jobs.json
 ```
 
-Windows에서는 `python3` 대신 `python`을 사용하셔도 됩니다. 선택적으로 `python -m pip install -e .` 하면 같은 명령을 `kjs`로 실행할 수 있습니다.
+Windows에서는 `python3` 대신 `python`을 사용하셔도 됩니다. `setup`은 네트워크에서 Scrapling을 내려받아 `workspace/tools/scrapling/` 가상환경을 준비하고 브라우저 파일을 Scrapling의 기본 사용자 캐시에 다운로드합니다. 한 번 설치한 뒤에는 매번 실행할 필요가 없습니다. `python -m pip install -e .`은 Scrapling 라이브러리와 `kjs` 명령을 설치하지만 브라우저 바이너리는 설치하지 않습니다. 스킬 파일만 복사하는 설치로는 패키지·브라우저가 설치되지 않습니다.
 
 `init` 후 `workspace/profile.json`과 경력/경험 서식을 채우세요. 최초 상태는 빈 서식이며, 데모 성과나 사용자의 경력을 임의로 생성하지 않습니다. 이력서 원본을 옮기지 말고, 에이전트에 자료 폴더 경로를 알려주어 필요한 파일만 읽힌 뒤 작업용 프로필과 초안을 `workspace/`에 저장하세요.
 

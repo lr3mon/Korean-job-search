@@ -6,16 +6,17 @@ Run commands from the repository root. Follow only the stages you need.
 
 ## Quick start
 
-Python 3.10+; no mandatory third-party runtime dependencies. Run from this repository:
+Python 3.10+. Run from this repository:
 
 ```bash
 python3 -m korean_job_search doctor
+python3 -m korean_job_search setup
 python3 -m korean_job_search init
 python3 -m korean_job_search sources --company NAVER
 python3 -m korean_job_search collect --source NAVER --source CJ제일제당 --source saramin --limit 5
 ```
 
-Use `python` on Windows if applicable. `python -m pip install -e .` optionally installs the `kjs` command. `init` creates a blank private profile and story templates in `workspace/`; no fabricated candidate data is supplied. Leave your resume and evidence in their existing folder, give the agent that folder's path, and have it read only relevant files to fill the working profile and drafts in `workspace/`.
+Use `python` on Windows if applicable. `setup` installs Scrapling in the project-local `workspace/tools/scrapling/` virtual environment and downloads browser files into Scrapling's default user cache. Run it once, not before every command. `python -m pip install -e .` installs the Scrapling Python package and `kjs` command, but not the browser binary. Skill-only installers copy files without installing either dependency. `init` creates a blank private profile and story templates in `workspace/`; no fabricated candidate data is supplied. Leave your resume and evidence in their existing folder, give the agent that folder's path, and have it read only relevant files to fill the working profile and drafts in `workspace/`.
 
 Open your agent in the repository. Ask it to read `AGENTS.md` and `.agents/skills/korean-job-search/SKILL.md`, and tell it where your career documents are without asking it to move, copy or edit the originals. Ask for exact source URLs, current deadlines, factual claims only, and no application submission. [Compatibility notes](AGENTS_COMPATIBILITY.md) distinguish standard-format support, discovery checks and actual model-driven trials.
 

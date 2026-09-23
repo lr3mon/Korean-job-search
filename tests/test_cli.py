@@ -31,6 +31,20 @@ class CliTests(unittest.TestCase):
         self.assertFalse(data["model_sessions_tested"])
         self.assertFalse(data["network_used"])
 
+    def test_setup_preserves_existing_non_venv_directory(self):
+        with tempfile.TemporaryDirectory() as td:
+            workspace = Path(td).resolve() / "workspace"
+            directory = workspace / "tools" / "scrapling"
+            directory.mkdir(parents=True)
+            sentinel = directory / "user-file.txt"
+            sentinel.write_text("keep", encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, "-m", "korean_job_search", "--workspace", str(workspace), "setup"],
+                cwd=Path(__file__).resolve().parents[1], capture_output=True, text=True)
+            self.assertEqual(result.returncode, 2, result.stderr)
+            self.assertEqual(sentinel.read_text(encoding="utf-8"), "keep")
+            self.assertFalse((directory / "pyvenv.cfg").exists())
+
     def test_atomic_write_rejects_symlinks(self):
         with tempfile.TemporaryDirectory() as td:
             td = str(Path(td).resolve())

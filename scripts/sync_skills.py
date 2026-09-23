@@ -27,12 +27,12 @@ POINTERS = {
 
 1. 저장소 루트의 `.agents/skills/korean-job-search/SKILL.md`를 먼저 읽는다.
 2. 필요한 단계의 `references/`만 추가로 읽고 그 절차를 실제 도구로 실행한다.
-3. 명령은 저장소 루트에서 실행한다. 기본 CLI는 Python 3.10+ 표준 라이브러리를 사용한다.
-   `python3 -m korean_job_search doctor`로 확인하고 `python3 -m korean_job_search init`으로 시작한다.
+3. 명령은 저장소 루트에서 실행한다. Python 3.10+에서 `python3 -m korean_job_search doctor`로 확인한다.
+   첫 설치 시 `python3 -m korean_job_search setup`으로 Scrapling과 브라우저를 프로젝트 가상환경에 설치한 뒤 `python3 -m korean_job_search init`으로 시작한다.
 4. 도구 이름은 호스트 에이전트의 파일·터미널·웹 기능으로 대응한다.
    검색/브라우저가 없으면 handoff로 보고한다. 검색 계획을 수집 결과로 보고하지 않는다.
 5. 공개 HTML 파서 미지원·JS 셸·상세 iframe은 스킬의 `references/scrapling.md`로 보완한다.
-   선택적 Scrapling 도구는 격리 환경에서 쓰며, robots 미확인을 자동 우회하지 않는다.
+   Scrapling 보조 도구는 격리 환경에서 쓰며, robots 미확인을 자동 우회하지 않는다.
 
 ## 경계
 

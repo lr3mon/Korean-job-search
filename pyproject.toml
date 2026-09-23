@@ -7,11 +7,8 @@ name = "korean-job-search"
 version = "0.1.0"
 description = "한국 채용공고 탐색과 근거 기반 지원서 작성을 위한 에이전트 공통 도구"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["scrapling[fetchers]==0.4.11"]
 license = {text = "MIT"}
-
-[project.optional-dependencies]
-scrapling = ["scrapling[fetchers]==0.4.11"]
 
 [project.scripts]
 kjs = "korean_job_search.cli:main"

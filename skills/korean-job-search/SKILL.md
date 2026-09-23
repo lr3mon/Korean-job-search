@@ -2,7 +2,7 @@
 name: korean-job-search
 description: "Use when preparing Korean job applications or searches. 한국 채용공고 탐색, 지원 자격 검토, 근거 기반 자기소개서·경력기술서, 면접과 지원 현황 관리에 사용한다. 일반 번역·개인정보 수집·자동 지원에는 사용하지 않는다."
 license: MIT
-compatibility: "Python 3.10+ standard library CLI; optional Scrapling 0.4.11 helper or host MCP/browser tools; run from repository root; no built-in LLM."
+compatibility: "Python 3.10+; project setup installs Scrapling 0.4.11 and browser; host MCP/browser tools optional; run from repository root; no built-in LLM."
 ---
 
 # 한국 채용 탐색·지원서 작성
@@ -30,6 +30,7 @@ compatibility: "Python 3.10+ standard library CLI; optional Scrapling 0.4.11 hel
 
 ```text
 python3 -m korean_job_search doctor
+python3 -m korean_job_search setup  # 첫 프로젝트 설치 시 한 번; 인터넷 연결·브라우저 다운로드 필요
 python3 -m korean_job_search init
 python3 -m korean_job_search sources
 ```
@@ -52,7 +53,7 @@ python3 -m korean_job_search ingest --file workspace/sources/posting.txt --sourc
 
 ### 공개 페이지가 잘 읽히지 않으면
 
-`needs_browser`, 빈 JavaScript 셸, 잡코리아 상세 iframe, 원티드 공개 페이지 확인에는 [Scrapling 보조 수집](references/scrapling.md)을 읽고 적용한다. **HTTP 응답에 공고가 있는데 기존 파서만 못 읽는 경우부터 구분**한다. 스킬에 포함된 스크립트로 공개 목록 링크·선택한 JD를 추출하고 실제 파일을 검증한다. Scrapling MCP가 있으면 현재 도구 스키마에 대응하고, 없으면 같은 절차의 터미널 경로를 쓴다. 기본 CLI나 전역 설정에 무거운 브라우저 의존성을 강제로 추가하지 않는다.
+`needs_browser`, 빈 JavaScript 셸, 잡코리아 상세 iframe, 원티드 공개 페이지 확인에는 [Scrapling 보조 수집](references/scrapling.md)을 읽고 적용한다. **HTTP 응답에 공고가 있는데 기존 파서만 못 읽는 경우부터 구분**한다. 스킬에 포함된 스크립트로 공개 목록 링크·선택한 JD를 추출하고 실제 파일을 검증한다. Scrapling MCP가 있으면 현재 도구 스키마에 대응하고, 없으면 프로젝트 가상환경의 Python으로 터미널 경로를 쓴다. 기본 `collect` 명령은 브라우저를 자동 실행하지 않으며, 전역 에이전트 설정을 변경하지 않는다.
 
 robots 정책 미확인과 명시적 차단은 따로 기록하되, 이를 자동 브라우저 재시도 허가로 해석하지 않는다. 목록·상세·현재 문항의 확인 범위를 나누고, 로그인·CAPTCHA·제출 단계로 넘어가지 않는다.
 

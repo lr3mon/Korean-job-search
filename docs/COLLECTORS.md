@@ -17,7 +17,7 @@ Routing uses exact verified hostnames, including when the registry's `id` is `kr
 
 ## Optional skill-level Scrapling workflow
 
-The shared skill bundles `references/scrapling.md` and `scripts/scrapling_capture.py` in each generated adapter. This is an explicit helper, **not** a silent change to `collect` or `SafeFetcher`.
+The shared skill bundles `references/scrapling.md` and `scripts/scrapling_capture.py` in each generated adapter. The default project `setup` installs Scrapling and its browser; invoking this helper remains explicit, **not** a silent change to `collect` or `SafeFetcher`.
 
 - `--engine http`: robots-aware `SafeFetcher` plus Scrapling's selector parser. JobKorea HTML can already contain posting anchors even when the core generic parser returns `needs_browser`.
 - `--engine browser`: the same HTTP preflight followed by one fresh anonymous Scrapling `DynamicFetcher` render. HTTP/robots failures do not escalate to a browser; no existing profile, cookies, proxy rotation or challenge solver is used. Browser subresource networking is not the core fetcher's IP-pinned transport; restrict use to the helper's allowlisted public portal routes and trusted public pages.

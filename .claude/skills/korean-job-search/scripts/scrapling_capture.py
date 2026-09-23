@@ -61,7 +61,7 @@ def selector_class():
     try:
         from scrapling import Selector
     except ImportError as exc:
-        raise RuntimeError("Scrapling is optional: use the isolated setup in references/scrapling.md.") from exc
+        raise RuntimeError("Scrapling unavailable in this interpreter; run isolated setup with python3 -m korean_job_search setup and use workspace/tools/scrapling/bin/python (Scripts/python.exe on Windows).") from exc
     return Selector
 
 

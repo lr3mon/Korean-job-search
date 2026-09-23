@@ -15,26 +15,19 @@
 ## 두 가지 실행 경로
 
 1. **Scrapling MCP가 실제 연결된 호스트:** 현재 노출된 도구 스키마를 확인해 아래 MCP 절차에 대응한다. 특정 에이전트에 MCP가 자동 설치돼 있다고 가정하지 않는다.
-2. **터미널이 있는 호스트:** 번들 [캡처 스크립트](../scripts/scrapling_capture.py)를 실행한다. Python 3.10+에서 Scrapling을 선택적으로 설치한다. Codex·Prime Agent·Claude Code·Hermes·OpenClaw 모두 같은 코드를 사용할 수 있다.
+2. **터미널이 있는 호스트:** 번들 [캡처 스크립트](../scripts/scrapling_capture.py)를 실행한다. 프로젝트 최초 설정에서 Scrapling과 브라우저를 함께 설치한다. Codex·Prime Agent·Claude Code·Hermes·OpenClaw 모두 같은 코드를 사용할 수 있다.
 
-기본 `python3 -m korean_job_search collect`의 동작과 의존성은 바꾸지 않는다. 스킬이 필요할 때 이 보조 도구를 명시적으로 선택한다. 대형 브라우저 패키지나 모델 호출을 모든 실행에 강제하지 않는다.
+기본 `python3 -m korean_job_search collect`의 동작은 바꾸지 않는다. 스킬이 필요할 때 이 보조 도구를 명시적으로 선택한다. 설치된 브라우저를 모든 수집에 자동 실행하거나 모델 호출을 강제하지 않는다.
 
-## 선택적 격리 설치
+## 프로젝트 설정
 
-이미 사용 가능한 Scrapling 환경이 있으면 그 Python 실행 파일을 사용한다. 없으면 사용자의 프로젝트 작업 범위 안에서 아래처럼 **새 환경**을 준비한다. 기존 환경을 덮어쓰지 않는다.
-
-```bash
-python3 -m venv workspace/tools/scrapling
-workspace/tools/scrapling/bin/python -m pip install -e '.[scrapling]'
-```
-
-이 extra는 검증 대상으로 고정한 `scrapling[fetchers]==0.4.11`을 설치한다. 일반 HTTP + HTML 파싱에는 브라우저 설치가 필요 없다. 브라우저 모드가 필요하고 실행 파일이 없다면 아래 공식 설치 명령으로 브라우저 의존성을 준비한다. 다운로드와 디스크 사용이 발생하며 전역 에이전트 설정은 건드리지 않는다.
+저장소 루트에서 최초 한 번 실행한다. `setup`은 `workspace/tools/scrapling/`에 프로젝트 가상환경을 만들고 고정된 `scrapling[fetchers]==0.4.11`을 설치하며, 브라우저 파일은 Scrapling의 기본 사용자 캐시에 다운로드한다. 기존 비가상환경 디렉터리는 덮어쓰지 않는다. 네트워크·다운로드·디스크 사용이 필요하다. 전역 에이전트 설정은 변경하지 않는다.
 
 ```bash
-workspace/tools/scrapling/bin/scrapling install
+python3 -m korean_job_search setup
 ```
 
-Windows에서는 환경 실행 파일이 `workspace/tools/scrapling/Scripts/python.exe`와 `Scripts/scrapling.exe`다. 아래 Bash 변수 문법은 셸에 맞게 바꾸거나 실제 경로를 직접 쓴다. Windows 런타임 실측을 주장하지 않는다.
+`pip install -e .`은 Scrapling Python 패키지만 설치하므로 브라우저를 사용하려면 `setup`을 실행한다. 스킬 파일만 복사하는 설치는 의존성을 설치하지 않는다. Windows에서는 환경 실행 파일이 `workspace/tools/scrapling/Scripts/python.exe`와 `Scripts/scrapling.exe`다. 아래 Bash 변수 문법은 셸에 맞게 바꾸거나 실제 경로를 직접 쓴다. Windows 런타임 실측을 주장하지 않는다.
 
 ```bash
 PY=workspace/tools/scrapling/bin/python
@@ -113,4 +106,4 @@ MCP 호출도 정책을 우회하는 예외가 아니다. robots 확인 실패 �
 5. 스냅샷은 `workspace/`에만 두고 공개 Git에 원문·세션·개인 자료를 올리지 않는다.
 6. 기본 수집기 전체 지원, 모든 에이전트의 실제 모델 실행, 자동 제출을 완료했다고 주장하지 않는다.
 
-보조 도구의 종료 코드 0은 부분 추출 성공이다. 나머지는 2이며 `snapshot.json` 또는 stderr 진단을 확인한다. `--help`는 0이다. 기본 CLI는 Scrapling 없이 계속 사용할 수 있다.
+보조 도구의 종료 코드 0은 부분 추출 성공이다. 나머지는 2이며 `snapshot.json` 또는 stderr 진단을 확인한다. `--help`는 0이다. 기본 `collect`는 설치된 Scrapling을 자동 사용하지 않는다.

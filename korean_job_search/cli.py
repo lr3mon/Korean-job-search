@@ -10,9 +10,11 @@ import json
 import os
 from pathlib import Path
 import shutil
+import subprocess
 import sys
 import tempfile
 import time
+import venv
 
 from . import __version__, registry
 
@@ -129,6 +131,29 @@ def _positive(value):
     return n
 
 
+def setup_scrapling(workspace):
+    root = Path.cwd().resolve()
+    if not (root / "pyproject.toml").is_file() or not (root / "korean_job_search/network.py").is_file():
+        raise ValueError("Scrapling 설정은 Korean-job-search 저장소 루트에서 실행하세요.")
+    directory = _no_symlinks(Path(workspace) / "tools" / "scrapling")
+    python = directory / ("Scripts/python.exe" if os.name == "nt" else "bin/python")
+    scrapling = directory / ("Scripts/scrapling.exe" if os.name == "nt" else "bin/scrapling")
+    try:
+        if directory.exists():
+            if not python.is_file() or not (directory / "pyvenv.cfg").is_file():
+                raise ValueError(f"기존 디렉터리는 가상환경이 아닙니다: {directory}")
+        else:
+            _private_parents(directory)
+            directory.mkdir(mode=0o700)
+            venv.EnvBuilder(with_pip=True).create(directory)
+        subprocess.run([str(python), "-m", "pip", "install", "-e", str(root)], cwd=root, check=True)
+        subprocess.run([str(scrapling), "install"], cwd=root, check=True)
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError(f"Scrapling 설치가 종료 코드 {exc.returncode}로 실패했습니다. 네트워크/디스크 공간을 확인한 뒤 setup을 다시 실행하세요.") from None
+    return {"status": "ready", "python": str(python), "scrapling": str(scrapling),
+            "browser_install_command_completed": True, "workspace": str(Path(workspace).absolute())}
+
+
 def build_parser():
     p = argparse.ArgumentParser(prog="kjs", description="한국 공식 채용공고 탐색·근거 기반 지원서 작업 도구 (자동 제출 없음)")
     p.add_argument("--version", action="version", version=__version__)
@@ -136,6 +161,7 @@ def build_parser():
     commands = p.add_subparsers(dest="command", required=True)
     c = commands.add_parser("init", help="비공개 작업 폴더 초기화; 기존 자료 보존")
     c.add_argument("--path", help="--workspace 대신 사용할 경로")
+    commands.add_parser("setup", help="Scrapling은 프로젝트 가상환경에, 브라우저는 사용자 캐시에 설치 (다운로드 발생)")
     c = commands.add_parser("sources", help="기업/포털 출처와 검증 근거 조회")
     c.add_argument("--company", action="append")
     c.add_argument("--source", action="append")
@@ -251,13 +277,16 @@ def run(args):
     if args.command == "doctor":
         root = Path(__file__).parent.parent
         emit({"version": __version__, "python": sys.version.split()[0], "package_root": str(root),
-              "workspace": str(ws.absolute()), "runtime_dependencies": [], "network_used": False,
+              "workspace": str(ws.absolute()), "runtime_dependencies": ["scrapling[fetchers]==0.4.11"], "network_used": False,
               "model_sessions_tested": False,
               "agents": {name: {"executable": shutil.which(binary), "note": "실행 파일 탐지이며 모델 세션 검증 아님"}
                          for name, binary in [("hermes", "hermes"), ("prime-agent", "prime-agent"), ("codex", "codex"), ("claude-code", "claude"), ("openclaw", "openclaw")]},
               "catalogue_present": (registry.DATA_DIR / "companies.json").exists(),
               "canonical_skill": str(root / ".agents/skills/korean-job-search/SKILL.md"),
               "privacy": "workspace/private/.env는 커밋 금지. 클라우드 모델을 사용하면 읽은 내용은 해당 제공자에게 전달될 수 있습니다."})
+        return 0
+    if args.command == "setup":
+        emit(setup_scrapling(ws))
         return 0
     if args.command == "sources":
         selected = _selection(args)
