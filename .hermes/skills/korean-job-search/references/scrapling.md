@@ -27,7 +27,7 @@
 python3 -m korean_job_search setup
 ```
 
-`pip install -e .`은 Scrapling Python 패키지만 설치하므로 브라우저를 사용하려면 `setup`을 실행한다. 스킬 파일만 복사하는 설치는 의존성을 설치하지 않는다. Windows에서는 `py -3 -m korean_job_search setup`으로 실행할 수 있고 환경 실행 파일은 `workspace/tools/scrapling/Scripts/python.exe`와 `Scripts/scrapling.exe`다. Windows Python 3.13의 설치·Chromium 실행은 [CI에서 확인](https://github.com/lr3mon/Korean-job-search/actions/runs/35811267215)했으며, 다른 Windows 버전/환경의 동작을 보장하지 않는다. 아래 Bash 변수 문법은 셸에 맞게 바꾸거나 실제 경로를 직접 쓴다.
+`pip install -e .`은 Scrapling Python 패키지만 설치하므로 브라우저를 사용하려면 `setup`을 실행한다. 스킬 파일만 복사하는 설치는 의존성을 설치하지 않는다. Windows에서는 `py -3 -m korean_job_search setup`으로 실행할 수 있고 환경 실행 파일은 `workspace/tools/scrapling/Scripts/python.exe`와 `Scripts/scrapling.exe`다. Windows Python 3.10·3.13의 설치·Chromium 실행은 [CI에서 확인](https://github.com/lr3mon/Korean-job-search/actions/runs/35811489106)했으며, 모든 사용자 PC 환경의 동작을 보장하지 않는다. 아래 Bash 변수 문법은 셸에 맞게 바꾸거나 실제 경로를 직접 쓴다.
 
 ```bash
 PY=workspace/tools/scrapling/bin/python
