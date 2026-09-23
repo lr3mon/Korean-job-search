@@ -13,7 +13,7 @@
 | OpenClaw | `skills/korean-job-search/`의 생성 사본 | 이 저장소가 **해당 에이전트의 구성된 workspace**여야 한다. 셸 CWD만 바꾸는 것으로 충분하지 않다. |
 | 일반 AGENTS/Gemini | 루트 `AGENTS.md`, `GEMINI.md` | 공통 문서를 읽는 포인터다. Gemini 고유 스킬 자동 탐색 검증을 뜻하지 않는다. |
 
-사본은 심볼릭 링크가 아닌 **자체 포함된 일반 파일**이다. 상대 Markdown 링크는 사본 안에서 끝나며, CLI 명령은 저장소 루트 기준이다. Windows에서 링크 생성 권한이 없어도 어댑터를 사용할 수 있다. Windows의 한글 파일·파이프 출력은 UTF-8 모드(`PYTHONUTF8=1` 또는 `-X utf8`)로 실행한다. `python3`가 없으면 Python 3.10+인지 확인한 `py -3 -X utf8` 또는 `python -X utf8`을 사용한다. 네이티브 Windows 실행 검증은 별도다.
+사본은 심볼릭 링크가 아닌 **자체 포함된 일반 파일**이다. 상대 Markdown 링크는 사본 안에서 끝나며, CLI 명령은 저장소 루트 기준이다. Windows에서 링크 생성 권한이 없어도 어댑터를 사용할 수 있다. Windows의 한글 파일·파이프 출력은 UTF-8 모드(`PYTHONUTF8=1` 또는 `-X utf8`)로 실행한다. `python3`가 없으면 Python 3.10+인지 확인한 `py -3 -X utf8` 또는 `python -X utf8`을 사용한다. Windows Python 3.10/3.13 오프라인 CLI 테스트와 Python 3.13의 Scrapling 설치·Chromium 실행은 [CI에서 확인](https://github.com/lr3mon/Korean-job-search/actions/runs/35811267215)했다. 에이전트의 실제 모델 실행 검증과는 별개다.
 
 ```text
 python3 scripts/sync_skills.py

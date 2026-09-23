@@ -30,7 +30,7 @@ jobs:
       - run: python -m korean_job_search sources --all-companies --out source-summary.json
       - run: python -m compileall -q korean_job_search
       - name: Verify Windows setup and Chromium launch
-        if: matrix.os == 'windows-latest' && matrix.python == '3.13'
+        if: matrix.os == 'windows-latest'
         run: python -m korean_job_search --workspace workspace/setup-verification setup
   scrapling-parser-tests:
     runs-on: ubuntu-latest
