@@ -1,29 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
-  <title id="title">Korean-job-search — Your experience. Your next chapter.</title>
-  <desc id="desc">An AI career workspace built for Korea. Connect official sources, your experience, and grounded applications.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">Korean-job-search — 공고는 달라도, 경험은 쌓이도록.</title>
+  <desc id="desc">한국 채용에 맞춘 AI 취업 작업실. 공식 채용공고를 찾고, 내 경험과 연결하고, 지원서와 면접을 준비합니다. 최종 판단과 제출은 사용자가 합니다.</desc>
   <rect width="1280" height="420" rx="18" fill="#111914"/>
   <path d="M826 0V420" stroke="#2C3C31"/>
-  <g font-family="Arial, Helvetica, sans-serif">
+  <g font-family="'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif">
     <rect x="58" y="42" width="9" height="9" rx="2" fill="#B7E7A2"/>
-    <text x="80" y="52" fill="#E9EEE6" font-size="18" font-weight="700" letter-spacing=".1">Korean-job-search</text>
-    <text x="58" y="151" fill="#F4F4EA" font-size="67" font-weight="700" letter-spacing="-2.7">Your experience.</text>
-    <text x="58" y="227" fill="#B7E7A2" font-size="67" font-weight="700" letter-spacing="-2.7">Your next chapter.</text>
-    <text x="61" y="285" fill="#ADB9AD" font-size="23">An AI career workspace, built for Korea.</text>
+    <text x="80" y="52" fill="#E9EEE6" font-size="18" font-weight="700" letter-spacing=".1" xml:lang="en">Korean-job-search</text>
+    <text x="58" y="145" fill="#F4F4EA" font-size="68" font-weight="700" letter-spacing="-1.8">공고는 달라도,</text>
+    <text x="58" y="229" fill="#B7E7A2" font-size="68" font-weight="700" letter-spacing="-1.8">경험은 쌓이도록.</text>
+    <text x="61" y="285" fill="#ADB9AD" font-size="23">한국 채용에 맞춘 AI 취업 작업실.</text>
     <path d="M60 332H766" stroke="#2C3C31"/>
-    <text x="61" y="373" fill="#C5D1C3" font-size="13" letter-spacing="1.4">OFFICIAL SOURCES</text>
-    <text x="277" y="373" fill="#C5D1C3" font-size="13" letter-spacing="1.4">EVIDENCE FIRST</text>
-    <text x="471" y="373" fill="#C5D1C3" font-size="13" letter-spacing="1.4">YOUR AGENT</text>
-    <text x="876" y="55" fill="#839981" font-size="12" letter-spacing="1.9">ONE CONNECTED WORKFLOW</text>
+    <text x="61" y="373" fill="#C5D1C3" font-size="16">공식 채용공고</text>
+    <text x="277" y="373" fill="#C5D1C3" font-size="16">내 경험의 근거</text>
+    <text x="493" y="373" fill="#C5D1C3" font-size="16">익숙한 AI 에이전트</text>
+    <text x="876" y="55" fill="#839981" font-size="15">공고부터 면접까지, 하나의 흐름</text>
     <path d="M890 117V293" stroke="#4B6247" stroke-width="2"/>
     <circle cx="890" cy="118" r="7" fill="#111914" stroke="#B7E7A2" stroke-width="2"/>
     <circle cx="890" cy="206" r="7" fill="#111914" stroke="#B7E7A2" stroke-width="2"/>
     <circle cx="890" cy="294" r="7" fill="#B7E7A2"/>
-    <text x="918" y="111" fill="#839981" font-size="11" letter-spacing="1.8">01 / DISCOVER</text>
-    <text x="918" y="138" fill="#E9EEE6" font-size="23" font-weight="600">Find the opportunity.</text>
-    <text x="918" y="199" fill="#839981" font-size="11" letter-spacing="1.8">02 / CONNECT</text>
-    <text x="918" y="226" fill="#E9EEE6" font-size="23" font-weight="600">Build your case.</text>
-    <text x="918" y="287" fill="#839981" font-size="11" letter-spacing="1.8">03 / PREPARE</text>
-    <text x="918" y="314" fill="#E9EEE6" font-size="23" font-weight="600">Make it your own.</text>
-    <text x="876" y="373" fill="#839981" font-size="13">Open source. Human in control.</text>
+    <text x="918" y="111" fill="#839981" font-size="13">01 / 찾고</text>
+    <text x="918" y="138" fill="#E9EEE6" font-size="23" font-weight="600">나에게 맞는 공고</text>
+    <text x="918" y="199" fill="#839981" font-size="13">02 / 연결하고</text>
+    <text x="918" y="226" fill="#E9EEE6" font-size="23" font-weight="600">내 경험에서 찾은 근거</text>
+    <text x="918" y="287" fill="#839981" font-size="13">03 / 다듬고</text>
+    <text x="918" y="314" fill="#E9EEE6" font-size="23" font-weight="600">지원서와 면접 준비</text>
+    <text x="876" y="373" fill="#839981" font-size="14">오픈소스 · 최종 판단과 제출은 직접</text>
   </g>
 </svg>
