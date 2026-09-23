@@ -15,9 +15,9 @@ python3 -m korean_job_search sources --company NAVER
 python3 -m korean_job_search collect --source NAVER --source CJ제일제당 --source saramin --limit 5
 ```
 
-Use `python` on Windows if applicable. `python -m pip install -e .` optionally installs the `kjs` command. Fill the blank private profile and story templates in `workspace/`; no fabricated candidate data is supplied.
+Use `python` on Windows if applicable. `python -m pip install -e .` optionally installs the `kjs` command. `init` creates a blank private profile and story templates in `workspace/`; no fabricated candidate data is supplied. Leave your resume and evidence in their existing folder, give the agent that folder's path, and have it read only relevant files to fill the working profile and drafts in `workspace/`.
 
-Open your agent in the repository and ask it to read `AGENTS.md` and `.agents/skills/korean-job-search/SKILL.md`, then find roles based on your private profile. Ask for exact source URLs, current deadlines, factual claims only, and no application submission. [Compatibility notes](AGENTS_COMPATIBILITY.md) distinguish standard-format support, discovery checks and actual model-driven trials.
+Open your agent in the repository. Ask it to read `AGENTS.md` and `.agents/skills/korean-job-search/SKILL.md`, and tell it where your career documents are without asking it to move, copy or edit the originals. Ask for exact source URLs, current deadlines, factual claims only, and no application submission. [Compatibility notes](AGENTS_COMPATIBILITY.md) distinguish standard-format support, discovery checks and actual model-driven trials.
 
 ## Acquisition versus discovery plans
 
@@ -50,7 +50,7 @@ Ranking is a transparent keyword heuristic, not a hiring probability or assessme
 
 ## Privacy
 
-Keep all candidate documents in ignored `workspace/` or `private/`. Never put them in tracked agent instructions. The CLI makes no LLM calls. If your chosen agent reads private data using a cloud model, that data may be transmitted to its provider: local files do not imply offline inference. Read [SECURITY.md](../SECURITY.md) before adding connectors or publishing a copy.
+Leave original candidate documents in their user-designated folder; keep newly created profiles, drafts and application records in ignored `workspace/` or `private/`. The repository's ignore rules do not protect an external source folder. Never put personal details in tracked agent instructions. The CLI makes no LLM calls. If your chosen agent reads private data using a cloud model, that data may be transmitted to its provider: local files do not imply offline inference. Read [SECURITY.md](../SECURITY.md) before adding connectors or publishing a copy.
 
 ## Verification
 

@@ -51,7 +51,7 @@ With Python 3.10+, open the repository directory and run:
 python3 -m korean_job_search init
 ```
 
-The default CLI needs no third-party runtime libraries. Add your resume and evidence to `workspace/`, alongside the blank profile and story templates. Personal files there are excluded from Git tracking by default.
+The default CLI needs no third-party runtime libraries. It creates a blank profile and story templates in the Git-ignored `workspace/`. Keep your resume and evidence where they are; tell your agent the folder path so it can read only the relevant files and write its working profile and drafts to `workspace/`. The repository's Git ignore rule does not cover your original folder.
 
 ### 2. Give your agent a starting point
 
@@ -60,14 +60,17 @@ Open your preferred agent in this repository and ask:
 ```text
 Read AGENTS.md and .agents/skills/korean-job-search/SKILL.md before proceeding.
 
-Use my career material in workspace to find Korean AI product-planning or business-development roles.
+My resume and career documents are in [absolute path to my documents folder]. Read only the files you need; do not move, copy or edit the originals.
+Find Korean AI product-planning or business-development roles.
 Verify the official JD and eligibility, then explain how my experience relates to the role.
 Ask about missing information. Do not invent experience or submit applications.
 ```
 
+Replace `[absolute path to my documents folder]` with the actual folder path.
+
 You do not need to run the whole workflow at once. Start with one job description to evaluate or one application answer to review.
 
-> **Your experience belongs in your workspace.** Keep personal details out of shared skills and agent instructions. A cloud-backed agent may still send the material it reads to its model provider. [Privacy notes](SECURITY.md)
+> **Keep the originals where they are; keep new work in your workspace.** Keep personal details out of shared skills and agent instructions. A cloud-backed agent may still send the material it reads to its model provider. [Privacy notes](SECURITY.md)
 
 ## Checked against real postings
 

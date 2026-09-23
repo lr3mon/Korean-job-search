@@ -17,7 +17,7 @@ python3 -m korean_job_search collect --source NAVER --source CJ제일제당 --so
 
 Windows에서는 `python3` 대신 `python`을 사용하셔도 됩니다. 선택적으로 `python -m pip install -e .` 하면 같은 명령을 `kjs`로 실행할 수 있습니다.
 
-`init` 후 `workspace/profile.json`과 경력/경험 서식을 채우세요. 최초 상태는 빈 서식이며, 데모 성과나 사용자의 경력을 임의로 생성하지 않습니다.
+`init` 후 `workspace/profile.json`과 경력/경험 서식을 채우세요. 최초 상태는 빈 서식이며, 데모 성과나 사용자의 경력을 임의로 생성하지 않습니다. 이력서 원본을 옮기지 말고, 에이전트에 자료 폴더 경로를 알려주어 필요한 파일만 읽힌 뒤 작업용 프로필과 초안을 `workspace/`에 저장하세요.
 
 ### 에이전트에게 맡기기
 
@@ -25,11 +25,14 @@ Windows에서는 `python3` 대신 `python`을 사용하셔도 됩니다. 선택�
 
 ```text
 korean-job-search 스킬을 사용해주세요.
-workspace의 제 경력 자료를 확인하고 AI 서비스 기획/사업개발 공고를 찾아주세요.
+제 이력서와 경력 자료는 [자료 폴더의 절대경로]에 있습니다. 필요한 파일만 읽고 원본은 옮기거나 복사·수정하지 마세요.
+AI 서비스 기획/사업개발 공고를 찾아주세요.
 주요 기업 공식 채용 페이지를 먼저 보고 사람인·잡코리아·원티드로 보완해주세요.
 실제 JD와 마감 시각을 확인한 후보만 제안하고, 근거 없는 경험은 만들지 마세요.
 문항과 글자 수를 확인한 뒤 지원서를 작성하고 독립 검토해주세요. 제출은 하지 마세요.
 ```
+
+`[자료 폴더의 절대경로]`를 실제 폴더 경로로 바꿔서 전달하세요.
 
 - Codex / Prime Agent: `.agents/skills/korean-job-search/`를 참조합니다.
 - Claude Code: `.claude/skills/korean-job-search/` 연결을 사용합니다.
