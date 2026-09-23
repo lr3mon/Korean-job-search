@@ -138,6 +138,7 @@ def setup_scrapling(workspace):
     directory = _no_symlinks(Path(workspace) / "tools" / "scrapling")
     python = directory / ("Scripts/python.exe" if os.name == "nt" else "bin/python")
     scrapling = directory / ("Scripts/scrapling.exe" if os.name == "nt" else "bin/scrapling")
+    stage = "가상환경"
     try:
         if directory.exists():
             if not python.is_file() or not (directory / "pyvenv.cfg").is_file():
@@ -146,12 +147,22 @@ def setup_scrapling(workspace):
             _private_parents(directory)
             directory.mkdir(mode=0o700)
             venv.EnvBuilder(with_pip=True).create(directory)
+        stage = "Scrapling 패키지"
         subprocess.run([str(python), "-m", "pip", "install", "-e", str(root)], cwd=root, check=True)
-        subprocess.run([str(scrapling), "install"], cwd=root, check=True)
+        stage = "Chromium 다운로드"
+        subprocess.run([str(python), "-m", "playwright", "install", "chromium"], cwd=root, check=True)
+        stage = "Chromium 실행"
+        subprocess.run([str(python), "-c",
+                        "from playwright.sync_api import sync_playwright\n"
+                        "with sync_playwright() as playwright:\n"
+                        "    browser = playwright.chromium.launch(headless=True)\n"
+                        "    browser.close()\n"], cwd=root, check=True)
     except subprocess.CalledProcessError as exc:
-        raise RuntimeError(f"Scrapling 설치가 종료 코드 {exc.returncode}로 실패했습니다. 네트워크/디스크 공간을 확인한 뒤 setup을 다시 실행하세요.") from None
+        if stage == "Chromium 실행":
+            raise RuntimeError("Chromium을 내려받았지만 실행하지 못했습니다. 필요한 OS 라이브러리·권한을 별도로 준비하세요. setup은 시스템 패키지를 설치하지 않습니다.") from None
+        raise RuntimeError(f"{stage} 단계가 종료 코드 {exc.returncode}로 실패했습니다. 네트워크/디스크 공간을 확인한 뒤 setup을 다시 실행하세요.") from None
     return {"status": "ready", "python": str(python), "scrapling": str(scrapling),
-            "browser_install_command_completed": True, "workspace": str(Path(workspace).absolute())}
+            "browser_ready": True, "workspace": str(Path(workspace).absolute())}
 
 
 def build_parser():

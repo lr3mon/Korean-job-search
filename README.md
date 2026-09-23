@@ -52,6 +52,8 @@ python3 -m korean_job_search setup
 python3 -m korean_job_search init
 ```
 
+Windows PowerShell에서는 `py -3 -m korean_job_search setup`과 `py -3 -m korean_job_search init`을 사용하세요. `setup`은 브라우저를 직접 실행해 준비 상태를 확인하지만 관리자 권한이나 시스템 패키지를 설치하지 않습니다. Linux에서 브라우저 실행에 필요한 OS 라이브러리가 없으면 별도로 준비해야 합니다.
+
 `workspace/`에 빈 프로필과 경험 서식이 만들어집니다. 이력서·경력 자료를 옮길 필요는 없습니다. 사용 중인 에이전트에 자료 폴더 경로를 알려주면, 필요한 내용을 읽어 작업용 프로필과 초안을 `workspace/`에 저장할 수 있습니다. 이 폴더는 기본적으로 Git 추적에서 제외되지만, 원본 자료 폴더에는 이 저장소의 제외 규칙이 적용되지 않습니다.
 
 `pip install -e .`도 Scrapling 라이브러리를 설치하지만 브라우저 바이너리는 설치하지 않습니다. `npx skills add`처럼 스킬 파일만 복사하는 설치 역시 Python 패키지나 브라우저를 설치하지 않으므로, 이 저장소에서 `setup`을 별도로 실행해야 합니다.

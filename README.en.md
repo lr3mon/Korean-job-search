@@ -52,6 +52,8 @@ python3 -m korean_job_search setup
 python3 -m korean_job_search init
 ```
 
+On Windows PowerShell, use `py -3 -m korean_job_search setup` and `py -3 -m korean_job_search init`. `setup` launches Chromium to check readiness; it does not request administrator privileges or install system packages. Missing Linux OS libraries are a separate prerequisite.
+
 `setup` installs Scrapling in the project-local `workspace/tools/scrapling/` virtual environment and downloads browser files into Scrapling's default user cache (network and disk space required). `init` creates a blank profile and story templates in the Git-ignored `workspace/`. Keep your resume and evidence where they are; tell your agent the folder path so it can read only the relevant files and write its working profile and drafts to `workspace/`. The repository's Git ignore rule does not cover your original folder.
 
 `pip install -e .` installs the Scrapling Python package but not the browser binary. Skill-only installers such as `npx skills add` copy skill files without installing either; run `setup` separately from this repository.

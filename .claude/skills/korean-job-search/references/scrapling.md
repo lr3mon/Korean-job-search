@@ -21,13 +21,13 @@
 
 ## 프로젝트 설정
 
-저장소 루트에서 최초 한 번 실행한다. `setup`은 `workspace/tools/scrapling/`에 프로젝트 가상환경을 만들고 고정된 `scrapling[fetchers]==0.4.11`을 설치하며, 브라우저 파일은 Scrapling의 기본 사용자 캐시에 다운로드한다. 기존 비가상환경 디렉터리는 덮어쓰지 않는다. 네트워크·다운로드·디스크 사용이 필요하다. 전역 에이전트 설정은 변경하지 않는다.
+저장소 루트에서 최초 한 번 실행한다. `setup`은 `workspace/tools/scrapling/`에 프로젝트 가상환경을 만들고 고정된 `scrapling[fetchers]==0.4.11`을 설치하며, Chromium 파일을 Scrapling의 기본 사용자 캐시에 다운로드한 뒤 실제 실행을 확인한다. 기존 비가상환경 디렉터리는 덮어쓰지 않는다. 네트워크·다운로드·디스크 사용이 필요하다. 관리자 권한이나 시스템 패키지 설치는 실행하지 않는다. Linux에서 브라우저 실행에 필요한 OS 라이브러리가 없으면 별도로 준비한다. 전역 에이전트 설정은 변경하지 않는다.
 
 ```bash
 python3 -m korean_job_search setup
 ```
 
-`pip install -e .`은 Scrapling Python 패키지만 설치하므로 브라우저를 사용하려면 `setup`을 실행한다. 스킬 파일만 복사하는 설치는 의존성을 설치하지 않는다. Windows에서는 환경 실행 파일이 `workspace/tools/scrapling/Scripts/python.exe`와 `Scripts/scrapling.exe`다. 아래 Bash 변수 문법은 셸에 맞게 바꾸거나 실제 경로를 직접 쓴다. Windows 런타임 실측을 주장하지 않는다.
+`pip install -e .`은 Scrapling Python 패키지만 설치하므로 브라우저를 사용하려면 `setup`을 실행한다. 스킬 파일만 복사하는 설치는 의존성을 설치하지 않는다. Windows에서는 `py -3 -m korean_job_search setup`으로 실행할 수 있고 환경 실행 파일은 `workspace/tools/scrapling/Scripts/python.exe`와 `Scripts/scrapling.exe`다. 아래 Bash 변수 문법은 셸에 맞게 바꾸거나 실제 경로를 직접 쓴다. Windows 설치/브라우저 실행은 CI 결과를 확인하기 전까지 실측 성공을 주장하지 않는다.
 
 ```bash
 PY=workspace/tools/scrapling/bin/python
