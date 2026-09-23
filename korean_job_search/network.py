@@ -55,9 +55,13 @@ _DNS_SLOTS = threading.BoundedSemaphore(8)
 _REDIRECTS = {301, 302, 303, 307, 308}
 _LOCAL_SUFFIXES = ("localhost", "local", "internal", "lan", "home", "home.arpa", "invalid", "test", "onion")
 _CREDENTIAL_KEYS = {
-    "access_token", "refresh_token", "id_token", "token", "api_key", "apikey",
-    "password", "passwd", "authorization", "auth", "credential", "credentials",
-    "signature", "x_amz_signature", "x_amz_credential", "x_goog_signature", "x_goog_credential",
+    # Compare separator-free names so percent-encoded, hyphenated and camelCase
+    # variants cannot evade the public-only URL boundary.
+    "accesstoken", "refreshtoken", "idtoken", "token", "apitoken", "apikey",
+    "password", "passwd", "authorization", "auth", "authtoken", "authenticationtoken",
+    "credential", "credentials", "signature", "xamzsignature", "xamzcredential",
+    "xgoogsignature", "xgoogcredential", "session", "sessionid", "jsessionid",
+    "sid", "sessionkey", "secret", "clientsecret", "authkey", "jwt", "bearertoken",
 }
 _UNRESERVED = frozenset("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~")
 # Explicit additions keep conservative classification consistent on Python 3.10+
@@ -201,7 +205,7 @@ def _validate_url(url: str) -> _Target:
             if any(host == suffix or host.endswith("." + suffix) for suffix in _LOCAL_SUFFIXES):
                 raise _Failure("blocked", "Local and special-use DNS names are forbidden.")
         for key, _ in parse_qsl(parts.query, keep_blank_values=True, max_num_fields=256):
-            if key.lower().replace("-", "_") in _CREDENTIAL_KEYS:
+            if re.sub(r"[^a-z0-9]", "", key.casefold()) in _CREDENTIAL_KEYS:
                 raise _Failure("needs_credentials", "Credential-bearing URLs are not fetched; provide a public URL.")
         host_header = "[" + host + "]" if ":" in host else host
         path = quote(parts.path or "/", safe="/%:@!$&'()*+,;=-._~")

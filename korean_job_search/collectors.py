@@ -257,7 +257,7 @@ def _jsonld(root, page_url, source_id, company=""):
         target = row.get("url") or row.get("mainEntityOfPage") or row.get("@id")
         if isinstance(target, dict):
             target = target.get("@id") or target.get("url")
-        if not target and len(postings) == 1:
+        if len(postings) == 1 and (not target or isinstance(target, str) and target.startswith("#")):
             target = page_url
         description = _text(row.get("description"))
         raw_deadline = row.get("validThrough", "")
@@ -288,7 +288,7 @@ def _definition_fields(node):
     return result
 
 
-def _naver_dom(root, page_url, source_id):
+def _naver_dom(root, page_url, source_id, structured_jobs=()):
     jobs = []
     cards = root.with_class("card_item")
     detail = urlsplit(page_url).path == "/rcrt/view.do"
@@ -300,7 +300,8 @@ def _naver_dom(root, page_url, source_id):
         if detail:
             query = dict(parse_qsl(urlsplit(page_url).query))
             ident = query.get("annoId", "")
-            company = fields.get("모집 부서", "")
+            company = next((job["company"] for job in structured_jobs
+                            if job["title"] == title and job["company"] != "Unknown employer"), "")
         else:
             click = card.first("card_link").attrs.get("onclick", "")
             found = re.fullmatch(r"\s*show\(['\"]?(\d+)['\"]?\)\s*;?\s*", click)
@@ -429,7 +430,7 @@ def parse_job_postings(html, url, source_id, company=""):
         # and supplement only missing metadata, not arbitrary page text.
         detail_jobs = []
         if adapter == "naver" and urlsplit(url).path == "/rcrt/view.do":
-            detail_jobs = _naver_dom(root, url, source_id)
+            detail_jobs = _naver_dom(root, url, source_id, jobs)
         elif adapter == "cj":
             detail_jobs = _cj_dom(root, url, source_id)
         detail_jobs = [job for job in detail_jobs if job]

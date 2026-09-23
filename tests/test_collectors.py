@@ -68,6 +68,14 @@ class StructuredTests(unittest.TestCase):
         self.assertEqual(parse_job_postings(ld_page(posting(title="")), BASE, "fixture"), [])
         self.assertEqual(parse_job_postings(ld_page([posting(url=None), posting(url=None, title="Other")]), BASE, "fixture"), [])
 
+    def test_single_posting_fragment_id_uses_page_url(self):
+        single = posting(url=None, **{"@id": "#job"})
+        jobs = parse_job_postings(ld_page(single), BASE, "fixture")
+        self.assertEqual(len(jobs), 1)
+        self.assertEqual(jobs[0]["url"], BASE)
+        self.assertEqual(parse_job_postings(ld_page([single, posting(url=None, title="Other")]), BASE, "fixture"), [])
+
+
     def test_script_not_in_description_and_no_invented_fields(self):
         job = parse_job_postings(ld_page(posting(description='<p>Role</p><script>secret()</script>', validThrough="마감시")), BASE, "fixture")[0]
         self.assertEqual(job["description"], "Role")
@@ -184,7 +192,7 @@ class AcquisitionTests(unittest.TestCase):
         self.assertEqual(r["status"], "needs_browser")
 
     def test_rejected_credentials_do_not_survive_in_result(self):
-        for url in ("https://user:secret-value@example.com/", "https://example.com/?token=secret-value"):
+        for url in ("https://user:secret-value@example.com/", "https://example.com/?token=secret-value", "https://example.com/?session_id=secret-value", "https://example.com/?authToken=secret-value"):
             f = FakeFetcher({})
             result = ingest_url(url, f)
             self.assertNotIn("secret-value", json.dumps(result))
@@ -220,6 +228,16 @@ class ObservedFixtureTests(unittest.TestCase):
         self.assertGreater(len(job["description"]), 200)
         self.assertNotEqual(job["evidence"]["completeness"], "listing_card")
         self.assertEqual(job["deadline"], "2026-09-29T10:00:00+09:00")
+
+    def test_naver_detail_employer_is_not_recruiting_department(self):
+        url = "https://recruit.navercorp.com/rcrt/view.do?annoId=30005289"
+        html = self.fixture("collect-naver-detail.html").replace('<dd class="info_text">NAVER</dd>', '<dd class="info_text">Platform Team</dd>', 1)
+        self.assertEqual(ingest_url(url, FakeFetcher({url: html}))["jobs"][0]["company"], "NAVER")
+        without_jsonld = html.split("</script>", 1)[1]
+        job = ingest_url(url, FakeFetcher({url: without_jsonld}))["jobs"][0]
+        self.assertEqual(job["company"], "Unknown employer")
+        self.assertTrue(any("employer" in warning.lower() for warning in job["warnings"]))
+
 
     def test_cj_observed_alphanumeric_career_id(self):
         u = "https://recruit.cj.net/recruit/ko/recruit/recruit/searchNewGonggoList.fo"

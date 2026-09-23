@@ -126,6 +126,16 @@ class FetcherTests(unittest.TestCase):
         self.assertEqual(self.calls, [])
         self.dns.assert_not_called()
 
+    def test_credential_query_aliases_are_blocked_without_echo_or_network(self):
+        for key in ("session_id", "authToken", "auth%2dtoken"):
+            with self.subTest(key=key):
+                result = self.fetcher.fetch(BASE + "/jobs?" + key + "=supersecret")
+                self.assertEqual(result["status"], "needs_credentials")
+                self.assertNotIn("supersecret", repr(result))
+        self.assertEqual(self.calls, [])
+        self.dns.assert_not_called()
+
+
     def test_non_public_literals(self):
         addresses = ["127.0.0.1", "0.0.0.0", "10.0.0.1", "172.16.0.1", "192.168.0.1", "169.254.169.254", "100.64.0.1", "192.0.0.8", "192.88.99.1", "192.0.2.1", "198.18.0.1", "198.51.100.1", "203.0.113.1", "224.0.0.1", "255.255.255.255", "[::1]", "[::]", "[fc00::1]", "[fe80::1]", "[ff02::1]", "[::ffff:127.0.0.1]", "[64:ff9b::7f00:1]", "[2002:7f00:1::]", "[2001:db8::1]", "[3fff::1]"]
         for address in addresses:
@@ -159,7 +169,7 @@ class FetcherTests(unittest.TestCase):
 
     def test_private_and_credential_redirects_are_not_followed(self):
         self.allow()
-        for location, status in [("http://127.0.0.1/", "blocked"), ("https://10.0.0.1/", "blocked"), ("https://u:secret@example.com/", "blocked"), ("https://example.com:8443/", "blocked"), ("file:///etc/passwd", "unsupported"), ("/login?next=/jobs", "needs_credentials")]:
+        for location, status in [("http://127.0.0.1/", "blocked"), ("https://10.0.0.1/", "blocked"), ("https://u:secret@example.com/", "blocked"), ("https://example.com:8443/", "blocked"), ("file:///etc/passwd", "unsupported"), ("/login?next=/jobs", "needs_credentials"), ("/jobs?session_id=supersecret", "needs_credentials")]:
             with self.subTest(location=location):
                 self.routes[BASE + "/jobs"] = response(302, b"", Location=location)
                 result = self.fetcher.fetch(BASE + "/jobs")
@@ -233,8 +243,8 @@ class FetcherTests(unittest.TestCase):
         self.assertNotIn(BASE + "/jobs", self.calls)
 
     def test_robots_wildcards_specific_agents_allow_ties_and_query(self):
-        self.routes[BASE + "/robots.txt"] = response(body=b"User-agent: *\nDisallow: /\n\nUser-agent: KoreanJobSearch\nDisallow: /private*\nAllow: /private/open\nDisallow: /*?secret=*\nDisallow: /equal\nAllow: /equal\nDisallow: /end$\n\nUser-agent: KoreanJobSearch\nDisallow: /merged\n")
-        for path, expected in [("/jobs", "ok"), ("/private", "robots_denied"), ("/private/open", "ok"), ("/jobs?secret=yes", "robots_denied"), ("/equal", "ok"), ("/end", "robots_denied"), ("/ending", "ok"), ("/merged", "robots_denied")]:
+        self.routes[BASE + "/robots.txt"] = response(body=b"User-agent: *\nDisallow: /\n\nUser-agent: KoreanJobSearch\nDisallow: /private*\nAllow: /private/open\nDisallow: /*?topic=*\nDisallow: /equal\nAllow: /equal\nDisallow: /end$\n\nUser-agent: KoreanJobSearch\nDisallow: /merged\n")
+        for path, expected in [("/jobs", "ok"), ("/private", "robots_denied"), ("/private/open", "ok"), ("/jobs?topic=yes", "robots_denied"), ("/equal", "ok"), ("/end", "robots_denied"), ("/ending", "ok"), ("/merged", "robots_denied")]:
             self.routes[BASE + path] = response()
             with self.subTest(path=path):
                 self.assertEqual(self.fetcher.fetch(BASE + path)["status"], expected)
